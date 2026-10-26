@@ -46,10 +46,10 @@ A UTF-8 JSON object of at most 1 MiB with exactly these three keys. Each value i
 
 The output is valid only when all of the following requirements hold. The true somatic SNVs and the true sample parameters are those used to simulate the data.
 
-1. **Contract.** Both files exist and follow the formats above exactly.
-2. **SNV precision.** At least 90 % of the reported rows match a true somatic SNV. A match requires `chrom`, `pos`, `ref` and `alt` to all be equal.
-3. **SNV recall.** At least 85 % of all true somatic SNVs, clonal and subclonal, are reported with matching `chrom`, `pos`, `ref` and `alt`.
-4. **Sample estimates.** Each estimate satisfies $ |reported - true| \leq tolerance \times |true| $, where $ true $ is the true value of that quantity and $ tolerance $ is the stated relative tolerance:
+1. Contract. Both files exist and follow the formats above exactly.
+2. SNV precision. At least 90 % of the reported rows match a true somatic SNV. A match requires `chrom`, `pos`, `ref` and `alt` to all be equal.
+3. SNV recall. At least 85 % of all true somatic SNVs, clonal and subclonal, are reported with matching `chrom`, `pos`, `ref` and `alt`.
+4. Sample estimates. Each estimate satisfies $ |reported - true| \leq tolerance \times |true| $, where $ true $ is the true value of that quantity and $ tolerance $ is the stated relative tolerance:
 
 | Quantity | Key | Relative tolerance |
 |---|---|---|

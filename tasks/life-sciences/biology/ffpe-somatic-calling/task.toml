@@ -4,7 +4,7 @@ artifacts = ["/root/results/somatic_snvs.tsv", "/root/results/sample_estimates.j
 [task]
 name = "turing/ffpe-somatic-calling"
 description = "Call somatic SNVs and estimate tumour purity, ploidy and tumour-in-normal fraction from an FFPE whole-genome-doubled lymphoma and a tumour-contaminated blood normal."
-version = "1.0.2"
+version = "1.0.3"
 keywords = ["somatic-variant-calling", "ffpe-artifacts", "tumor-in-normal", "copy-number", "purity-ploidy", "cancer-genomics"]
 
 [metadata]
