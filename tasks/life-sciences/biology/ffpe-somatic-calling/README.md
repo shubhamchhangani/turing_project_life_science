@@ -81,7 +81,7 @@ Diploid purity/ploidy estimates (ploidy 2, T ≈ 0.25) fail the ploidy and T tes
   - Trial 3: precision 0.871, recall 0.958, all three parameters correct. It reported 53 recurrent errors.
   - Trial 4: precision 0.609, recall 0.960, all three parameters correct. It reported 247 recurrent errors as "blood-enriched subclonal mutations".
 - **Transcript reading.** Both agents understood the task, used every input and solved the copy-number, FFPE and contamination parts. They failed on the scientific judgement of what a mutation that is "too frequent in the blood" means under a fixed tumour-in-normal fraction.
-- **Instruction change after round 2.** After round 2 one sentence was added ("Non-malignant cells carry the germline genome only, with no somatic mutations"). It closes the explanation that trial 3 offered (mutations in non-malignant blood cells), which was already excluded by the requirement that the reported SNVs be carried by malignant cells.
+- **Instruction changes after round 2.** The instruction was later reworded for form only (objective first, requirements framed as output requirements, inequalities in math notation); no fact, path, format or threshold changed. After round 2 one sentence was also added ("Non-malignant cells carry the germline genome only, with no somatic mutations"). It closes the explanation that trial 3 offered (mutations in non-malignant blood cells), which was already excluded by the requirement that the reported SNVs be carried by malignant cells.
 
 ## Data generation
 
