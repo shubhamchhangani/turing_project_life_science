@@ -1,0 +1,56 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 4,
+            "passed": 4,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1792977181.2326987,
+            "stop": 1792977181.242176
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_01_contract",
+                "status": "passed",
+                "duration": 0.0008567919999791229,
+                "start": 1792977181.2398756,
+                "stop": 1792977181.2408445,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_02_evidence",
+                "status": "passed",
+                "duration": 0.00032654099999263053,
+                "start": 1792977181.240921,
+                "stop": 1792977181.2413356,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_03_normalization",
+                "status": "passed",
+                "duration": 0.0002355830000055903,
+                "start": 1792977181.241392,
+                "stop": 1792977181.241706,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_04_every_posterior_coordinate",
+                "status": "passed",
+                "duration": 0.00023883299996896312,
+                "start": 1792977181.241768,
+                "stop": 1792977181.242076,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

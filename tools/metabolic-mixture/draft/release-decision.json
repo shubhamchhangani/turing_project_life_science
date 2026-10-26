@@ -1,0 +1,29 @@
+{
+  "decision": "DO_NOT_PACKAGE_SOLVED",
+  "zip_allowed": false,
+  "trials": [
+    {
+      "result": "/Users/shubhamchhangani/harshita/jobs/mfa-mixture-frontier/gpt6-sol-max-mixture-npx-chatgpt/metabolic-population-deconvoluti__iNpGMmB/result.json",
+      "model": "openai/gpt-6-sol",
+      "effort": "max",
+      "status": "solved_do_not_package",
+      "reward": 1.0,
+      "completed_commands": 34,
+      "error_type": null,
+      "counts_as_model_failure": false,
+      "task_checksum": "a9b53521b26007924e1309cbbf9016ed8123ed249c79929cf50e679234a2a51c",
+      "agent": "codex"
+    }
+  ],
+  "required_roster_without_local_failure": [
+    {
+      "model": "anthropic/claude-opus-5-5",
+      "effort": "low"
+    },
+    {
+      "model": "openai/gpt-6-sol",
+      "effort": "max"
+    }
+  ],
+  "limitation": "Single local trials do not guarantee failure on future runs or the Turing harness."
+}

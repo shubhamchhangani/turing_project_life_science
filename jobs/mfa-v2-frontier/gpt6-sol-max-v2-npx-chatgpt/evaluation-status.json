@@ -1,0 +1,15 @@
+{
+  "status": "solved_do_not_submit",
+  "model": "openai/gpt-6-sol",
+  "reasoning_effort": "max",
+  "authentication": "existing ChatGPT login",
+  "launcher": "npx @openai/codex@0.164.0 in an isolated Harbor Docker environment",
+  "reward": 1,
+  "pytest_passed": 16,
+  "weighted_ssr": 1961.008355878182,
+  "allowed_ssr": 2110,
+  "agent_execution_seconds": 678.3824,
+  "raw_result": "jobs/mfa-v2-frontier/gpt6-sol-max-v2-npx-chatgpt/metabolic-flux-analysis-v2__8Pk2XXs/result.json",
+  "new_zip_created": false,
+  "note": "Harbor cost_usd is an estimate, not evidence of a separate API bill for subscription authentication."
+}

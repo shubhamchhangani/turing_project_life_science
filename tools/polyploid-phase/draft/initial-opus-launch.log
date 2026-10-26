@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/Users/shubhamchhangani/harshita/tools/receptor-torus/run_opus.py", line 63, in <module>
+    token=subscription_token()
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shubhamchhangani/harshita/tools/receptor-torus/run_opus.py", line 22, in subscription_token
+    status=subprocess.run(['claude','auth','status'],capture_output=True,text=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'claude'

@@ -1,0 +1,18 @@
+{
+  "static_checks": true,
+  "independent_physics": true,
+  "artifact_regressions": true,
+  "offline_reference": "completed input-only Newton fit in 115.62 seconds, one CPU, 2 GiB, no network",
+  "offline_verifier": "4/4 passed, reward 1, 24.73 seconds; separate, one CPU, 2 GiB, no network",
+  "gpt_trial": {
+    "status": "SOLVED_DO_NOT_PACKAGE",
+    "reward": 1,
+    "agent_seconds": 1358.607648,
+    "model": "openai/gpt-6-sol",
+    "effort": "max",
+    "zip_created": false
+  },
+  "opus_trial": "cancelled because GPT solved this candidate; not counted as a failure",
+  "zip_created": false,
+  "all_models_failed": false
+}

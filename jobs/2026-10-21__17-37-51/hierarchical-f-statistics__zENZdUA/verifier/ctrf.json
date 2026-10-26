@@ -1,0 +1,150 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 10,
+            "passed": 0,
+            "failed": 10,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1792584587.3511274,
+            "stop": 1792584587.5813358
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_fstats_exists",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0003942499999851634,
+                "start": 1792584587.3590176,
+                "stop": 1792584587.3637624,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_fstats_exists():\n        \"\"\"fstats.csv exists at /root/results/fstats.csv.\"\"\"\n>       assert FSTATS.is_file(), f\"missing output file {FSTATS}\"\nE       AssertionError: missing output file /root/results/fstats.csv\nE       assert False\nE        +  where False = is_file()\nE        +    where is_file = PosixPath('/root/results/fstats.csv').is_file\n\ntests/test_outputs.py:43: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_fstats_header",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0002725829999974394,
+                "start": 1792584587.3638434,
+                "stop": 1792584587.3718076,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_fstats_header():\n        \"\"\"fstats.csv header is exactly locus,F_IS,F_SC,F_CT,F_IT,identity_holds in that order.\"\"\"\n>       header, _ = read_csv(FSTATS)\n                    ^^^^^^^^^^^^^^^^\n\ntests/test_outputs.py:48: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:29: in read_csv\n    with path.open(newline=\"\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'\n\nusr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_fstats_rows_and_order",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0002684579999794323,
+                "start": 1792584587.371875,
+                "stop": 1792584587.3787992,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_fstats_rows_and_order():\n        \"\"\"fstats.csv has exactly 4 data rows, one per locus, sorted by locus ascending.\"\"\"\n>       _, rows = read_csv(FSTATS)\n                  ^^^^^^^^^^^^^^^^\n\ntests/test_outputs.py:54: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:29: in read_csv\n    with path.open(newline=\"\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'\n\nusr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_fstats_values_parse_and_finite",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00023141700000905985,
+                "start": 1792584587.378872,
+                "stop": 1792584587.3884745,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_fstats_values_parse_and_finite():\n        \"\"\"Every F value in fstats.csv parses as a finite float.\"\"\"\n>       rows = rows_by_locus(FSTATS)\n               ^^^^^^^^^^^^^^^^^^^^^\n\ntests/test_outputs.py:62: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:36: in rows_by_locus\n    header, rows = read_csv(path)\n                   ^^^^^^^^^^^^^^\ntests/test_outputs.py:29: in read_csv\n    with path.open(newline=\"\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'\n\nusr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_fstat_value",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00024195800000370582,
+                "start": 1792584587.3885477,
+                "stop": 1792584587.3958201,
+                "retries": 15,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::stat::['F_IS', 'F_SC', 'F_CT', 'F_IT']",
+                    "parametrize::locus::['Locus_A', 'Locus_B', 'Locus_C', 'Locus_D']"
+                ],
+                "trace": "locus = 'Locus_D', stat = 'F_IT'\n\n    @pytest.mark.parametrize(\"locus\", LOCI)\n    @pytest.mark.parametrize(\"stat\", STATS)\n    def test_fstat_value(locus, stat):\n        \"\"\"Each per-locus Weir & Cockerham hierarchical F-statistic is within relative tolerance 1e-4 of the reference.\"\"\"\n>       got = float(rows_by_locus(FSTATS)[locus][stat])\n                    ^^^^^^^^^^^^^^^^^^^^^\n\ntests/test_outputs.py:78: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:36: in rows_by_locus\n    header, rows = read_csv(path)\n                   ^^^^^^^^^^^^^^\ntests/test_outputs.py:29: in read_csv\n    with path.open(newline=\"\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'\n\nusr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_identity_holds_column",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00022204200000430774,
+                "start": 1792584587.5080636,
+                "stop": 1792584587.5150125,
+                "retries": 3,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::locus::['Locus_A', 'Locus_B', 'Locus_C', 'Locus_D']"
+                ],
+                "trace": "locus = 'Locus_D'\n\n    @pytest.mark.parametrize(\"locus\", LOCI)\n    def test_identity_holds_column(locus):\n        \"\"\"identity_holds is 'yes' for every locus (the identity holds exactly for the variance-component estimators).\"\"\"\n        f = EXPECTED[locus]\n        lhs = 1 - f[\"F_IT\"]\n        rhs = (1 - f[\"F_IS\"]) * (1 - f[\"F_SC\"]) * (1 - f[\"F_CT\"])\n        want = \"yes\" if abs(lhs - rhs) <= RTOL * abs(lhs) else \"no\"\n>       got = rows_by_locus(FSTATS)[locus][\"identity_holds\"]\n              ^^^^^^^^^^^^^^^^^^^^^\n\ntests/test_outputs.py:92: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:36: in rows_by_locus\n    header, rows = read_csv(path)\n                   ^^^^^^^^^^^^^^\ntests/test_outputs.py:29: in read_csv\n    with path.open(newline=\"\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'\n\nusr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_structure_exists",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00022124999999562078,
+                "start": 1792584587.5364075,
+                "stop": 1792584587.5375574,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_structure_exists():\n        \"\"\"structure.csv exists at /root/results/structure.csv.\"\"\"\n>       assert STRUCTURE.is_file(), f\"missing output file {STRUCTURE}\"\nE       AssertionError: missing output file /root/results/structure.csv\nE       assert False\nE        +  where False = is_file()\nE        +    where is_file = PosixPath('/root/results/structure.csv').is_file\n\ntests/test_outputs.py:99: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_structure_header",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00019816600000410745,
+                "start": 1792584587.537613,
+                "stop": 1792584587.544194,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_structure_header():\n        \"\"\"structure.csv header is exactly locus,among_region_structure,among_deme_within_region_structure.\"\"\"\n>       header, _ = read_csv(STRUCTURE)\n                    ^^^^^^^^^^^^^^^^^^^\n\ntests/test_outputs.py:104: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:29: in read_csv\n    with path.open(newline=\"\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/root/results/structure.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/structure.csv'\n\nusr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_structure_rows_and_order",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00018683300000077452,
+                "start": 1792584587.5442495,
+                "stop": 1792584587.5509264,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_structure_rows_and_order():\n        \"\"\"structure.csv has exactly 4 data rows, one per locus, sorted by locus ascending.\"\"\"\n>       _, rows = read_csv(STRUCTURE)\n                  ^^^^^^^^^^^^^^^^^^^\n\ntests/test_outputs.py:112: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:29: in read_csv\n    with path.open(newline=\"\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/root/results/structure.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/structure.csv'\n\nusr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_structure_flags",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0002423330000169699,
+                "start": 1792584587.5509794,
+                "stop": 1792584587.5601566,
+                "retries": 3,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::locus::['Locus_A', 'Locus_B', 'Locus_C', 'Locus_D']"
+                ],
+                "trace": "locus = 'Locus_D'\n\n    @pytest.mark.parametrize(\"locus\", LOCI)\n    def test_structure_flags(locus):\n        \"\"\"among_region_structure is 'yes' iff F_CT > 0.05 and among_deme_within_region_structure is 'yes' iff F_SC > 0.05.\"\"\"\n>       row = rows_by_locus(STRUCTURE)[locus]\n              ^^^^^^^^^^^^^^^^^^^^^^^^\n\ntests/test_outputs.py:121: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:36: in rows_by_locus\n    header, rows = read_csv(path)\n                   ^^^^^^^^^^^^^^\ntests/test_outputs.py:29: in read_csv\n    with path.open(newline=\"\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/root/results/structure.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/structure.csv'\n\nusr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            }
+        ]
+    }
+}

@@ -1,0 +1,257 @@
+{
+  "task": "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/scaffold-receptor-ensemble",
+  "static_checks_passed": true,
+  "portal_acceptance_guaranteed": false,
+  "package_fingerprint": "808e620476918bc4f8265255b881f43ea1341031772d6dbb62b6eecf724eb1f1",
+  "files": {
+    "README.md": "5c1f188269529b5d92b89328aac719a4098000a7af83dd40e6593efc05857703",
+    "environment/Dockerfile": "d6540c5be3525c1b05cf2b11b8faea8a069deeb3b33476076729d76fb9fc73c2",
+    "environment/data/model.json": "7c1b68435b8247c1a1e3fc95be97c5453dde37925232440a0b4101709086e01c",
+    "instruction.md": "04f6a07a295482b31305397a50f1acac756259fb94ae0d032a25c7d9b008cfdb",
+    "solution/compiled_moments.py": "353c117480a98f7ed102305e354e538ac519817fbad25b3b2bcf52a30425e86f",
+    "solution/engine.py": "e8f84a0594b47a9a9881fde175bfd115836cde520de99d1a6d51a40d676dfb92",
+    "solution/scaffold_engine.py": "100d56fc9c901d316a946b8ae818690c2276e9616784d775affdfc42ddf759de",
+    "solution/signed_engine.py": "53e9f93d21688c329b6d1832ac0396f0bd379032cfcf3bc17c8c91d28bb6c3c1",
+    "solution/solve.py": "d73d502e80c01fd6bb9f34f217d6229667b8abdd81d129b5089a3d21494cd389",
+    "solution/solve.sh": "85d36442d1ac6eb6a1202b2e215a6aaf590ba31d9c8d499567cf88ff0f32aa39",
+    "task.toml": "d8b9bfba22e1a4dd94cb372cd73e6046a9b75fb6ce8477bb088c2b6fb0ed5567",
+    "tests/Dockerfile": "40a472d43c9c11c874d50c944ce495e6e05a25e74680cd19ba5688af7954d221",
+    "tests/data/expectations.json": "e7f5fc202aca33cd2f8d9024ea47f33dba04fb6fc71ff3f416c065d35d0c2a00",
+    "tests/data/model.json": "7c1b68435b8247c1a1e3fc95be97c5453dde37925232440a0b4101709086e01c",
+    "tests/provenance/check_small.py": "08d24c4cc2eb28271a9bd7ea2a88f52d84df4aae18d0743d746f21553f97f5b6",
+    "tests/provenance/compiled_moments.py": "353c117480a98f7ed102305e354e538ac519817fbad25b3b2bcf52a30425e86f",
+    "tests/provenance/engine.py": "e8f84a0594b47a9a9881fde175bfd115836cde520de99d1a6d51a40d676dfb92",
+    "tests/provenance/generate.py": "2c10c26234a8d2e21735d08aef2e272daea1e5b8a44711158e3af7351cea10ca",
+    "tests/provenance/independent_source.py": "550feed60a91da83099553cf383b7b7bac5a7f42963842c0c18877ed3a6ad120",
+    "tests/provenance/scaffold_engine.py": "100d56fc9c901d316a946b8ae818690c2276e9616784d775affdfc42ddf759de",
+    "tests/provenance/signed_engine.py": "53e9f93d21688c329b6d1832ac0396f0bd379032cfcf3bc17c8c91d28bb6c3c1",
+    "tests/provenance/source_kernel.py": "d52cf3b03e4c00050628da4d9d7903c9869d27c5f3adeaece8349e0adeb456f6",
+    "tests/test.sh": "f1fca86ffbdd524f14cbaf25f036bb99264a827de070965f68dd260dd61500e7",
+    "tests/test_outputs.py": "eee7506f6859ed0b6d649eeb5b02ff1f0d3c92b340c7ea7a3e1e01fcf49fc070"
+  },
+  "checks": [
+    {
+      "check": "root structure",
+      "passed": true,
+      "detail": "missing=[], extra=[]"
+    },
+    {
+      "check": "environment is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "tests is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "solution is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no hidden/cache files",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no canary markers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no symlinks in package",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "schema 1.4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "top-level artifacts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "task required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "metadata required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "environment required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "turing task namespace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no legacy metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "life sciences biology category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "binary reward and overlap type",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent execution contract",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent environment network",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "isolated offline verifier",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent resources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier resources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier timeout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test runner errexit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test runner shell syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/compiled_moments.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/engine.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/scaffold_engine.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/signed_engine.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/solve.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/provenance/check_small.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/provenance/compiled_moments.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/provenance/engine.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/provenance/generate.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/provenance/independent_source.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/provenance/scaffold_engine.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/provenance/signed_engine.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/provenance/source_kernel.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/test_outputs.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "execution-contract closing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all artifacts stated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no scoring language in instructions",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "errors": [],
+  "required_additional_evidence": [
+    "offline reference solution and verifier",
+    "valid and invalid artifact regressions",
+    "scientific coverage and independent truth review",
+    "completed substantive trials on the required model roster"
+  ],
+  "zip_created": false
+}

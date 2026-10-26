@@ -1,0 +1,95 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 8,
+            "passed": 8,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1792753025.1685324,
+            "stop": 1792753026.2744174
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_flux_contract",
+                "status": "passed",
+                "duration": 0.001418792999999141,
+                "start": 1792753025.1827352,
+                "stop": 1792753025.184288,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_pool_contract",
+                "status": "passed",
+                "duration": 0.0007838339999750588,
+                "start": 1792753025.184395,
+                "stop": 1792753025.1853702,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_glucose_normalization",
+                "status": "passed",
+                "duration": 0.0005041259999529757,
+                "start": 1792753025.185444,
+                "stop": 1792753025.1860285,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_directional_consistency",
+                "status": "passed",
+                "duration": 0.0005534590000024764,
+                "start": 1792753025.1860979,
+                "stop": 1792753025.186731,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_mass_balance",
+                "status": "passed",
+                "duration": 0.000622208000010005,
+                "start": 1792753025.186802,
+                "stop": 1792753025.1874835,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_flux_accuracy",
+                "status": "passed",
+                "duration": 0.0005101259999946706,
+                "start": 1792753025.1875455,
+                "stop": 1792753025.1881175,
+                "retries": 11,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::key::['A_G6PDH', 'A_PDH', 'A_PC', 'A_ME', 'A_CS', 'A_IDH', 'B_G6PDH', 'B_PDH', 'B_PC', 'B_ME', 'B_CS', 'B_IDH']"
+                ]
+            },
+            {
+                "name": "test_outputs.py::test_pool_accuracy",
+                "status": "passed",
+                "duration": 0.0005862920000083705,
+                "start": 1792753025.1947696,
+                "stop": 1792753025.1954255,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_measurement_fit",
+                "status": "passed",
+                "duration": 1.0787003339999899,
+                "start": 1792753025.1954849,
+                "stop": 1792753026.2743008,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

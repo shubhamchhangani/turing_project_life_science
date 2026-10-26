@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "seed": 0,
+      "reference_max_error": 2.220446049250313e-16,
+      "independent_source_max_error": 3.3306690738754696e-16
+    },
+    {
+      "seed": 1,
+      "reference_max_error": 1.3877787807814457e-16,
+      "independent_source_max_error": 1.6653345369377348e-16
+    },
+    {
+      "seed": 2,
+      "reference_max_error": 3.3306690738754696e-16,
+      "independent_source_max_error": 1.3877787807814457e-16
+    },
+    {
+      "seed": 3,
+      "reference_max_error": 1.6653345369377348e-16,
+      "independent_source_max_error": 1.942890293094024e-16
+    },
+    {
+      "seed": 4,
+      "reference_max_error": 1.942890293094024e-16,
+      "independent_source_max_error": 8.326672684688674e-16
+    },
+    {
+      "seed": 5,
+      "reference_max_error": 3.885780586188048e-16,
+      "independent_source_max_error": 4.440892098500626e-16
+    },
+    {
+      "seed": 6,
+      "reference_max_error": 1.3877787807814457e-16,
+      "independent_source_max_error": 3.3306690738754696e-16
+    },
+    {
+      "seed": 7,
+      "reference_max_error": 2.3592239273284576e-16,
+      "independent_source_max_error": 2.7755575615628914e-16
+    },
+    {
+      "seed": 8,
+      "reference_max_error": 1.6653345369377348e-16,
+      "independent_source_max_error": 3.608224830031759e-16
+    },
+    {
+      "seed": 9,
+      "reference_max_error": 2.220446049250313e-16,
+      "independent_source_max_error": 3.885780586188048e-16
+    },
+    {
+      "seed": 10,
+      "reference_max_error": 2.7755575615628914e-16,
+      "independent_source_max_error": 1.5265566588595902e-16
+    },
+    {
+      "seed": 11,
+      "reference_max_error": 2.7755575615628914e-16,
+      "independent_source_max_error": 2.7755575615628914e-16
+    }
+  ]
+}

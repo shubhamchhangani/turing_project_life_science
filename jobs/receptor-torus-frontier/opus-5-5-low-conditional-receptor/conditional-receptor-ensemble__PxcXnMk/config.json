@@ -1,0 +1,16 @@
+{
+    "task": {
+        "path": "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/conditional-receptor-ensemble"
+    },
+    "trial_name": "conditional-receptor-ensemble__PxcXnMk",
+    "trials_dir": "jobs/receptor-torus-frontier/opus-5-5-low-conditional-receptor",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "anthropic/claude-opus-5-5",
+        "kwargs": {
+            "version": "2.1.300",
+            "reasoning_effort": "low"
+        }
+    },
+    "job_id": "1c86cadd-baf8-4ba8-afe6-f069c5df8dd5"
+}

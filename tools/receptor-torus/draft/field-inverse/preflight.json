@@ -1,0 +1,200 @@
+{
+  "task": "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/inverse-receptor-cooperativity",
+  "static_checks_passed": true,
+  "portal_acceptance_guaranteed": false,
+  "package_fingerprint": "8cf6186bd7c96611dd11bf16c0bea41f0781b777cf2dc4aa8731b36cfe58dbeb",
+  "files": {
+    "environment/Dockerfile": "c51759859500aeffecf5cd880f01d04097c4baff6519f96c74849394d07303c6",
+    "environment/data/edge_moments.csv": "cbdebdc561ef5f44ffe383efb89f28c1556b53f4c71773d86e6f5fa4e00e5935",
+    "environment/data/model.json": "11321053ea2d04355918a213bc4c10b52cfdcb1d08c45b7c5ccb470fa32ceda4",
+    "environment/data/site_moments.csv": "199cdbf7a6820f97944e41da2c702fe93f6806aad4b52cae2ec4c71a9e20d88b",
+    "instruction.md": "db9c1938071ff8f152d7f695753a8abddf9f41c932b0b11fe4fa3bdfbf0a9b80",
+    "solution/inverse_fit.py": "a91afe4b1e93df214a8ca23249a6b4c6b1ca05c9a977b4de42d0ddc4c37ce741",
+    "solution/lattice.py": "cb9547b064c43160d31dcf9bfab11a81325e21dc9b4c315d5f5564926334df11",
+    "solution/solve.sh": "1c29c161af5a696cc598371a1f67fcce8a9152e8145139dd297118020a5963a1",
+    "task.toml": "ca1c8d908f07d3c70aad4b0db7bedef742f5b9cff25a1160dcd6eebec8b95363",
+    "tests/Dockerfile": "7a3f459bfd9ee8ad70b12097532aac248647b16061db4fa2a024bbd5c83cbc79",
+    "tests/data/edge_moments.csv": "cbdebdc561ef5f44ffe383efb89f28c1556b53f4c71773d86e6f5fa4e00e5935",
+    "tests/data/injected_parameters.json": "f5a11d0062b07fea3cb716e786d3ffbb715746bc6affd41fdbcc4a1cb9fc5635",
+    "tests/data/model.json": "11321053ea2d04355918a213bc4c10b52cfdcb1d08c45b7c5ccb470fa32ceda4",
+    "tests/data/site_moments.csv": "199cdbf7a6820f97944e41da2c702fe93f6806aad4b52cae2ec4c71a9e20d88b",
+    "tests/physics.py": "edba848d112697eb18cdc0836a62db58d579a1b56ff59770bee35f69e0807e4d",
+    "tests/test.sh": "17940e5e24782df1abdb47f659779ad26c2bd15e76ba764d8e8cc2ee1a2f6f20",
+    "tests/test_outputs.py": "ccf90052465b27e0d7e6e632a191b8802db3c7b657323ad6a4ac7abd31c1cdd6"
+  },
+  "checks": [
+    {
+      "check": "root structure",
+      "passed": true,
+      "detail": "missing=[], extra=[]"
+    },
+    {
+      "check": "environment is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "tests is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "solution is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no hidden/cache files",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no canary markers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no symlinks in package",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "schema 1.4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "top-level artifacts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "task required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "metadata required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "environment required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "turing task namespace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no legacy metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "life sciences biology category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "binary reward and overlap type",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent execution contract",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent environment network",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "isolated offline verifier",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent resources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier resources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier timeout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test runner errexit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test runner shell syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/inverse_fit.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/lattice.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/physics.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/test_outputs.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "execution-contract closing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all artifacts stated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no scoring language in instructions",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "errors": [],
+  "required_additional_evidence": [
+    "offline reference solution and verifier",
+    "valid and invalid artifact regressions",
+    "scientific coverage and independent truth review",
+    "completed substantive trials on the required model roster"
+  ],
+  "zip_created": false
+}

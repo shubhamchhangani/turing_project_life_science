@@ -1,0 +1,5317 @@
+{
+  "ploidy": 6,
+  "variants": 64,
+  "dosages": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "span": 8,
+  "reads": [
+    {
+      "id": "r0001",
+      "end": 7,
+      "calls": [
+        {
+          "variant": 0,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 1,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 2,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 3,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 4,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 5,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 6,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 7,
+          "allele": 1,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0002",
+      "end": 7,
+      "calls": [
+        {
+          "variant": 0,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 1,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 2,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 3,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 4,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 5,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 6,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 7,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0003",
+      "end": 8,
+      "calls": [
+        {
+          "variant": 1,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 2,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 3,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 4,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 5,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 6,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 7,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 8,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0004",
+      "end": 8,
+      "calls": [
+        {
+          "variant": 1,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 2,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 3,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 4,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 5,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 6,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 7,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 8,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0005",
+      "end": 9,
+      "calls": [
+        {
+          "variant": 2,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 3,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 4,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 5,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 6,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 7,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 8,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 9,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0006",
+      "end": 9,
+      "calls": [
+        {
+          "variant": 2,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 3,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 4,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 5,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 6,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 7,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 8,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 9,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0007",
+      "end": 10,
+      "calls": [
+        {
+          "variant": 3,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 4,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 5,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 6,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 7,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 8,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 9,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 10,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0008",
+      "end": 10,
+      "calls": [
+        {
+          "variant": 3,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 4,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 5,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 6,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 7,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 8,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 9,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 10,
+          "allele": 1,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0009",
+      "end": 11,
+      "calls": [
+        {
+          "variant": 4,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 5,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 6,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 7,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 8,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 9,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 10,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 11,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0010",
+      "end": 11,
+      "calls": [
+        {
+          "variant": 4,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 5,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 6,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 7,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 8,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 9,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 10,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 11,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0011",
+      "end": 12,
+      "calls": [
+        {
+          "variant": 5,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 6,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 7,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 8,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 9,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 10,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 11,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 12,
+          "allele": 1,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0012",
+      "end": 12,
+      "calls": [
+        {
+          "variant": 5,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 6,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 7,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 8,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 9,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 10,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 11,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 12,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0013",
+      "end": 13,
+      "calls": [
+        {
+          "variant": 6,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 7,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 8,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 9,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 10,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 11,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 12,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 13,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0014",
+      "end": 13,
+      "calls": [
+        {
+          "variant": 6,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 7,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 8,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 9,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 10,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 11,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 12,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 13,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0015",
+      "end": 14,
+      "calls": [
+        {
+          "variant": 7,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 8,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 9,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 10,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 11,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 12,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 13,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 14,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0016",
+      "end": 14,
+      "calls": [
+        {
+          "variant": 7,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 8,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 9,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 10,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 11,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 12,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 13,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 14,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0017",
+      "end": 15,
+      "calls": [
+        {
+          "variant": 8,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 9,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 10,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 11,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 12,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 13,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 14,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 15,
+          "allele": 1,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0018",
+      "end": 15,
+      "calls": [
+        {
+          "variant": 8,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 9,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 10,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 11,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 12,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 13,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 14,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 15,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0019",
+      "end": 16,
+      "calls": [
+        {
+          "variant": 9,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 10,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 11,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 12,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 13,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 14,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 15,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 16,
+          "allele": 1,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0020",
+      "end": 16,
+      "calls": [
+        {
+          "variant": 9,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 10,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 11,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 12,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 13,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 14,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 15,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 16,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0021",
+      "end": 17,
+      "calls": [
+        {
+          "variant": 10,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 11,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 12,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 13,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 14,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 15,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 16,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 17,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0022",
+      "end": 17,
+      "calls": [
+        {
+          "variant": 10,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 11,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 12,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 13,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 14,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 15,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 16,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 17,
+          "allele": 1,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0023",
+      "end": 18,
+      "calls": [
+        {
+          "variant": 11,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 12,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 13,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 14,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 15,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 16,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 17,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 18,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0024",
+      "end": 18,
+      "calls": [
+        {
+          "variant": 11,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 12,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 13,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 14,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 15,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 16,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 17,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 18,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0025",
+      "end": 19,
+      "calls": [
+        {
+          "variant": 12,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 13,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 14,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 15,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 16,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 17,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 18,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 19,
+          "allele": 1,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0026",
+      "end": 19,
+      "calls": [
+        {
+          "variant": 12,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 13,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 14,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 15,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 16,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 17,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 18,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 19,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0027",
+      "end": 20,
+      "calls": [
+        {
+          "variant": 13,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 14,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 15,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 16,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 17,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 18,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 19,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 20,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0028",
+      "end": 20,
+      "calls": [
+        {
+          "variant": 13,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 14,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 15,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 16,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 17,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 18,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 19,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 20,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0029",
+      "end": 21,
+      "calls": [
+        {
+          "variant": 14,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 15,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 16,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 17,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 18,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 19,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 20,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 21,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0030",
+      "end": 21,
+      "calls": [
+        {
+          "variant": 14,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 15,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 16,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 17,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 18,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 19,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 20,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 21,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0031",
+      "end": 22,
+      "calls": [
+        {
+          "variant": 15,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 16,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 17,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 18,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 19,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 20,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 21,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 22,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0032",
+      "end": 22,
+      "calls": [
+        {
+          "variant": 15,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 16,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 17,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 18,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 19,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 20,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 21,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 22,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0033",
+      "end": 23,
+      "calls": [
+        {
+          "variant": 16,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 17,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 18,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 19,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 20,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 21,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 22,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 23,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0034",
+      "end": 23,
+      "calls": [
+        {
+          "variant": 16,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 17,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 18,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 19,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 20,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 21,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 22,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 23,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0035",
+      "end": 24,
+      "calls": [
+        {
+          "variant": 17,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 18,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 19,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 20,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 21,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 22,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 23,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 24,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0036",
+      "end": 24,
+      "calls": [
+        {
+          "variant": 17,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 18,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 19,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 20,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 21,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 22,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 23,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 24,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0037",
+      "end": 25,
+      "calls": [
+        {
+          "variant": 18,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 19,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 20,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 21,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 22,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 23,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 24,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 25,
+          "allele": 1,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0038",
+      "end": 25,
+      "calls": [
+        {
+          "variant": 18,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 19,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 20,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 21,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 22,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 23,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 24,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 25,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0039",
+      "end": 26,
+      "calls": [
+        {
+          "variant": 19,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 20,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 21,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 22,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 23,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 24,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 25,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 26,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0040",
+      "end": 26,
+      "calls": [
+        {
+          "variant": 19,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 20,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 21,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 22,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 23,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 24,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 25,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 26,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0041",
+      "end": 27,
+      "calls": [
+        {
+          "variant": 20,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 21,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 22,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 23,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 24,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 25,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 26,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 27,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0042",
+      "end": 27,
+      "calls": [
+        {
+          "variant": 20,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 21,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 22,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 23,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 24,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 25,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 26,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 27,
+          "allele": 1,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0043",
+      "end": 28,
+      "calls": [
+        {
+          "variant": 21,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 22,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 23,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 24,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 25,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 26,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 27,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 28,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0044",
+      "end": 28,
+      "calls": [
+        {
+          "variant": 21,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 22,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 23,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 24,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 25,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 26,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 27,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 28,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0045",
+      "end": 29,
+      "calls": [
+        {
+          "variant": 22,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 23,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 24,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 25,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 26,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 27,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 28,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 29,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0046",
+      "end": 29,
+      "calls": [
+        {
+          "variant": 22,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 23,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 24,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 25,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 26,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 27,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 28,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 29,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0047",
+      "end": 30,
+      "calls": [
+        {
+          "variant": 23,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 24,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 25,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 26,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 27,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 28,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 29,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 30,
+          "allele": 1,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0048",
+      "end": 30,
+      "calls": [
+        {
+          "variant": 23,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 24,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 25,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 26,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 27,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 28,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 29,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 30,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0049",
+      "end": 31,
+      "calls": [
+        {
+          "variant": 24,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 25,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 26,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 27,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 28,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 29,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 30,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 31,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0050",
+      "end": 31,
+      "calls": [
+        {
+          "variant": 24,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 25,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 26,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 27,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 28,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 29,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 30,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 31,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0051",
+      "end": 32,
+      "calls": [
+        {
+          "variant": 25,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 26,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 27,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 28,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 29,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 30,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 31,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 32,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0052",
+      "end": 32,
+      "calls": [
+        {
+          "variant": 25,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 26,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 27,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 28,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 29,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 30,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 31,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 32,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0053",
+      "end": 33,
+      "calls": [
+        {
+          "variant": 26,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 27,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 28,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 29,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 30,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 31,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 32,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 33,
+          "allele": 1,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0054",
+      "end": 33,
+      "calls": [
+        {
+          "variant": 26,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 27,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 28,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 29,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 30,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 31,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 32,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 33,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0055",
+      "end": 34,
+      "calls": [
+        {
+          "variant": 27,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 28,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 29,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 30,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 31,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 32,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 33,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 34,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0056",
+      "end": 34,
+      "calls": [
+        {
+          "variant": 27,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 28,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 29,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 30,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 31,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 32,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 33,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 34,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0057",
+      "end": 35,
+      "calls": [
+        {
+          "variant": 28,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 29,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 30,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 31,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 32,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 33,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 34,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 35,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0058",
+      "end": 35,
+      "calls": [
+        {
+          "variant": 28,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 29,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 30,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 31,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 32,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 33,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 34,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 35,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0059",
+      "end": 36,
+      "calls": [
+        {
+          "variant": 29,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 30,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 31,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 32,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 33,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 34,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 35,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 36,
+          "allele": 1,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0060",
+      "end": 36,
+      "calls": [
+        {
+          "variant": 29,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 30,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 31,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 32,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 33,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 34,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 35,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 36,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0061",
+      "end": 37,
+      "calls": [
+        {
+          "variant": 30,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 31,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 32,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 33,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 34,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 35,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 36,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 37,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0062",
+      "end": 37,
+      "calls": [
+        {
+          "variant": 30,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 31,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 32,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 33,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 34,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 35,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 36,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 37,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0063",
+      "end": 38,
+      "calls": [
+        {
+          "variant": 31,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 32,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 33,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 34,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 35,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 36,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 37,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 38,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0064",
+      "end": 38,
+      "calls": [
+        {
+          "variant": 31,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 32,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 33,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 34,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 35,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 36,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 37,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 38,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0065",
+      "end": 39,
+      "calls": [
+        {
+          "variant": 32,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 33,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 34,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 35,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 36,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 37,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 38,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 39,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0066",
+      "end": 39,
+      "calls": [
+        {
+          "variant": 32,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 33,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 34,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 35,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 36,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 37,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 38,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 39,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0067",
+      "end": 40,
+      "calls": [
+        {
+          "variant": 33,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 34,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 35,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 36,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 37,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 38,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 39,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 40,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0068",
+      "end": 40,
+      "calls": [
+        {
+          "variant": 33,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 34,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 35,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 36,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 37,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 38,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 39,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 40,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0069",
+      "end": 41,
+      "calls": [
+        {
+          "variant": 34,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 35,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 36,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 37,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 38,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 39,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 40,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 41,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0070",
+      "end": 41,
+      "calls": [
+        {
+          "variant": 34,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 35,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 36,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 37,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 38,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 39,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 40,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 41,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0071",
+      "end": 42,
+      "calls": [
+        {
+          "variant": 35,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 36,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 37,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 38,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 39,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 40,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 41,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 42,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0072",
+      "end": 42,
+      "calls": [
+        {
+          "variant": 35,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 36,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 37,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 38,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 39,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 40,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 41,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 42,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0073",
+      "end": 43,
+      "calls": [
+        {
+          "variant": 36,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 37,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 38,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 39,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 40,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 41,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 42,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 43,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0074",
+      "end": 43,
+      "calls": [
+        {
+          "variant": 36,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 37,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 38,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 39,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 40,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 41,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 42,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 43,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0075",
+      "end": 44,
+      "calls": [
+        {
+          "variant": 37,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 38,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 39,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 40,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 41,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 42,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 43,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 44,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0076",
+      "end": 44,
+      "calls": [
+        {
+          "variant": 37,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 38,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 39,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 40,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 41,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 42,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 43,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 44,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0077",
+      "end": 45,
+      "calls": [
+        {
+          "variant": 38,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 39,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 40,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 41,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 42,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 43,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 44,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 45,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0078",
+      "end": 45,
+      "calls": [
+        {
+          "variant": 38,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 39,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 40,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 41,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 42,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 43,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 44,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 45,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0079",
+      "end": 46,
+      "calls": [
+        {
+          "variant": 39,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 40,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 41,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 42,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 43,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 44,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 45,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 46,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0080",
+      "end": 46,
+      "calls": [
+        {
+          "variant": 39,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 40,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 41,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 42,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 43,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 44,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 45,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 46,
+          "allele": 1,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0081",
+      "end": 47,
+      "calls": [
+        {
+          "variant": 40,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 41,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 42,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 43,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 44,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 45,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 46,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 47,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0082",
+      "end": 47,
+      "calls": [
+        {
+          "variant": 40,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 41,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 42,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 43,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 44,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 45,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 46,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 47,
+          "allele": 1,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0083",
+      "end": 48,
+      "calls": [
+        {
+          "variant": 41,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 42,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 43,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 44,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 45,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 46,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 47,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 48,
+          "allele": 1,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0084",
+      "end": 48,
+      "calls": [
+        {
+          "variant": 41,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 42,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 43,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 44,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 45,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 46,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 47,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 48,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0085",
+      "end": 49,
+      "calls": [
+        {
+          "variant": 42,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 43,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 44,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 45,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 46,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 47,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 48,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 49,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0086",
+      "end": 49,
+      "calls": [
+        {
+          "variant": 42,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 43,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 44,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 45,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 46,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 47,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 48,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 49,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0087",
+      "end": 50,
+      "calls": [
+        {
+          "variant": 43,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 44,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 45,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 46,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 47,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 48,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 49,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 50,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0088",
+      "end": 50,
+      "calls": [
+        {
+          "variant": 43,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 44,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 45,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 46,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 47,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 48,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 49,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 50,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0089",
+      "end": 51,
+      "calls": [
+        {
+          "variant": 44,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 45,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 46,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 47,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 48,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 49,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 50,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 51,
+          "allele": 1,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0090",
+      "end": 51,
+      "calls": [
+        {
+          "variant": 44,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 45,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 46,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 47,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 48,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 49,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 50,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 51,
+          "allele": 1,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0091",
+      "end": 52,
+      "calls": [
+        {
+          "variant": 45,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 46,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 47,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 48,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 49,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 50,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 51,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 52,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0092",
+      "end": 52,
+      "calls": [
+        {
+          "variant": 45,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 46,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 47,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 48,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 49,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 50,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 51,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 52,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0093",
+      "end": 53,
+      "calls": [
+        {
+          "variant": 46,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 47,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 48,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 49,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 50,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 51,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 52,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 53,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0094",
+      "end": 53,
+      "calls": [
+        {
+          "variant": 46,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 47,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 48,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 49,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 50,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 51,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 52,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 53,
+          "allele": 1,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0095",
+      "end": 54,
+      "calls": [
+        {
+          "variant": 47,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 48,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 49,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 50,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 51,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 52,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 53,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 54,
+          "allele": 1,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0096",
+      "end": 54,
+      "calls": [
+        {
+          "variant": 47,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 48,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 49,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 50,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 51,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 52,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 53,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 54,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0097",
+      "end": 55,
+      "calls": [
+        {
+          "variant": 48,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 49,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 50,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 51,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 52,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 53,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 54,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 55,
+          "allele": 1,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0098",
+      "end": 55,
+      "calls": [
+        {
+          "variant": 48,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 49,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 50,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 51,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 52,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 53,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 54,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 55,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0099",
+      "end": 56,
+      "calls": [
+        {
+          "variant": 49,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 50,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 51,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 52,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 53,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 54,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 55,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 56,
+          "allele": 1,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0100",
+      "end": 56,
+      "calls": [
+        {
+          "variant": 49,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 50,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 51,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 52,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 53,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 54,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 55,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 56,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0101",
+      "end": 57,
+      "calls": [
+        {
+          "variant": 50,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 51,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 52,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 53,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 54,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 55,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 56,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 57,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0102",
+      "end": 57,
+      "calls": [
+        {
+          "variant": 50,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 51,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 52,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 53,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 54,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 55,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 56,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 57,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0103",
+      "end": 58,
+      "calls": [
+        {
+          "variant": 51,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 52,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 53,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 54,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 55,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 56,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 57,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 58,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0104",
+      "end": 58,
+      "calls": [
+        {
+          "variant": 51,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 52,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 53,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 54,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 55,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 56,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 57,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 58,
+          "allele": 1,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0105",
+      "end": 59,
+      "calls": [
+        {
+          "variant": 52,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 53,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 54,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 55,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 56,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 57,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 58,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 59,
+          "allele": 0,
+          "error_probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": "r0106",
+      "end": 59,
+      "calls": [
+        {
+          "variant": 52,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 53,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 54,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 55,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 56,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 57,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 58,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 59,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0107",
+      "end": 60,
+      "calls": [
+        {
+          "variant": 53,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 54,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 55,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 56,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 57,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 58,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 59,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 60,
+          "allele": 1,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0108",
+      "end": 60,
+      "calls": [
+        {
+          "variant": 53,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 54,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 55,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 56,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 57,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 58,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 59,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 60,
+          "allele": 1,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0109",
+      "end": 61,
+      "calls": [
+        {
+          "variant": 54,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 55,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 56,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 57,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 58,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 59,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 60,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 61,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0110",
+      "end": 61,
+      "calls": [
+        {
+          "variant": 54,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 55,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 56,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 57,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 58,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 59,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 60,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 61,
+          "allele": 1,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0111",
+      "end": 62,
+      "calls": [
+        {
+          "variant": 55,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 56,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 57,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 58,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 59,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 60,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 61,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 62,
+          "allele": 1,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0112",
+      "end": 62,
+      "calls": [
+        {
+          "variant": 55,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 56,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 57,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 58,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 59,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 60,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 61,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 62,
+          "allele": 0,
+          "error_probability": 0.025
+        }
+      ]
+    },
+    {
+      "id": "r0113",
+      "end": 63,
+      "calls": [
+        {
+          "variant": 56,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 57,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 58,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 59,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 60,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 61,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 62,
+          "allele": 1,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 63,
+          "allele": 0,
+          "error_probability": 0.19
+        }
+      ]
+    },
+    {
+      "id": "r0114",
+      "end": 63,
+      "calls": [
+        {
+          "variant": 56,
+          "allele": 0,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 57,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 58,
+          "allele": 0,
+          "error_probability": 0.08
+        },
+        {
+          "variant": 59,
+          "allele": 0,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 60,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 61,
+          "allele": 1,
+          "error_probability": 0.19
+        },
+        {
+          "variant": 62,
+          "allele": 1,
+          "error_probability": 0.025
+        },
+        {
+          "variant": 63,
+          "allele": 1,
+          "error_probability": 0.025
+        }
+      ]
+    }
+  ]
+}

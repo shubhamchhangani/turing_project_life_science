@@ -1,0 +1,42 @@
+{
+  "status": "forward_coupling_screen_passed_not_inverse_validation",
+  "records": [
+    {
+      "cooling_seconds": 4e-05,
+      "frozen_populations": [
+        0.37011539108647024,
+        0.28091561279756017,
+        0.20575252194847735,
+        0.1432164741674921
+      ],
+      "midpoint_1024_max_error": 2.39725925221812e-09,
+      "total_variation_from_room_temperature": 0.011902368940423153,
+      "total_variation_from_final_temperature": 0.27090355663519733
+    },
+    {
+      "cooling_seconds": 0.0006,
+      "frozen_populations": [
+        0.4205403103360807,
+        0.28399685736513847,
+        0.18660134247232457,
+        0.10886148982645663
+      ],
+      "midpoint_1024_max_error": 4.2241406206233734e-08,
+      "total_variation_from_room_temperature": 0.06540853275761166,
+      "total_variation_from_final_temperature": 0.22047863738558712
+    }
+  ],
+  "reference_temperature_population": [
+    0.35930309960851375,
+    0.2798255353350935,
+    0.20729985518825314,
+    0.1535715098681395
+  ],
+  "final_temperature_equilibrium": [
+    0.6410189477216677,
+    0.2510266267342459,
+    0.08149641374191642,
+    0.02645801180217008
+  ],
+  "seconds": 0.06513387500308454
+}

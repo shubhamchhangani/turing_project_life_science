@@ -1,0 +1,16 @@
+{
+    "task": {
+        "path": "tasks/life-sciences/biology/receptor-cluster-thermodynamics"
+    },
+    "trial_name": "receptor-cluster-thermodynamics__waSDxaF",
+    "trials_dir": "jobs/receptor-torus-frontier/gpt6-sol-max-receptor-torus-npx-retry1",
+    "agent": {
+        "name": "npx_codex_agent:NpxCodex",
+        "model_name": "openai/gpt-6-sol",
+        "kwargs": {
+            "version": "0.164.0",
+            "reasoning_effort": "max"
+        }
+    },
+    "job_id": "915a34de-8eda-4331-86b7-f46abbe45521"
+}

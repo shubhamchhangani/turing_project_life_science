@@ -1,0 +1,129 @@
+{
+    "id": "3ce1e325-14b8-4dd3-979e-86c9e8497088",
+    "task_name": "turing/inverse-receptor-cooperativity",
+    "trial_name": "inverse-receptor-cooperativity__PvkAtR6",
+    "trial_uri": "file:///Users/shubhamchhangani/harshita/jobs/receptor-torus-frontier/gpt6-sol-max-inverse-receptor-npx-retry1/inverse-receptor-cooperativity__PvkAtR6",
+    "task_id": {
+        "path": "tasks/life-sciences/biology/inverse-receptor-cooperativity"
+    },
+    "source": null,
+    "task_checksum": "f2865e9851b4ea89fcd43a96c2aa8c2f3f64b4546ae35c70a7ff76ea8466a4d0",
+    "config": {
+        "task": {
+            "path": "tasks/life-sciences/biology/inverse-receptor-cooperativity",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "inverse-receptor-cooperativity__PvkAtR6",
+        "trials_dir": "jobs/receptor-torus-frontier/gpt6-sol-max-inverse-receptor-npx-retry1",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "npx_codex_agent:NpxCodex",
+            "import_path": null,
+            "model_name": "openai/gpt-6-sol",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {
+                "version": "0.164.0",
+                "reasoning_effort": "max"
+            },
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "stream": false,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "4ea32677-d1fb-4719-97ef-a40a7edaca5f",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "codex",
+        "version": "0.164.0",
+        "model_info": {
+            "name": "gpt-6-sol",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 4218298,
+        "n_cache_tokens": 4131968,
+        "n_output_tokens": 33345,
+        "cost_usd": 1.3325035999999995,
+        "model_usage": {
+            "openai/gpt-6-sol": {
+                "n_input_tokens": 4218298,
+                "n_cache_tokens": 4131968,
+                "n_output_tokens": 33345,
+                "cost_usd": 1.3325035999999995
+            }
+        },
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-10-24T03:06:57.558737Z",
+    "finished_at": "2026-10-24T03:32:17.603455Z",
+    "environment_setup": {
+        "started_at": "2026-10-24T03:06:57.581044Z",
+        "finished_at": "2026-10-24T03:07:03.677918Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-24T03:07:03.678004Z",
+        "finished_at": "2026-10-24T03:08:16.395356Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-24T03:08:16.395660Z",
+        "finished_at": "2026-10-24T03:30:55.003308Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-24T03:31:03.286701Z",
+        "finished_at": "2026-10-24T03:32:17.603366Z"
+    },
+    "step_results": null
+}

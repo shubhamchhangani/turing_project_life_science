@@ -1,0 +1,34 @@
+{
+  "scope": "local photon-only curvature with image-derived geometry fixed; no global identifiability claim",
+  "hessian_eigenvalues": [
+    0.05493766550648755,
+    0.34447371265345994,
+    2.195648315292729,
+    4.117589934358724,
+    10.962795839344457,
+    49.98316589454047,
+    61.18089366312156,
+    181.80056899078755,
+    207.76480466033203
+  ],
+  "finite_difference_relative_disagreement": 6.054734482502627e-06,
+  "positive_definite": true,
+  "truth_used": false,
+  "log_rate_local_standard_errors": [
+    3.8104826196054713,
+    3.743491572465483,
+    0.691398678457314,
+    0.6623656927159821,
+    0.3907360697197123,
+    0.3660735017256043,
+    0.9726937482497016,
+    0.9390805095149412,
+    1.0140504445280467,
+    0.9890520067624173,
+    2.205464255832993,
+    2.196789282147446
+  ],
+  "condition_number": 3781.8280544847185,
+  "largest_local_rate_uncertainty_factor": 45.17223461241537,
+  "seconds": 1.4958294160023797
+}

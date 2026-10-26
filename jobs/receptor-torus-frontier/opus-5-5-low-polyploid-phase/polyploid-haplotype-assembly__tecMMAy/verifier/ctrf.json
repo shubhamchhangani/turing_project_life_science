@@ -1,0 +1,50 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 3,
+            "passed": 2,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1792833440.6299896,
+            "stop": 1792833440.7430432
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_01_complete_contract",
+                "status": "passed",
+                "duration": 0.0005439999998770872,
+                "start": 1792833440.636468,
+                "stop": 1792833440.6371536,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_02_all_variant_dosages",
+                "status": "passed",
+                "duration": 0.0005278339999676973,
+                "start": 1792833440.6372375,
+                "stop": 1792833440.6378603,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_03_all_read_corrections",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.10091812500002106,
+                "start": 1792833440.6379256,
+                "stop": 1792833440.7429173,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "submitted = ['01001100000101111100111001110011101000101101100111111110011101001110100110001001001100100100110100011111010001000011...1001001000001111111110011100010000100101001100110001100101000011011010101111101100001000001010101110100100010101', ...]\n\n    def test_03_all_read_corrections(submitted):\n        \"\"\"Every observed read contributes its complete best-homolog weighted distance.\"\"\"\n        check_dosages(submitted)\n>       assert correction_cost(submitted)<=MODEL['maximum_weighted_corrections'],'Correction budget exceeded'\nE       AssertionError: Correction budget exceeded\nE       assert 20270 <= 19885\nE        +  where 20270 = correction_cost(['01001100000101111100111001110011101000101101100111111110011101001110100110001001001100100100110100011111010001000011...1001001000001111111110011100010000100101001100110001100101000011011010101111101100001000001010101110100100010101', ...])\n\ntests/test_outputs.py:80: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            }
+        ]
+    }
+}

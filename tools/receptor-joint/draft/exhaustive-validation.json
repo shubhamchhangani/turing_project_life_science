@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "seed": 0,
+      "max_probability_error": 5.551115123125783e-17
+    },
+    {
+      "seed": 1,
+      "max_probability_error": 5.551115123125783e-17
+    },
+    {
+      "seed": 2,
+      "max_probability_error": 5.551115123125783e-17
+    },
+    {
+      "seed": 3,
+      "max_probability_error": 5.551115123125783e-17
+    },
+    {
+      "seed": 4,
+      "max_probability_error": 1.249000902703301e-16
+    },
+    {
+      "seed": 5,
+      "max_probability_error": 2.7755575615628914e-17
+    }
+  ]
+}

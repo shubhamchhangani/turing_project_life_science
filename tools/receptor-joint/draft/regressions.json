@@ -1,0 +1,1139 @@
+{
+  "passed": true,
+  "valid_cases": 3,
+  "invalid_cases": 280,
+  "cases": [
+    {
+      "case": "reference",
+      "expected_accept": true
+    },
+    {
+      "case": "numeric ' 0.1'",
+      "expected_accept": false
+    },
+    {
+      "case": "numeric '0.1 '",
+      "expected_accept": false
+    },
+    {
+      "case": "numeric 'NaN'",
+      "expected_accept": false
+    },
+    {
+      "case": "numeric 'inf'",
+      "expected_accept": false
+    },
+    {
+      "case": "numeric '1_0'",
+      "expected_accept": false
+    },
+    {
+      "case": "numeric '\uff10.\uff11'",
+      "expected_accept": false
+    },
+    {
+      "case": "numeric '1e999'",
+      "expected_accept": false
+    },
+    {
+      "case": "numeric '-0.1'",
+      "expected_accept": false
+    },
+    {
+      "case": "numeric '1.1'",
+      "expected_accept": false
+    },
+    {
+      "case": "numeric ''",
+      "expected_accept": false
+    },
+    {
+      "case": "numeric '0x1p-2'",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 0 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 1 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 2 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 3 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 4 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 5 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 6 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 7 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 8 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 9 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 10 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 11 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 12 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 13 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 14 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 15 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 16 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 17 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 18 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 19 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 20 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 21 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 22 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 23 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 24 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 25 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 26 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 27 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 28 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 29 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 30 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 31 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 32 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 33 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 34 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 35 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 36 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 37 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 38 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 39 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 40 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 41 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 42 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 43 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 44 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 45 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 46 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 47 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 48 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 49 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 50 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 51 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 52 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 53 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 54 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 55 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 56 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 57 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 58 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 59 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 60 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 61 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 62 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 63 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 64 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 65 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 66 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 67 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 68 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 69 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 70 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 71 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 72 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 73 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 74 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 75 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 76 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 77 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 78 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 79 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 80 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 81 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 82 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 83 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 84 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 85 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 86 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 87 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 88 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 89 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 90 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 91 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 92 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 93 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 94 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 95 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 96 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 97 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 98 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 99 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 100 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 101 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 102 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 103 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 104 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 105 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 106 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 107 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 108 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 109 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 110 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 111 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 112 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 113 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 114 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 115 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 116 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 117 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 118 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 119 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 120 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 121 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 122 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 123 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 124 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 125 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 126 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 127 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 128 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 129 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 130 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 131 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 132 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 133 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 134 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 135 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 136 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 137 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 138 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 139 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 140 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 141 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 142 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 143 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 144 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 145 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 146 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 147 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 148 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 149 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 150 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 151 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 152 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 153 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 154 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 155 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 156 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 157 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 158 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 159 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 160 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 161 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 162 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 163 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 164 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 165 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 166 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 167 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 168 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 169 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 170 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 171 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 172 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 173 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 174 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 175 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 176 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 177 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 178 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 179 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 180 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 181 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 182 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 183 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 184 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 185 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 186 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 187 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 188 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 189 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 190 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 191 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 192 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 193 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 194 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 195 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 196 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 197 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 198 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 199 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 200 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 201 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 202 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 203 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 204 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 205 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 206 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 207 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 208 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 209 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 210 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 211 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 212 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 213 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 214 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 215 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 216 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 217 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 218 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 219 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 220 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 221 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 222 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 223 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 224 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 225 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 226 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 227 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 228 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 229 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 230 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 231 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 232 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 233 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 234 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 235 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 236 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 237 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 238 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 239 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 240 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 241 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 242 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 243 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 244 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 245 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 246 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 247 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 248 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 249 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 250 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 251 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 252 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 253 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 254 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong joint probability 255 with preserved normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong log_partition",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong log_clamp_probability",
+      "expected_accept": false
+    },
+    {
+      "case": "product law with correct one-site marginals and normalization",
+      "expected_accept": false
+    },
+    {
+      "case": "duplicate",
+      "expected_accept": false
+    },
+    {
+      "case": "missing",
+      "expected_accept": false
+    },
+    {
+      "case": "extra",
+      "expected_accept": false
+    },
+    {
+      "case": "extra_column",
+      "expected_accept": false
+    },
+    {
+      "case": "header",
+      "expected_accept": false
+    },
+    {
+      "case": "symlink",
+      "expected_accept": false
+    },
+    {
+      "case": "fifo",
+      "expected_accept": false
+    },
+    {
+      "case": "directory",
+      "expected_accept": false
+    },
+    {
+      "case": "oversize",
+      "expected_accept": false
+    },
+    {
+      "case": "bad_utf8",
+      "expected_accept": false
+    },
+    {
+      "case": "reordered CRLF",
+      "expected_accept": true
+    },
+    {
+      "case": "scientific notation",
+      "expected_accept": true
+    }
+  ]
+}

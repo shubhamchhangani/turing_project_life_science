@@ -1,0 +1,120 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 10,
+            "passed": 10,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1792584839.4120486,
+            "stop": 1792584839.430755
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_fstats_exists",
+                "status": "passed",
+                "duration": 0.0003460000000927721,
+                "start": 1792584839.419664,
+                "stop": 1792584839.4201274,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_fstats_header",
+                "status": "passed",
+                "duration": 0.00023141699995221643,
+                "start": 1792584839.4201958,
+                "stop": 1792584839.4205084,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_fstats_rows_and_order",
+                "status": "passed",
+                "duration": 0.0002777490000198668,
+                "start": 1792584839.4205627,
+                "stop": 1792584839.420931,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_fstats_values_parse_and_finite",
+                "status": "passed",
+                "duration": 0.00019916700006206156,
+                "start": 1792584839.4209816,
+                "stop": 1792584839.4212413,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_fstat_value",
+                "status": "passed",
+                "duration": 0.0002924170000255799,
+                "start": 1792584839.4212954,
+                "stop": 1792584839.421668,
+                "retries": 15,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::stat::['F_IS', 'F_SC', 'F_CT', 'F_IT']",
+                    "parametrize::locus::['Locus_A', 'Locus_B', 'Locus_C', 'Locus_D']"
+                ]
+            },
+            {
+                "name": "test_outputs.py::test_identity_holds_column",
+                "status": "passed",
+                "duration": 0.00021620799992660977,
+                "start": 1792584839.4270296,
+                "stop": 1792584839.4273129,
+                "retries": 3,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::locus::['Locus_A', 'Locus_B', 'Locus_C', 'Locus_D']"
+                ]
+            },
+            {
+                "name": "test_outputs.py::test_structure_exists",
+                "status": "passed",
+                "duration": 0.00018558300001814132,
+                "start": 1792584839.4284186,
+                "stop": 1792584839.428665,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_structure_header",
+                "status": "passed",
+                "duration": 0.00024033299996517599,
+                "start": 1792584839.4287283,
+                "stop": 1792584839.429043,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_structure_rows_and_order",
+                "status": "passed",
+                "duration": 0.00017870800002128817,
+                "start": 1792584839.4290903,
+                "stop": 1792584839.4293258,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_structure_flags",
+                "status": "passed",
+                "duration": 0.00021295800002008036,
+                "start": 1792584839.4293704,
+                "stop": 1792584839.4296427,
+                "retries": 3,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::locus::['Locus_A', 'Locus_B', 'Locus_C', 'Locus_D']"
+                ]
+            }
+        ]
+    }
+}

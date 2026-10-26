@@ -1,0 +1,192 @@
+{
+  "task": "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/receptor-cluster-thermodynamics",
+  "static_checks_passed": true,
+  "portal_acceptance_guaranteed": false,
+  "package_fingerprint": "850998b9f8b51fbca8291adefefff640aa1ac14ca2a5696ee006f2ced1ef4798",
+  "files": {
+    "README.md": "633f9f4a400fe30b3b720f5775a63d672d2a77e374185c6e4b5f50e2d123e9c6",
+    "environment/Dockerfile": "c51759859500aeffecf5cd880f01d04097c4baff6519f96c74849394d07303c6",
+    "environment/data/couplings.csv": "4c81423a154cc670384a4810b6dd3da2adc7c4ef8e6ebe16888531121d1160cc",
+    "environment/data/model.json": "29aba55909ab958283fb2ac46714b47c9eb02615f6ef464f8a4dc5a1c02fa4c3",
+    "instruction.md": "5d4b088c8aecc1ee61d69672762a6d703b48f45aa03657ba6a7bf57fd6dcb7bd",
+    "solution/solve.py": "aa7442973f3980b04039f037addd4780ba10fc9f23cbf4e7bbd544ca7ee7dfd5",
+    "solution/solve.sh": "2f14ea977ec3d1929c939868793ea38fa32e960a800af5dc9c6a90a3e4c81297",
+    "task.toml": "584540074abb20ae5612aaa28a166561569ff5b0187daaf9945cf8eadff902e1",
+    "tests/Dockerfile": "7a3f459bfd9ee8ad70b12097532aac248647b16061db4fa2a024bbd5c83cbc79",
+    "tests/data/couplings.csv": "4c81423a154cc670384a4810b6dd3da2adc7c4ef8e6ebe16888531121d1160cc",
+    "tests/data/model.json": "29aba55909ab958283fb2ac46714b47c9eb02615f6ef464f8a4dc5a1c02fa4c3",
+    "tests/physics.py": "e9307bd6efab01d1a389034d8cf8a96f4b00c9db3b54e66fb816fc690a5c544e",
+    "tests/test.sh": "17940e5e24782df1abdb47f659779ad26c2bd15e76ba764d8e8cc2ee1a2f6f20",
+    "tests/test_outputs.py": "0de20f7b00d24fd7082e931fbaba08e3dc5fe823e86ded35d322a2d602fc6017"
+  },
+  "checks": [
+    {
+      "check": "root structure",
+      "passed": true,
+      "detail": "missing=[], extra=[]"
+    },
+    {
+      "check": "environment is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "tests is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "solution is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no hidden/cache files",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no canary markers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no symlinks in package",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "schema 1.4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "top-level artifacts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "task required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "metadata required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "environment required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "turing task namespace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no legacy metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "life sciences biology category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "binary reward and overlap type",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent execution contract",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent environment network",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "isolated offline verifier",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent resources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier resources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier timeout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test runner errexit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test runner shell syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/solve.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/physics.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/test_outputs.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "execution-contract closing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all artifacts stated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no scoring language in instructions",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "errors": [],
+  "required_additional_evidence": [
+    "offline reference solution and verifier",
+    "valid and invalid artifact regressions",
+    "scientific coverage and independent truth review",
+    "completed substantive trials on the required model roster"
+  ],
+  "zip_created": false
+}

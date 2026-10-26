@@ -1,0 +1,22 @@
+"""Create a fully specified finite gene-expression model, without hidden truth."""
+import json
+from pathlib import Path
+
+def model(m=8, p=12):
+    return dict(rna_capacity=m, protein_capacity=p, count_limit=24,
+                initial=[0, 2, 3], partition_rna=0.43, partition_protein=0.57,
+                rates=dict(on=0.61, off=0.37, feedback=2.6, half=4.5,
+                           transcription=1.9, leak=0.09, burst_two=0.28,
+                           rna_decay=0.31, translation=0.72, protein_decay=0.19,
+                           photon_background=0.17, photon_brightness=0.48),
+                mother=[dict(duration=1.2, stimulus=0.6, photons=3),
+                        dict(duration=1.7, stimulus=1.4, photons=7)],
+                daughter_a=[dict(duration=1.6, stimulus=1.8, photons=4),
+                            dict(duration=1.3, stimulus=0.5, photons=8)],
+                daughter_b=[dict(duration=1.1, stimulus=0.4, photons=2),
+                            dict(duration=1.9, stimulus=1.2, photons=6)])
+
+if __name__ == '__main__':
+    target=Path(__file__).parent/'draft/model.json'
+    target.parent.mkdir(parents=True,exist_ok=True)
+    target.write_text(json.dumps(model(),indent=2)+'\n')

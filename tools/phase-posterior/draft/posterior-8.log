@@ -1,0 +1,16 @@
+forward 0 logZ -10.9489341201 seconds 0.126503583
+forward 8 logZ -96.0090484489 seconds 0.590283208
+forward 16 logZ -176.1000787 seconds 1.0522245
+forward 24 logZ -258.001186034 seconds 1.5165565
+forward 32 logZ -339.449335247 seconds 1.988666833
+forward 40 logZ -424.281852413 seconds 2.452195208
+forward 48 logZ -505.714614907 seconds 2.913881958
+forward 56 logZ -588.385082195 seconds 3.374829
+backward 56 seconds 3.5201885
+backward 48 seconds 4.635656708
+backward 40 seconds 5.7494765
+backward 32 seconds 6.862443292
+backward 24 seconds 7.993011708
+backward 16 seconds 9.106678667
+backward 8 seconds 10.243641
+backward 0 seconds 11.386054333

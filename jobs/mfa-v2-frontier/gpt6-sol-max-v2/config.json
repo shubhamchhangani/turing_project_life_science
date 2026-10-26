@@ -1,0 +1,18 @@
+{
+    "job_name": "gpt6-sol-max-v2",
+    "jobs_dir": "jobs/mfa-v2-frontier",
+    "agents": [
+        {
+            "name": "codex",
+            "model_name": "openai/gpt-6-sol",
+            "kwargs": {
+                "reasoning_effort": "max"
+            }
+        }
+    ],
+    "tasks": [
+        {
+            "path": "tasks/life-sciences/biology/metabolic-flux-analysis-v2"
+        }
+    ]
+}

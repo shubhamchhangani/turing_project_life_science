@@ -1,0 +1,27 @@
+visited 200000 discovered 1822528 seconds 0.401293
+visited 400000 discovered 1822528 seconds 0.725009
+visited 600000 discovered 1822528 seconds 1.05964
+visited 800000 discovered 1822528 seconds 1.34883
+visited 1000000 discovered 1822528 seconds 1.62369
+visited 1200000 discovered 1822528 seconds 1.90785
+visited 1400000 discovered 1822528 seconds 2.3101
+visited 1600000 discovered 1822528 seconds 2.65529
+visited 1800000 discovered 1822528 seconds 2.9444
+{"history":7,"orbits":1822528,"labelled_histories":1280000000,"stationarity_error":5.29396e-22,"seconds":3.07771}
+forward 0 logZ -10.9489341201 seconds 0.133052125
+forward 8 logZ -96.0090484489 seconds 1.014868875
+forward 16 logZ -176.1000787 seconds 1.966025917
+forward 24 logZ -258.001186034 seconds 2.842468668
+forward 32 logZ -339.449335247 seconds 3.772664293
+forward 40 logZ -424.281852413 seconds 4.657702752
+forward 48 logZ -505.714614907 seconds 5.631016961
+forward 56 logZ -588.385082195 seconds 6.559967003
+backward 56 seconds 8.114640295
+backward 48 seconds 22.028468551
+backward 40 seconds 38.108928267
+backward 32 seconds 53.066799023
+backward 24 seconds 67.906617864
+backward 16 seconds 83.981607746
+backward 8 seconds 101.289745213
+backward 0 seconds 115.595654178
+{"log_evidence":-588.3850821948286,"reads":114,"states":1822528,"seconds":115.595960969}

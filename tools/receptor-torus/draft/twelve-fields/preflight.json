@@ -1,0 +1,207 @@
+{
+  "task": "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/spatial-ligand-cooperativity",
+  "static_checks_passed": true,
+  "portal_acceptance_guaranteed": false,
+  "package_fingerprint": "b388fdc2c24ac6d38c50b3501f3bebdf714a8651e190b3e8b9f5f1313d62b366",
+  "files": {
+    "README.md": "33198ebd8d974502f4fda372de35c5aba86fb6454480f46b250f02651743ed77",
+    "environment/Dockerfile": "24b6d5bd9e99eb9f1485b8efab5c5227f946f9e2c3a650b30fa027e017304bb9",
+    "environment/data/edge_moments.csv": "aa8c3c3eda6d9d40e8f655e907a1f62611162a263761e099425fd648928aed0f",
+    "environment/data/model.json": "24dc6cad4ca58746e121601f27033e55860021c5a61e88d6df6799ab2a49865b",
+    "environment/data/site_moments.csv": "dc179ab361f3531698828eca0e91778f6fccfd8625a0c992d4ad03ce48a9891f",
+    "instruction.md": "3935660f0e221d29db5bd1142d8680a20f74a997716f3a978f435526ee574f0c",
+    "solution/lattice.py": "cb9547b064c43160d31dcf9bfab11a81325e21dc9b4c315d5f5564926334df11",
+    "solution/solve.py": "c998436dc7ea7c0ee4a4c15b55f0741584c1d260d9a9c7b385fec4d33c7faaeb",
+    "solution/solve.sh": "2f14ea977ec3d1929c939868793ea38fa32e960a800af5dc9c6a90a3e4c81297",
+    "solution/sparse_physics.py": "0a6096d382caa07b63d034ae9e44977a694a62979b2904613ccf7fa7a1491f9f",
+    "task.toml": "fea80e4f7ce0afd4e97fb3d7700da7eeed80c47263abdb2fae2cb892c1789f41",
+    "tests/Dockerfile": "7a3f459bfd9ee8ad70b12097532aac248647b16061db4fa2a024bbd5c83cbc79",
+    "tests/data/edge_moments.csv": "aa8c3c3eda6d9d40e8f655e907a1f62611162a263761e099425fd648928aed0f",
+    "tests/data/injected_parameters.json": "14809b4e1a38692d90f6c589c068910eefdc32cad06680a5a6af3743d316a1cc",
+    "tests/data/model.json": "24dc6cad4ca58746e121601f27033e55860021c5a61e88d6df6799ab2a49865b",
+    "tests/data/site_moments.csv": "dc179ab361f3531698828eca0e91778f6fccfd8625a0c992d4ad03ce48a9891f",
+    "tests/physics.py": "f56bdcf07262a3cbd52b64ac563f76019e6e7b1b448053c727ef6e5356ab0e3c",
+    "tests/test.sh": "17940e5e24782df1abdb47f659779ad26c2bd15e76ba764d8e8cc2ee1a2f6f20",
+    "tests/test_outputs.py": "01ce7e05a5a918c16f1e9ef3594ab38f57c3e6ca9c07dba1cc84b5af48c55e19"
+  },
+  "checks": [
+    {
+      "check": "root structure",
+      "passed": true,
+      "detail": "missing=[], extra=[]"
+    },
+    {
+      "check": "environment is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "tests is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "solution is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no hidden/cache files",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no canary markers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no symlinks in package",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "schema 1.4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "top-level artifacts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "task required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "metadata required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "environment required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "turing task namespace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no legacy metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "life sciences biology category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "binary reward and overlap type",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent execution contract",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent environment network",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "isolated offline verifier",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent resources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier resources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier timeout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test runner errexit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test runner shell syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/lattice.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/solve.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/sparse_physics.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/physics.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/test_outputs.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "execution-contract closing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all artifacts stated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no scoring language in instructions",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "errors": [],
+  "required_additional_evidence": [
+    "offline reference solution and verifier",
+    "valid and invalid artifact regressions",
+    "scientific coverage and independent truth review",
+    "completed substantive trials on the required model roster"
+  ],
+  "zip_created": false
+}

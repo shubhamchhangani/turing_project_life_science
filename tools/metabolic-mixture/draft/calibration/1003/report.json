@@ -1,0 +1,89 @@
+{
+  "seed": 1003,
+  "ssr": 3826.932934025284,
+  "elapsed_sec": 45.95366854200256,
+  "errors": {
+    "A/G6PDH": {
+      "relative_error": 0.0792399975743256,
+      "tolerance": 0.45
+    },
+    "A/PDH": {
+      "relative_error": 0.09448353017555397,
+      "tolerance": 0.12
+    },
+    "A/PC": {
+      "relative_error": 0.020745374958444366,
+      "tolerance": 0.12
+    },
+    "A/ME": {
+      "relative_error": 0.012626851490036551,
+      "tolerance": 0.08
+    },
+    "A/CS": {
+      "relative_error": 0.0035709269185107456,
+      "tolerance": 0.1
+    },
+    "A/IDH": {
+      "relative_error": 0.0472069937725913,
+      "tolerance": 0.2
+    },
+    "A/OAA": {
+      "relative_error": 0.008222000426864495,
+      "tolerance": 0.25
+    },
+    "A/Cit": {
+      "relative_error": 0.003738224415296069,
+      "tolerance": 0.25
+    },
+    "A/AKG": {
+      "relative_error": 0.06384128107908732,
+      "tolerance": 0.25
+    },
+    "A/Mal": {
+      "relative_error": 0.012744801661242752,
+      "tolerance": 0.25
+    },
+    "B/G6PDH": {
+      "relative_error": 0.018102250348444135,
+      "tolerance": 0.45
+    },
+    "B/PDH": {
+      "relative_error": 0.08516093901275945,
+      "tolerance": 0.12
+    },
+    "B/PC": {
+      "relative_error": 0.02018048617022336,
+      "tolerance": 0.12
+    },
+    "B/ME": {
+      "relative_error": 0.00527596348892613,
+      "tolerance": 0.08
+    },
+    "B/CS": {
+      "relative_error": 0.0021046873722414135,
+      "tolerance": 0.1
+    },
+    "B/IDH": {
+      "relative_error": 0.010796783372730564,
+      "tolerance": 0.2
+    },
+    "B/OAA": {
+      "relative_error": 0.01734003016620935,
+      "tolerance": 0.25
+    },
+    "B/Cit": {
+      "relative_error": 0.02945635942667959,
+      "tolerance": 0.25
+    },
+    "B/AKG": {
+      "relative_error": 0.02038991541719223,
+      "tolerance": 0.25
+    },
+    "B/Mal": {
+      "relative_error": 0.014867899784810337,
+      "tolerance": 0.25
+    }
+  },
+  "all_targets_within_tolerance": true,
+  "initialization": "reference estimate from a different noise realization; no injected parameters used for initialization"
+}

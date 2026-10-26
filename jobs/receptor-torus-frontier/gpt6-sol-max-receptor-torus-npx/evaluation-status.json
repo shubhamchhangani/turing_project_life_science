@@ -1,0 +1,6 @@
+{
+  "status": "inconclusive_usage_limit",
+  "counts_as_model_failure": false,
+  "reason": "Codex usage-limit error interrupted the attempt before outputs were produced.",
+  "source_trial": "receptor-cluster-thermodynamics__sHyyB3S"
+}

@@ -1,0 +1,36 @@
+schema_version = "1.4"
+artifacts = ["/root/results/couplings.csv", "/root/results/biases.csv"]
+
+[task]
+name = "turing/spatial-ligand-cooperativity"
+description = "Infer heterogeneous receptor cooperativity and twelve spatially separated ligand biases from equilibrium moments on a periodic membrane lattice."
+version = "1.0.0"
+keywords = ["inverse-statistical-mechanics", "membrane-receptors", "ligand-bias", "cooperativity"]
+
+[metadata]
+domain = "life-sciences"
+category = "biology"
+subcategory = "computational-biophysics"
+reward_type = "binary"
+source = "original"
+public_overlap = false
+
+[environment]
+network_mode = "public"
+cpus = 1
+memory_mb = 2048
+storage_mb = 10240
+
+[agent]
+timeout_sec = 18000
+network_mode = "public"
+
+[verifier]
+timeout_sec = 900
+network_mode = "no-network"
+environment_mode = "separate"
+
+[verifier.environment]
+network_mode = "no-network"
+cpus = 1
+memory_mb = 2048

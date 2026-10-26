@@ -1,0 +1,26 @@
+[
+  {
+    "case": "solved",
+    "passed": true
+  },
+  {
+    "case": "valid_failure",
+    "passed": true
+  },
+  {
+    "case": "infra",
+    "passed": true
+  },
+  {
+    "case": "quota",
+    "passed": true
+  },
+  {
+    "case": "short_timeout",
+    "passed": true
+  },
+  {
+    "case": "full_timeout",
+    "passed": true
+  }
+]

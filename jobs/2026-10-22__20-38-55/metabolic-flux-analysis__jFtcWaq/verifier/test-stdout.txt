@@ -1,0 +1,446 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.9, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 13 items
+
+tests/test_outputs.py FFFFFFFFFFFFF                                      [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_file_exists _______________________________
+
+    def test_file_exists():
+        """fluxes.csv exists at /root/results/fluxes.csv."""
+>       assert FLUXES.is_file(), f"missing output file {FLUXES}"
+E       AssertionError: missing output file /root/results/fluxes.csv
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/root/results/fluxes.csv').is_file
+
+tests/test_outputs.py:48: AssertionError
+_________________________________ test_header __________________________________
+
+    def test_header():
+        """Header is exactly reaction_id,net_flux,forward_flux,reverse_flux."""
+>       header, _ = read_fluxes()
+                    ^^^^^^^^^^^^^
+
+tests/test_outputs.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:35: in read_fluxes
+    with FLUXES.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+__________________________ test_one_row_per_reaction ___________________________
+
+    def test_one_row_per_reaction():
+        """Exactly one row for each of the 31 reactions in network.tsv, no extra or duplicate rows."""
+>       _, rows = read_fluxes()
+                  ^^^^^^^^^^^^^
+
+tests/test_outputs.py:59: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:35: in read_fluxes
+    with FLUXES.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+______________________________ test_values_finite ______________________________
+
+    def test_values_finite():
+        """Every net_flux, forward_flux and reverse_flux parses as a finite float."""
+>       _, rows = read_fluxes()
+                  ^^^^^^^^^^^^^
+
+tests/test_outputs.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:35: in read_fluxes
+    with FLUXES.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+__________________________ test_glucose_normalization __________________________
+
+    def test_glucose_normalization():
+        """Glucose uptake (GLCup net flux) is reported as 100."""
+>       v = flux_table()["GLCup"]["net"]
+            ^^^^^^^^^^^^
+
+tests/test_outputs.py:83: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:41: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:35: in read_fluxes
+    with FLUXES.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+_________________________ test_directional_consistency _________________________
+
+    def test_directional_consistency():
+        """forward - reverse = net for every reaction; irreversible reactions have reverse 0 and net >= 0."""
+>       f = flux_table()
+            ^^^^^^^^^^^^
+
+tests/test_outputs.py:89: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:41: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:35: in read_fluxes
+    with FLUXES.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+______________________________ test_mass_balance _______________________________
+
+    def test_mass_balance():
+        """Reported net fluxes close the steady-state balance of every intracellular metabolite within 0.1."""
+>       f = flux_table()
+            ^^^^^^^^^^^^
+
+tests/test_outputs.py:103: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:41: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:35: in read_fluxes
+    with FLUXES.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+__________________________ test_flux_value[G6PDH_net] __________________________
+
+key = 'G6PDH_net'
+
+    @pytest.mark.parametrize("key", list(EXPECTED["graded"]))
+    def test_flux_value(key):
+        """Graded flux is within its stated relative tolerance of the true (injected) value."""
+        spec = EXPECTED["graded"][key]
+>       got = flux_table()[spec["reaction_id"]][spec["column"]]
+              ^^^^^^^^^^^^
+
+tests/test_outputs.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:41: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:35: in read_fluxes
+    with FLUXES.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+___________________________ test_flux_value[PDH_net] ___________________________
+
+key = 'PDH_net'
+
+    @pytest.mark.parametrize("key", list(EXPECTED["graded"]))
+    def test_flux_value(key):
+        """Graded flux is within its stated relative tolerance of the true (injected) value."""
+        spec = EXPECTED["graded"][key]
+>       got = flux_table()[spec["reaction_id"]][spec["column"]]
+              ^^^^^^^^^^^^
+
+tests/test_outputs.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:41: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:35: in read_fluxes
+    with FLUXES.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+___________________________ test_flux_value[PC_net] ____________________________
+
+key = 'PC_net'
+
+    @pytest.mark.parametrize("key", list(EXPECTED["graded"]))
+    def test_flux_value(key):
+        """Graded flux is within its stated relative tolerance of the true (injected) value."""
+        spec = EXPECTED["graded"][key]
+>       got = flux_table()[spec["reaction_id"]][spec["column"]]
+              ^^^^^^^^^^^^
+
+tests/test_outputs.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:41: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:35: in read_fluxes
+    with FLUXES.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+___________________________ test_flux_value[ME_net] ____________________________
+
+key = 'ME_net'
+
+    @pytest.mark.parametrize("key", list(EXPECTED["graded"]))
+    def test_flux_value(key):
+        """Graded flux is within its stated relative tolerance of the true (injected) value."""
+        spec = EXPECTED["graded"][key]
+>       got = flux_table()[spec["reaction_id"]][spec["column"]]
+              ^^^^^^^^^^^^
+
+tests/test_outputs.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:41: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:35: in read_fluxes
+    with FLUXES.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+___________________________ test_flux_value[CS_net] ____________________________
+
+key = 'CS_net'
+
+    @pytest.mark.parametrize("key", list(EXPECTED["graded"]))
+    def test_flux_value(key):
+        """Graded flux is within its stated relative tolerance of the true (injected) value."""
+        spec = EXPECTED["graded"][key]
+>       got = flux_table()[spec["reaction_id"]][spec["column"]]
+              ^^^^^^^^^^^^
+
+tests/test_outputs.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:41: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:35: in read_fluxes
+    with FLUXES.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+_________________________ test_flux_value[IDH_reverse] _________________________
+
+key = 'IDH_reverse'
+
+    @pytest.mark.parametrize("key", list(EXPECTED["graded"]))
+    def test_flux_value(key):
+        """Graded flux is within its stated relative tolerance of the true (injected) value."""
+        spec = EXPECTED["graded"][key]
+>       got = flux_table()[spec["reaction_id"]][spec["column"]]
+              ^^^^^^^^^^^^
+
+tests/test_outputs.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:41: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:35: in read_fluxes
+    with FLUXES.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_outputs.py::test_file_exists - AssertionError: missing outp...
+FAILED tests/test_outputs.py::test_header - FileNotFoundError: [Errno 2] No s...
+FAILED tests/test_outputs.py::test_one_row_per_reaction - FileNotFoundError: ...
+FAILED tests/test_outputs.py::test_values_finite - FileNotFoundError: [Errno ...
+FAILED tests/test_outputs.py::test_glucose_normalization - FileNotFoundError:...
+FAILED tests/test_outputs.py::test_directional_consistency - FileNotFoundErro...
+FAILED tests/test_outputs.py::test_mass_balance - FileNotFoundError: [Errno 2...
+FAILED tests/test_outputs.py::test_flux_value[G6PDH_net] - FileNotFoundError:...
+FAILED tests/test_outputs.py::test_flux_value[PDH_net] - FileNotFoundError: [...
+FAILED tests/test_outputs.py::test_flux_value[PC_net] - FileNotFoundError: [E...
+FAILED tests/test_outputs.py::test_flux_value[ME_net] - FileNotFoundError: [E...
+FAILED tests/test_outputs.py::test_flux_value[CS_net] - FileNotFoundError: [E...
+FAILED tests/test_outputs.py::test_flux_value[IDH_reverse] - FileNotFoundErro...
+============================== 13 failed in 0.13s ==============================

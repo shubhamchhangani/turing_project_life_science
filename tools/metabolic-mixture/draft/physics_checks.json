@@ -1,0 +1,7 @@
+{
+  "max_abs_difference_independent_pooled_ion_counts": 5.109402728686874e-08,
+  "max_pool_normalization_error": 7.771561172376096e-16,
+  "truth_mid_ssr": 3929.812438706215,
+  "omit_pool_amount_weighting_mid_ssr_at_truth": 90074.70343590251,
+  "scope": "Independent observation-model implementation and RK45 integration; reaction atom specification is shared. Negative control is not refitted."
+}

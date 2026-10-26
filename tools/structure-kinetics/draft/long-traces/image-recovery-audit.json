@@ -1,0 +1,15 @@
+{
+  "scope": "post-fit author audit; no hidden labels or poses used by solver",
+  "images": 128,
+  "correct_class_assignments": 128,
+  "noise_level_image_fits": 128,
+  "median_rotation_error_degrees": 0.11329368597730421,
+  "max_rotation_error_degrees": 0.5304209165808993,
+  "mobile_domain_rmsd_angstrom": [
+    0.007437587098297636,
+    0.09187464831025215,
+    0.007429010587362449,
+    0.009807790386240947
+  ],
+  "pose_refinement_seconds": 88.52682729100343
+}

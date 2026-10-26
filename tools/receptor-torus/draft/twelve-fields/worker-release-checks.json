@@ -1,0 +1,16 @@
+{
+  "all_passed": true,
+  "checks": [
+    "two_valid_failures",
+    "reject_status_solved_do_not_package",
+    "reject_status_incomplete",
+    "reject_error_type_NonZeroAgentExitCodeError",
+    "reject_quota_interrupted_True",
+    "reject_task_checksum_other",
+    "reject_task_checksum_None",
+    "reject_effort_high",
+    "reject_model_another-model",
+    "reject_sleep_interruption",
+    "reject_missing_model"
+  ]
+}

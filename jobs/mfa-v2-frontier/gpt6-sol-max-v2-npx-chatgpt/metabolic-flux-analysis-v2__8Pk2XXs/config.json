@@ -1,0 +1,16 @@
+{
+    "task": {
+        "path": "tasks/life-sciences/biology/metabolic-flux-analysis-v2"
+    },
+    "trial_name": "metabolic-flux-analysis-v2__8Pk2XXs",
+    "trials_dir": "jobs/mfa-v2-frontier/gpt6-sol-max-v2-npx-chatgpt",
+    "agent": {
+        "name": "npx_codex_agent:NpxCodex",
+        "model_name": "openai/gpt-6-sol",
+        "kwargs": {
+            "version": "0.164.0",
+            "reasoning_effort": "max"
+        }
+    },
+    "job_id": "6a0831bb-7d5d-41bd-bd36-8a7fba67b06d"
+}

@@ -1,0 +1,16 @@
+{
+    "task": {
+        "path": "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/scaffold-receptor-ensemble"
+    },
+    "trial_name": "scaffold-receptor-ensemble__NgbJBw8",
+    "trials_dir": "jobs/receptor-torus-frontier/opus-5-5-low-scaffold-receptor",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "anthropic/claude-opus-5-5",
+        "kwargs": {
+            "version": "2.1.300",
+            "reasoning_effort": "low"
+        }
+    },
+    "job_id": "d4fbb857-eb8c-430c-a871-a20afa95ebae"
+}

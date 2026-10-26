@@ -1,0 +1,97 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 8,
+            "passed": 7,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1792683066.9273934,
+            "stop": 1792683066.948229
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_file_exists",
+                "status": "passed",
+                "duration": 0.00038545799975509,
+                "start": 1792683066.937388,
+                "stop": 1792683066.937915,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_header",
+                "status": "passed",
+                "duration": 0.00025462500002504385,
+                "start": 1792683066.9379904,
+                "stop": 1792683066.9383256,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_one_row_per_reaction",
+                "status": "passed",
+                "duration": 0.0003160000001116714,
+                "start": 1792683066.9383926,
+                "stop": 1792683066.9387941,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_values_finite",
+                "status": "passed",
+                "duration": 0.0003018750003320747,
+                "start": 1792683066.9388587,
+                "stop": 1792683066.939248,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_glucose_normalization",
+                "status": "passed",
+                "duration": 0.0002484579999872949,
+                "start": 1792683066.9393034,
+                "stop": 1792683066.9396224,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_directional_consistency",
+                "status": "passed",
+                "duration": 0.00028912500010847,
+                "start": 1792683066.9396791,
+                "stop": 1792683066.9400387,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_mass_balance",
+                "status": "passed",
+                "duration": 0.00040129199987859465,
+                "start": 1792683066.940092,
+                "stop": 1792683066.9405637,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_flux_value",
+                "status": "failed",
+                "duration": 0.0002819159999489784,
+                "start": 1792683066.9406404,
+                "stop": 1792683066.940994,
+                "retries": 5,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::key::['G6PDH_net', 'PDH_net', 'PC_net', 'ME_net', 'CS_net', 'IDH_reverse']"
+                ],
+                "trace": "key = 'CS_net'\n\n    @pytest.mark.parametrize(\"key\", list(EXPECTED[\"graded\"]))\n    def test_flux_value(key):\n        \"\"\"Graded flux is within its stated relative tolerance of the true (injected) value.\"\"\"\n        spec = EXPECTED[\"graded\"][key]\n        got = flux_table()[spec[\"reaction_id\"]][spec[\"column\"]]\n        want, rtol = spec[\"true\"], spec[\"rel_tol\"]\n>       assert abs(got - want) <= rtol * abs(want), (\n            f\"{key} ({spec['reaction_id']} {spec['column']}): got {got:.3f}, true {want:.3f}, \"\n            f\"allowed relative error {rtol:.0%}\")\nE       AssertionError: CS_net (CS net): got 34.646, true 30.000, allowed relative error 10%\nE       assert 4.646461096077729 <= (0.1 * 30.0)\nE        +  where 4.646461096077729 = abs((34.64646109607773 - 30.0))\nE        +  and   30.0 = abs(30.0)\n\ntests/test_outputs.py:123: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            }
+        ]
+    }
+}

@@ -1,0 +1,47 @@
+{
+  "_source": "Flux and pool parameters injected into the transient synthetic-data generator; not reference optimizer output.",
+  "graded": {
+    "G6PDH_net": {
+      "reaction_id": "G6PDH",
+      "column": "net",
+      "true": 15.0,
+      "rel_tol": 0.45
+    },
+    "PDH_net": {
+      "reaction_id": "PDH",
+      "column": "net",
+      "true": 42.0,
+      "rel_tol": 0.12
+    },
+    "PC_net": {
+      "reaction_id": "PC",
+      "column": "net",
+      "true": 11.0,
+      "rel_tol": 0.12
+    },
+    "ME_net": {
+      "reaction_id": "ME",
+      "column": "net",
+      "true": 40.0,
+      "rel_tol": 0.08
+    },
+    "CS_net": {
+      "reaction_id": "CS",
+      "column": "net",
+      "true": 30.0,
+      "rel_tol": 0.1
+    },
+    "IDH_reverse": {
+      "reaction_id": "IDH",
+      "column": "reverse",
+      "true": 8.0,
+      "rel_tol": 0.2
+    }
+  },
+  "pools": {
+    "OAA": 8.0,
+    "Cit": 45.0,
+    "AKG": 22.0,
+    "Mal": 30.0
+  }
+}

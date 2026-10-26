@@ -1,0 +1,45 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 DONE 0.0s
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 463B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11.9-slim-bookworm
+#2 DONE 0.4s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 35.50kB done
+#4 DONE 0.0s
+
+#5 [1/5] FROM docker.io/library/python:3.11.9-slim-bookworm@sha256:8fb099199b9f2d70342674bd9dbccd3ed03a258f26bbd1d556822c6dfc60c317
+#5 resolve docker.io/library/python:3.11.9-slim-bookworm@sha256:8fb099199b9f2d70342674bd9dbccd3ed03a258f26bbd1d556822c6dfc60c317 0.0s done
+#5 DONE 0.0s
+
+#6 [3/5] RUN pip install --no-cache-dir numpy==1.26.4 scipy==1.13.1 pfapack==1.0.2 pytest==8.4.1 pytest-json-ctrf==0.3.5
+#6 CACHED
+
+#7 [2/5] RUN apt-get update && apt-get install -y --no-install-recommends bash gfortran gcc libblas-dev liblapack-dev pkg-config && rm -rf /var/lib/apt/lists/*
+#7 CACHED
+
+#8 [4/5] RUN mkdir -p /root/results /logs/verifier
+#8 CACHED
+
+#9 [5/5] COPY . /tests/
+#9 DONE 0.0s
+
+#10 exporting to image
+#10 exporting layers 0.0s done
+#10 exporting manifest sha256:6679a0e4b1d4dbb17c4d34ceb5ab4039e553fa17af49045f3ba944a421a7a5c5 done
+#10 exporting config sha256:5a6574ee38a5979f7b03a76886f747caffbaafcbc2852d6bfadec0bcc2b354e8 done
+#10 exporting attestation manifest sha256:12821c0ca67aa5a07fe8ac5a42ea77bf6d336f0ea5f13e99a3f3f3ba9dffbc23 done
+#10 exporting manifest list sha256:7a558b0820058b0a46c221c50e7fd40c3e393b9806a4a497668f955920d4ad03 done
+#10 naming to docker.io/library/inverse-receptor-verifier:latest done
+#10 unpacking to docker.io/library/inverse-receptor-verifier:latest done
+#10 DONE 0.0s

@@ -1,0 +1,12 @@
+{
+  "reference_completed": true,
+  "reference_summary": "Fit completed CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH calls 56 seconds 745.393654215",
+  "reference_network": "none",
+  "cpus": 1,
+  "memory_mb": 2048,
+  "max_coupling_error": 9.192000000046718e-07,
+  "max_bias_error": 7.960000003581769e-08,
+  "verifier_reward": "1",
+  "separate_offline_verifier_passed": true,
+  "zip_created": false
+}

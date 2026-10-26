@@ -1,0 +1,51 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 387B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11.9-slim-bookworm
+#2 ...
+
+#3 [auth] library/python:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11.9-slim-bookworm
+#2 DONE 2.1s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [1/6] FROM docker.io/library/python:3.11.9-slim-bookworm@sha256:8fb099199b9f2d70342674bd9dbccd3ed03a258f26bbd1d556822c6dfc60c317
+#5 resolve docker.io/library/python:3.11.9-slim-bookworm@sha256:8fb099199b9f2d70342674bd9dbccd3ed03a258f26bbd1d556822c6dfc60c317 done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 105.11kB done
+#6 DONE 0.0s
+
+#7 [2/6] RUN apt-get update && apt-get install -y --no-install-recommends bash gcc g++ && rm -rf /var/lib/apt/lists/*
+#7 CACHED
+
+#8 [3/6] RUN pip install --no-cache-dir numpy==1.26.4 scipy==1.13.1 numba==0.60.0
+#8 CACHED
+
+#9 [4/6] WORKDIR /root
+#9 CACHED
+
+#10 [5/6] COPY data /root/data
+#10 DONE 0.0s
+
+#11 [6/6] RUN mkdir -p /root/results
+#11 DONE 0.1s
+
+#12 exporting to image
+#12 exporting layers 0.0s done
+#12 exporting manifest sha256:e1772be7ef377461a96be06b980e0f8798fdaa4ab159a0beb1b53285a387203d done
+#12 exporting config sha256:9637fe9b086d51e7938f24e38013084d069ef174499b2bfea1ee83dd23d6ff8a done
+#12 exporting attestation manifest sha256:8eb50f6bd3a6158cddab28b02f72946e5fff7e71a968bee4219d8efb5be92c66 done
+#12 exporting manifest list sha256:91d50a1f35dacb05415e9fc4d01a98e71ddc311ab566382b2902258c5aa68c0d done
+#12 naming to docker.io/library/phase-posterior-agent:latest done
+#12 unpacking to docker.io/library/phase-posterior-agent:latest done
+#12 DONE 0.1s

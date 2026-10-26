@@ -1,0 +1,33 @@
+start  0: SSR =    133.09
+start  1: SSR =    133.09
+start  2: SSR =    133.09
+start  3: SSR =    133.09
+start  4: SSR =    133.09
+start  5: SSR =    133.09
+start  6: SSR =    133.09
+start  7: SSR =    133.09
+start  8: SSR =    133.09
+start  9: SSR =    133.09
+start 10: SSR =    133.09
+start 11: SSR =    133.09
+start 12: SSR =    133.09
+start 13: SSR =    133.09
+start 14: SSR =    133.09
+start 15: SSR =    133.09
+start 16: SSR =    133.09
+start 17: SSR =    133.09
+start 18: SSR =    133.09
+start 19: SSR =    133.09
+start 20: SSR =    133.09
+start 21: SSR =    133.09
+start 22: SSR =    133.09
+start 23: SSR =    133.09
+best SSR = 133.09 with 156 measurements and 18 free parameters
+  G6PDH    14.532
+  PDH      40.279
+  PC       11.135
+  ME       39.816
+  CS       29.351
+  IDH      29.351
+  GLUDH    33.820
+  LDH     167.961

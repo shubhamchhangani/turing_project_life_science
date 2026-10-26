@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "tasks/life-sciences/biology/hierarchical-f-statistics"
+    },
+    "trial_name": "hierarchical-f-statistics__xXbsNLd",
+    "trials_dir": "jobs/2026-10-21__15-36-43",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "87bf59be-c0ec-4424-a408-329d07552b87"
+}

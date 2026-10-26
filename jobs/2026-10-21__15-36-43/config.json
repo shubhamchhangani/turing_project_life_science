@@ -1,0 +1,12 @@
+{
+    "agents": [
+        {
+            "name": "nop"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "tasks/life-sciences/biology/hierarchical-f-statistics"
+        }
+    ]
+}

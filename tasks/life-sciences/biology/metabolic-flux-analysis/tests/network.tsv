@@ -1,0 +1,32 @@
+reaction_id	equation	reversible
+GLCup	Glc.ext -> G6P	no
+PGI	G6P <=> F6P	yes
+PFK	F6P -> T3P + T3P	no
+G6PDH	G6P -> P5P + CO2	no
+TK1	P5P + P5P <=> T3P + S7P	yes
+TA	S7P + T3P <=> E4P + F6P	yes
+TK2	P5P + E4P <=> T3P + F6P	yes
+GAPDH	T3P -> PG3	no
+PK	PG3 -> Pyr	no
+LDH	Pyr -> Lac	no
+ALT	Pyr -> Ala	no
+PHGDH	PG3 -> Ser	no
+PDH	Pyr -> AcCoA + CO2	no
+PC	Pyr + CO2 -> OAA	no
+CS	AcCoA + OAA -> Cit	no
+IDH	Cit <=> AKG + CO2	yes
+AKGDH	AKG -> Suc + CO2	no
+SDH	Suc -> Fum	no
+FH	Fum <=> Mal	yes
+MDH	Mal <=> OAA	yes
+ME	Mal -> Pyr + CO2	no
+GOT	OAA -> Asp	no
+GLNup	Gln.ext -> Glu	no
+GLUDH	Glu <=> AKG	yes
+LACout	Lac -> Lac.ext	no
+ALAout	Ala -> Ala.ext	no
+SERout	Ser -> Ser.ext	no
+ASPout	Asp -> Asp.ext	no
+GLUout	Glu -> Glu.ext	no
+P5Pout	P5P -> P5P.ext	no
+ACCOAout	AcCoA -> AcCoA.ext	no

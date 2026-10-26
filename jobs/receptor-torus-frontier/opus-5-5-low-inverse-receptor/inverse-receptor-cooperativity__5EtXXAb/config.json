@@ -1,0 +1,16 @@
+{
+    "task": {
+        "path": "tasks/life-sciences/biology/inverse-receptor-cooperativity"
+    },
+    "trial_name": "inverse-receptor-cooperativity__5EtXXAb",
+    "trials_dir": "jobs/receptor-torus-frontier/opus-5-5-low-inverse-receptor",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "anthropic/claude-opus-5-5",
+        "kwargs": {
+            "version": "2.1.300",
+            "reasoning_effort": "low"
+        }
+    },
+    "job_id": "74e94b61-4ef2-4eca-aefb-070f1ee08966"
+}

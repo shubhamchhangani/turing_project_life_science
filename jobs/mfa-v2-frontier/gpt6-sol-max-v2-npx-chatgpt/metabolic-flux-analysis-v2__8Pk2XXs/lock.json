@@ -1,0 +1,41 @@
+{
+    "schema_version": 2,
+    "task": {
+        "name": "metabolic-flux-analysis-v2",
+        "version": "2.0.0",
+        "type": "local",
+        "digest": "sha256:e2c1222b377f592ce86b1d0f5e8b320d3b50239ba54cb8736344335d7fcca0be",
+        "path": "tasks/life-sciences/biology/metabolic-flux-analysis-v2"
+    },
+    "install_only": false,
+    "timeout_multiplier": 1.0,
+    "agent": {
+        "name": "npx_codex_agent:NpxCodex",
+        "model_name": "openai/gpt-6-sol",
+        "skills": [],
+        "resume_trajectory": false,
+        "extra_allowed_hosts": [],
+        "kwargs": {
+            "version": "0.164.0",
+            "reasoning_effort": "max"
+        },
+        "mcp_servers": []
+    },
+    "bridge_inputs": {},
+    "skills": [],
+    "environment": {
+        "type": "docker",
+        "force_build": false,
+        "delete": true,
+        "stream": false,
+        "cpu_enforcement_policy": "auto",
+        "memory_enforcement_policy": "auto",
+        "extra_docker_compose": [],
+        "kwargs": {},
+        "extra_allowed_hosts": []
+    },
+    "verifier": {
+        "disable": false,
+        "environment_mode": "separate"
+    }
+}

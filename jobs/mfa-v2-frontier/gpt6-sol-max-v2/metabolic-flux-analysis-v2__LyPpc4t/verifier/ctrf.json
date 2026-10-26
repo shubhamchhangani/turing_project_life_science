@@ -1,0 +1,155 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 11,
+            "passed": 0,
+            "failed": 11,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1792737156.3217416,
+            "stop": 1792737156.3903005
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_pool_contract",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0003315840000368553,
+                "start": 1792737156.3332267,
+                "stop": 1792737156.3384855,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_pool_contract():\n        \"\"\"pools.csv has the exact header, four unknown pools once each, and positive finite decimals.\"\"\"\n>       header, rows = read_table(POOLS)\n                       ^^^^^^^^^^^^^^^^^\n\ntests/test_outputs.py:70: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = PosixPath('/root/results/pools.csv')\n\n    def read_table(path):\n        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.\n>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/pools.csv'\n\ntests/test_outputs.py:41: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_file_exists",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00025962500001242006,
+                "start": 1792737156.3385525,
+                "stop": 1792737156.3409488,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_file_exists():\n        \"\"\"fluxes.csv exists at /root/results/fluxes.csv.\"\"\"\n>       assert FLUXES.is_file(), f\"missing output file {FLUXES}\"\nE       AssertionError: missing output file /root/results/fluxes.csv\nE       assert False\nE        +  where False = is_file()\nE        +    where is_file = PosixPath('/root/results/fluxes.csv').is_file\n\ntests/test_outputs.py:88: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_header",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00022787399996104796,
+                "start": 1792737156.3410215,
+                "stop": 1792737156.3440835,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_header():\n        \"\"\"Header is exactly reaction_id,net_flux,forward_flux,reverse_flux.\"\"\"\n>       header, _ = read_fluxes()\n                    ^^^^^^^^^^^^^\n\ntests/test_outputs.py:93: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:60: in read_fluxes\n    return read_table(FLUXES)\n           ^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = PosixPath('/root/results/fluxes.csv')\n\n    def read_table(path):\n        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.\n>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'\n\ntests/test_outputs.py:41: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_one_row_per_reaction",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.000262042000144902,
+                "start": 1792737156.3441463,
+                "stop": 1792737156.3472147,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_one_row_per_reaction():\n        \"\"\"Exactly one row for each of the 31 reactions in network.tsv, no extra or duplicate rows.\"\"\"\n>       _, rows = read_fluxes()\n                  ^^^^^^^^^^^^^\n\ntests/test_outputs.py:100: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:60: in read_fluxes\n    return read_table(FLUXES)\n           ^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = PosixPath('/root/results/fluxes.csv')\n\n    def read_table(path):\n        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.\n>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'\n\ntests/test_outputs.py:41: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_values_finite",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00021166699991681526,
+                "start": 1792737156.347271,
+                "stop": 1792737156.3500626,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_values_finite():\n        \"\"\"Flux fields use whitespace-free ASCII decimal notation and have finite values.\"\"\"\n>       _, rows = read_fluxes()\n                  ^^^^^^^^^^^^^\n\ntests/test_outputs.py:111: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:60: in read_fluxes\n    return read_table(FLUXES)\n           ^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = PosixPath('/root/results/fluxes.csv')\n\n    def read_table(path):\n        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.\n>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'\n\ntests/test_outputs.py:41: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_glucose_normalization",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00018395899996903609,
+                "start": 1792737156.3501194,
+                "stop": 1792737156.3534362,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_glucose_normalization():\n        \"\"\"Glucose uptake (GLCup net flux) is reported as 100.\"\"\"\n>       v = flux_table()[\"GLCup\"][\"net\"]\n            ^^^^^^^^^^^^\n\ntests/test_outputs.py:125: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:81: in flux_table\n    _header, rows = read_fluxes()\n                    ^^^^^^^^^^^^^\ntests/test_outputs.py:60: in read_fluxes\n    return read_table(FLUXES)\n           ^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = PosixPath('/root/results/fluxes.csv')\n\n    def read_table(path):\n        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.\n>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'\n\ntests/test_outputs.py:41: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_directional_consistency",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0002014169998574289,
+                "start": 1792737156.3534918,
+                "stop": 1792737156.3568835,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_directional_consistency():\n        \"\"\"One-way fluxes are nonnegative; direction identity and irreversibility use 0.05 tolerance.\"\"\"\n>       f = flux_table()\n            ^^^^^^^^^^^^\n\ntests/test_outputs.py:131: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:81: in flux_table\n    _header, rows = read_fluxes()\n                    ^^^^^^^^^^^^^\ntests/test_outputs.py:60: in read_fluxes\n    return read_table(FLUXES)\n           ^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = PosixPath('/root/results/fluxes.csv')\n\n    def read_table(path):\n        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.\n>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'\n\ntests/test_outputs.py:41: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_mass_balance",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0002682499999764332,
+                "start": 1792737156.3569434,
+                "stop": 1792737156.3603754,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_mass_balance():\n        \"\"\"Reported net fluxes close the steady-state balance of every intracellular metabolite within 0.1.\"\"\"\n>       f = flux_table()\n            ^^^^^^^^^^^^\n\ntests/test_outputs.py:145: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:81: in flux_table\n    _header, rows = read_fluxes()\n                    ^^^^^^^^^^^^^\ntests/test_outputs.py:60: in read_fluxes\n    return read_table(FLUXES)\n           ^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = PosixPath('/root/results/fluxes.csv')\n\n    def read_table(path):\n        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.\n>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'\n\ntests/test_outputs.py:41: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_pool_accuracy",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00020470900005875592,
+                "start": 1792737156.3604279,
+                "stop": 1792737156.3633502,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_pool_accuracy():\n        \"\"\"Each inferred pool is within 25 percent of its independently injected value.\"\"\"\n>       test_pool_contract()\n\ntests/test_outputs.py:160: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:70: in test_pool_contract\n    header, rows = read_table(POOLS)\n                   ^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = PosixPath('/root/results/pools.csv')\n\n    def read_table(path):\n        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.\n>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/pools.csv'\n\ntests/test_outputs.py:41: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_flux_value",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00019237599997268262,
+                "start": 1792737156.3634012,
+                "stop": 1792737156.3669136,
+                "retries": 5,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::key::['G6PDH_net', 'PDH_net', 'PC_net', 'ME_net', 'CS_net', 'IDH_reverse']"
+                ],
+                "trace": "key = 'IDH_reverse'\n\n    @pytest.mark.parametrize(\"key\", list(EXPECTED[\"graded\"]))\n    def test_flux_value(key):\n        \"\"\"Graded flux is within its stated relative tolerance of the true (injected) value.\"\"\"\n        spec = EXPECTED[\"graded\"][key]\n>       got = flux_table()[spec[\"reaction_id\"]][spec[\"column\"]]\n              ^^^^^^^^^^^^\n\ntests/test_outputs.py:171: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:81: in flux_table\n    _header, rows = read_fluxes()\n                    ^^^^^^^^^^^^^\ntests/test_outputs.py:60: in read_fluxes\n    return read_table(FLUXES)\n           ^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = PosixPath('/root/results/fluxes.csv')\n\n    def read_table(path):\n        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.\n>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'\n\ntests/test_outputs.py:41: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_measurement_fit",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0002292500000748987,
+                "start": 1792737156.3873444,
+                "stop": 1792737156.3902137,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_measurement_fit():\n        \"\"\"The full map predicts all MID fractions and positive-SD rates with weighted SSR <= 2110.\"\"\"\n        # Validate cheap contract checks before starting any scientific computation.\n>       test_pool_contract()\n\ntests/test_outputs.py:181: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:70: in test_pool_contract\n    header, rows = read_table(POOLS)\n                   ^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = PosixPath('/root/results/pools.csv')\n\n    def read_table(path):\n        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.\n>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/pools.csv'\n\ntests/test_outputs.py:41: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            }
+        ]
+    }
+}

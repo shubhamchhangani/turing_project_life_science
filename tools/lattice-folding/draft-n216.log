@@ -1,0 +1,2 @@
+N=216, H=64, HH=54
+{'status': 'OPTIMAL', 'seconds': 4.4920324590057135, 'branches': 137698, 'conflicts': 12960}

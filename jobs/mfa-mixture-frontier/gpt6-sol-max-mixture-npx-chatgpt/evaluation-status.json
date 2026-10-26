@@ -1,0 +1,16 @@
+{
+  "status": "solved_do_not_submit",
+  "model": "openai/gpt-6-sol",
+  "reasoning_effort": "max",
+  "authentication": "existing ChatGPT login",
+  "launcher": "npx @openai/codex@0.164.0 in isolated Harbor Docker",
+  "reward": 1,
+  "pytest_passed": 19,
+  "agent_reported_ssr": 3896.961822,
+  "allowed_ssr": 4090,
+  "agent_execution_seconds": 613.693551,
+  "raw_result": "jobs/mfa-mixture-frontier/gpt6-sol-max-mixture-npx-chatgpt/metabolic-population-deconvoluti__iNpGMmB/result.json",
+  "new_zip_created": false,
+  "counts_as_model_failure": false,
+  "note": "A successful GPT trial already disproves the all-models-fail condition; no Opus trial was launched."
+}

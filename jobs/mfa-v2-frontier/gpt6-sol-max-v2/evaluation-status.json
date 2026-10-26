@@ -1,0 +1,22 @@
+{
+  "model": "openai/gpt-6-sol",
+  "reasoning_effort": "max",
+  "task_version": "2.0.0",
+  "status": "infrastructure_error",
+  "counts_as_model_failure": false,
+  "error_type": "ApiUsageLimitError",
+  "provider_message": "Quota exceeded. Check your plan and billing details.",
+  "recorded_reward": 0.0,
+  "meaningful_solution_attempt_observed": false,
+  "usage": {
+    "n_input_tokens": null,
+    "n_cache_tokens": null,
+    "n_output_tokens": null,
+    "cost_usd": null,
+    "model_usage": null,
+    "rollout_details": null,
+    "metadata": null
+  },
+  "raw_result_path": "/Users/shubhamchhangani/harshita/jobs/mfa-v2-frontier/gpt6-sol-max-v2/metabolic-flux-analysis-v2__LyPpc4t/result.json",
+  "next_action": "Restore API credits or the applicable quota/spend limit before retrying the authorized single evaluation."
+}

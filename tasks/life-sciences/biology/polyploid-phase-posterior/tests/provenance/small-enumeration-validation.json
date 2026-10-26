@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "span": 2,
+      "seed": 71,
+      "labelled_configurations": 160000,
+      "log_evidence_error": 0.0,
+      "posterior_error": 5.827560656257447e-13
+    },
+    {
+      "span": 2,
+      "seed": 101,
+      "labelled_configurations": 160000,
+      "log_evidence_error": 1.7763568394002505e-15,
+      "posterior_error": 1.0658141036401503e-12
+    },
+    {
+      "span": 2,
+      "seed": 208,
+      "labelled_configurations": 160000,
+      "log_evidence_error": 1.7763568394002505e-15,
+      "posterior_error": 1.1538547894929252e-12
+    },
+    {
+      "span": 3,
+      "seed": 71,
+      "labelled_configurations": 160000,
+      "log_evidence_error": 0.0,
+      "posterior_error": 3.098632461728812e-13
+    },
+    {
+      "span": 3,
+      "seed": 101,
+      "labelled_configurations": 160000,
+      "log_evidence_error": 0.0,
+      "posterior_error": 1.7352785874891197e-13
+    },
+    {
+      "span": 3,
+      "seed": 208,
+      "labelled_configurations": 160000,
+      "log_evidence_error": 0.0,
+      "posterior_error": 1.688649220454863e-13
+    }
+  ],
+  "burnside_orbit_counts": {
+    "1": 1,
+    "2": 4,
+    "3": 28,
+    "4": 328,
+    "5": 5200,
+    "6": 94624,
+    "7": 1822528,
+    "8": 35909248
+  }
+}

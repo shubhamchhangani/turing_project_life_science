@@ -1,0 +1,9 @@
+Fisher exhaustive error 2.4424906541753444e-15
+Newton iteration 0 calls 1 objective 104.86208193916664 gradient 0.47286840063115776 elapsed 26.560973082996497
+Newton iteration 1 calls 2 objective 93.26670791263805 gradient 0.41872788983709563 elapsed 50.26695624999411
+Newton iteration 2 calls 3 objective 91.46843789235339 gradient 0.1484485482377943 elapsed 69.76175316599983
+Newton iteration 3 calls 4 objective 91.34681073029529 gradient 0.028845460450430904 elapsed 89.2655622079983
+Newton iteration 4 calls 5 objective 91.34414857114865 gradient 0.0018995441673199664 elapsed 109.01715608299855
+Newton iteration 5 calls 6 objective 91.34413936848355 gradient 1.1067420219501578e-05 elapsed 128.6406420409985
+Newton iteration 6 calls 7 objective 91.34413936822847 gradient 3.6352043597531747e-10 elapsed 148.54831454099622
+{'iterations': 6, 'calls': 7, 'seconds': 148.54839174999506, 'max_moment_error': 3.6352043597531747e-10, 'converged': True, 'minimum_fisher_eigenvalue': 0.07568302984842386, 'max_coupling_error': 9.452881255533896e-10, 'max_field_error': 4.510403162072407e-11, 'small_fisher_error': 2.4424906541753444e-15}

@@ -1,0 +1,39 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 228B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11.9-slim-bookworm
+#2 DONE 1.3s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 122.70kB done
+#4 DONE 0.0s
+
+#5 [1/4] FROM docker.io/library/python:3.11.9-slim-bookworm@sha256:8fb099199b9f2d70342674bd9dbccd3ed03a258f26bbd1d556822c6dfc60c317
+#5 resolve docker.io/library/python:3.11.9-slim-bookworm@sha256:8fb099199b9f2d70342674bd9dbccd3ed03a258f26bbd1d556822c6dfc60c317 0.0s done
+#5 DONE 0.0s
+
+#6 [2/4] RUN pip install --no-cache-dir pytest==8.4.1 pytest-json-ctrf==0.3.5
+#6 CACHED
+
+#7 [3/4] RUN mkdir -p /root/results /logs/verifier
+#7 CACHED
+
+#8 [4/4] COPY . /tests/
+#8 DONE 0.0s
+
+#9 exporting to image
+#9 exporting layers 0.0s done
+#9 exporting manifest sha256:b21cd5a6ceeacebb2e339ec381c51d7a2e5ef6df01ef8ecc25034f458b646645 done
+#9 exporting config sha256:24390346d8c331e2f5263fd9d96738fd81144f782b42fbd63fa81da406533a38 done
+#9 exporting attestation manifest sha256:36b1fa01436133c6ebe743d9ad5c79f12264b1a1d48c37b42aeb02f9fbb13750 done
+#9 exporting manifest list sha256:ac1993b83aaa2d1afddf6e3d9895b49093f6f6b403c50f3d8ef592c845f71387 done
+#9 naming to docker.io/library/phase-posterior-verifier:latest done
+#9 unpacking to docker.io/library/phase-posterior-verifier:latest done
+#9 DONE 0.0s

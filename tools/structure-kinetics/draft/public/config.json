@@ -1,0 +1,136 @@
+{
+  "schema": "author-screen-1",
+  "states": 4,
+  "core": [
+    [
+      -17,
+      -9,
+      -4
+    ],
+    [
+      -13,
+      11,
+      6
+    ],
+    [
+      -4,
+      -12,
+      13
+    ],
+    [
+      3,
+      8,
+      -13
+    ],
+    [
+      7,
+      -3,
+      3
+    ],
+    [
+      -10,
+      0,
+      -15
+    ]
+  ],
+  "mobile_domain": [
+    [
+      25,
+      0,
+      0
+    ],
+    [
+      27,
+      6,
+      3
+    ],
+    [
+      22,
+      -5,
+      6
+    ]
+  ],
+  "hinge": [
+    3,
+    1,
+    0
+  ],
+  "bead_weights": [
+    1.5,
+    1.2,
+    1.1,
+    1.4,
+    0.9,
+    1.3,
+    1.0,
+    0.8,
+    0.7
+  ],
+  "gaussian_sigma": 2.7,
+  "image_size": 32,
+  "pixel_size": 2.5,
+  "transfer_decay": 9.0,
+  "image_noise_sd": 0.00035,
+  "reference_temperature": 300.0,
+  "freeze_temperature": 80.0,
+  "attempt_rate": 1000000.0,
+  "cooling_seconds": [
+    4e-05,
+    0.0006
+  ],
+  "label_pairs": [
+    [
+      0,
+      6
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      7
+    ]
+  ],
+  "forster_distance": 35.0,
+  "dye_on": 3500.0,
+  "dye_off": 1200.0,
+  "photon_background": 700.0,
+  "photon_brightness": 140000.0,
+  "acceptor_detection": 0.82,
+  "direct_acceptor_brightness": 45000.0,
+  "temperatures": [
+    285.0,
+    315.0
+  ],
+  "trace_seconds": 0.008,
+  "geometry_contract": "azimuth followed by elevation: scipy intrinsic/extrinsic convention explicitly z then y extrinsic; xyz=R_y(elevation) R_z(azimuth) local + hinge",
+  "units": {
+    "length": "angstrom",
+    "time": "second",
+    "temperature": "kelvin",
+    "angle": "radian"
+  },
+  "parameter_bounds": {
+    "azimuth": [
+      -2.7,
+      2.7
+    ],
+    "elevation": [
+      -1.2,
+      1.2
+    ],
+    "energies": [
+      -0.5,
+      1.5
+    ],
+    "barriers": [
+      2.0,
+      6.5
+    ]
+  }
+}

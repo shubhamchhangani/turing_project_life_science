@@ -1,0 +1,5 @@
+locus,among_region_structure,among_deme_within_region_structure
+Locus_A,yes,no
+Locus_B,no,yes
+Locus_C,yes,yes
+Locus_D,no,no

@@ -1,0 +1,24 @@
+CASE 12 360 1800 PLANTED 14935
+{"run": 0, "score": 15301, "best": 15301, "seconds": 3.602424874996359}
+{"run": 1, "score": 15227, "best": 15227, "seconds": 6.210885166998196}
+{"run": 2, "score": 15147, "best": 15147, "seconds": 8.83161399999517}
+{"run": 3, "score": 14891, "best": 14891, "seconds": 11.46061791700049}
+RESULT {"k": 12, "n": 360, "m": 1800, "planted": 14935, "reference_cost": 14891, "seconds": 11.462269582996669}
+CASE 16 480 2400 PLANTED 19885
+{"run": 0, "score": 22188, "best": 22188, "seconds": 4.848131375001685}
+{"run": 1, "score": 21724, "best": 21724, "seconds": 9.641550541004108}
+{"run": 2, "score": 21882, "best": 21724, "seconds": 14.489322291003191}
+{"run": 3, "score": 21542, "best": 21542, "seconds": 19.382273208000697}
+RESULT {"k": 16, "n": 480, "m": 2400, "planted": 19885, "reference_cost": 21542, "seconds": 19.38549824999791}
+CASE 12 360 3600 PLANTED 29485
+{"run": 0, "score": 29625, "best": 29625, "seconds": 5.348180624998349}
+{"run": 1, "score": 30494, "best": 29625, "seconds": 10.710012250005093}
+{"run": 2, "score": 29624, "best": 29624, "seconds": 16.106052750001254}
+{"run": 3, "score": 29835, "best": 29624, "seconds": 21.462779875000706}
+RESULT {"k": 12, "n": 360, "m": 3600, "planted": 29485, "reference_cost": 29624, "seconds": 21.465819875003945}
+CASE 16 480 4800 PLANTED 39230
+{"run": 0, "score": 43460, "best": 43460, "seconds": 9.72056629099825}
+{"run": 1, "score": 42936, "best": 42936, "seconds": 19.48068383300415}
+{"run": 2, "score": 41718, "best": 41718, "seconds": 29.2643501249986}
+{"run": 3, "score": 42246, "best": 41718, "seconds": 38.95733620800456}
+RESULT {"k": 16, "n": 480, "m": 4800, "planted": 39230, "reference_cost": 41718, "seconds": 38.962852167001984}

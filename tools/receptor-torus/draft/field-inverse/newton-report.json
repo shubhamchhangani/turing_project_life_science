@@ -1,0 +1,11 @@
+{
+  "iterations": 6,
+  "calls": 7,
+  "seconds": 148.54839174999506,
+  "max_moment_error": 3.6352043597531747e-10,
+  "converged": true,
+  "minimum_fisher_eigenvalue": 0.07568302984842386,
+  "max_coupling_error": 9.452881255533896e-10,
+  "max_field_error": 4.510403162072407e-11,
+  "small_fisher_error": 2.4424906541753444e-15
+}

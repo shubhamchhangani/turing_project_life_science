@@ -1,0 +1,12 @@
+{
+  "status": "SOLVED_DO_NOT_PACKAGE",
+  "reward": 1.0,
+  "model": "openai/gpt-6-sol",
+  "reasoning_effort": "max",
+  "exception": null,
+  "agent_execution": {
+    "started_at": "2026-10-23T21:42:19.886293Z",
+    "finished_at": "2026-10-23T21:50:15.638253Z"
+  },
+  "zip_created": false
+}

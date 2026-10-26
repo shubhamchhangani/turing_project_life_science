@@ -1,0 +1,234 @@
+{
+  "task": "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/metabolic-flux-analysis-v2",
+  "static_checks_passed": true,
+  "portal_acceptance_guaranteed": false,
+  "package_fingerprint": "f3746b18a380c564c30d242d5ecd14f4dda28425832d70114946922840de4e68",
+  "files": {
+    "README.md": "7b792f13f3cfa389851e2d0af928fe7ad94a7e1bb66cc5cd3b44a0b65a46ed09",
+    "environment/Dockerfile": "1e971b64ca5755b9d5f2b1088273c732bac2bd31546258bfd47fa1f0ab76a14d",
+    "environment/data/extracellular_rates.csv": "312ba248d5c944f1271f2b81eb1fe26bd85b42e94fd76c5e0e5ffd3332ac483a",
+    "environment/data/fragments.csv": "ab7dde85e3b2b51637ce8c0f6835b0cf322635fcd5ad3db9c96c98f5cdfd3f02",
+    "environment/data/isotope_abundances.csv": "ba00ee5805d77eeff6dfa293b30bb0669c2d16be8d6a526a923f889b26232b77",
+    "environment/data/labeling_schedule.csv": "4680e56604ca8c312805fb1a80a2c0651a798010fd32946042140495b13a05d2",
+    "environment/data/mid_measurements.csv": "86b09eb12218a96eef841b081909ff85e3e9fa7f4960cfa9b5a8d6fe098fa182",
+    "environment/data/network.tsv": "bef8419b5f8987f689b8023dde228b748ff9a34fe7dd335407648983d027a385",
+    "environment/data/pool_sizes.csv": "e9fdb5ca035be2cbc0cb9ea864de8814d33118bd0cc8a6afcc3eb8c9590be213",
+    "instruction.md": "40cf904bb5bd9e974d8a677ea078b9daa28360d2fa58f73b7d7a943645323fb6",
+    "solution/dynamic_fit.py": "0417600975caf6e316a36c6e097fae8313d5dc4b58dcc77f3296ea220b388554",
+    "solution/dynamic_model.py": "9793f7b6d54498c2ac6d2b7b1b3de1ceaf6aa0b73cbb0faa3c736c11f38be56d",
+    "solution/forward_model.py": "f9472d3722c983194db7e31024c4dd1be836f41e9560154f0743a893c16cb9e2",
+    "solution/network_model.py": "697ca9a014b7fa00f77d6554c877f171da3b849a53cdf55044d1fedca6f3f542",
+    "solution/solve.sh": "5a9ce24a458c6fbe7325174acdaa3240efbf24092a62c305ed4ff543ae20a192",
+    "task.toml": "e03753970557eb10de3cd637d483ab841828cb0b72714a3a86f5aa6143ddf33a",
+    "tests/Dockerfile": "5894d16c649ce04c23565cb57c89964e1740a576cffb29a2c3e4d9430d6751ce",
+    "tests/check_fit.py": "2627a06e97a92cbcf789e06e097eb84ce6e1652820ccb009c8621a87a52244a5",
+    "tests/data/extracellular_rates.csv": "312ba248d5c944f1271f2b81eb1fe26bd85b42e94fd76c5e0e5ffd3332ac483a",
+    "tests/data/fragments.csv": "ab7dde85e3b2b51637ce8c0f6835b0cf322635fcd5ad3db9c96c98f5cdfd3f02",
+    "tests/data/isotope_abundances.csv": "ba00ee5805d77eeff6dfa293b30bb0669c2d16be8d6a526a923f889b26232b77",
+    "tests/data/labeling_schedule.csv": "4680e56604ca8c312805fb1a80a2c0651a798010fd32946042140495b13a05d2",
+    "tests/data/mid_measurements.csv": "86b09eb12218a96eef841b081909ff85e3e9fa7f4960cfa9b5a8d6fe098fa182",
+    "tests/data/network.tsv": "bef8419b5f8987f689b8023dde228b748ff9a34fe7dd335407648983d027a385",
+    "tests/data/pool_sizes.csv": "e9fdb5ca035be2cbc0cb9ea864de8814d33118bd0cc8a6afcc3eb8c9590be213",
+    "tests/dynamic_model.py": "9793f7b6d54498c2ac6d2b7b1b3de1ceaf6aa0b73cbb0faa3c736c11f38be56d",
+    "tests/expected_fluxes.json": "7bf92819daa692c08e4dce1ade72a1689a5271cd7069426dcbcc44ec6d922de0",
+    "tests/forward_model.py": "f9472d3722c983194db7e31024c4dd1be836f41e9560154f0743a893c16cb9e2",
+    "tests/network.tsv": "bef8419b5f8987f689b8023dde228b748ff9a34fe7dd335407648983d027a385",
+    "tests/test.sh": "7ee810212593b12f748f7df6da97422f588a8a4200c2c18553fc941e455c1122",
+    "tests/test_outputs.py": "860a1b497bb3ea78ad9572da4038bfe61da57738d670cd06e90b9ecdb082cfb4"
+  },
+  "checks": [
+    {
+      "check": "root structure",
+      "passed": true,
+      "detail": "missing=[], extra=[]"
+    },
+    {
+      "check": "environment is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "tests is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "solution is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no hidden/cache files",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no canary markers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no symlinks in package",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "schema 1.4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "top-level artifacts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "task required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "metadata required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "environment required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "turing task namespace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no legacy metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "life sciences biology category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "binary reward and overlap type",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent execution contract",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent environment network",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "isolated offline verifier",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent resources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier resources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier timeout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test runner errexit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test runner shell syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/dynamic_fit.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/dynamic_model.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/forward_model.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/network_model.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/check_fit.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/dynamic_model.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/forward_model.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/test_outputs.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "execution-contract closing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all artifacts stated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no scoring language in instructions",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "errors": [],
+  "required_additional_evidence": [
+    "offline reference solution and verifier",
+    "valid and invalid artifact regressions",
+    "scientific coverage and independent truth review",
+    "completed substantive trials on the required model roster"
+  ],
+  "zip_created": false
+}

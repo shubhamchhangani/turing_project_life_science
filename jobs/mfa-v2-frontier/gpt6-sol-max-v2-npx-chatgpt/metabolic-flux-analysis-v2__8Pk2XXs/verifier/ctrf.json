@@ -1,0 +1,122 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 11,
+            "passed": 11,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1792751845.1458557,
+            "stop": 1792751846.0977178
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_pool_contract",
+                "status": "passed",
+                "duration": 0.0003835009999875183,
+                "start": 1792751845.1582322,
+                "stop": 1792751845.158738,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_file_exists",
+                "status": "passed",
+                "duration": 0.0002544989999933023,
+                "start": 1792751845.1588142,
+                "stop": 1792751845.1591566,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_header",
+                "status": "passed",
+                "duration": 0.00025370800005930505,
+                "start": 1792751845.1592112,
+                "stop": 1792751845.1595454,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_one_row_per_reaction",
+                "status": "passed",
+                "duration": 0.00033724899992648716,
+                "start": 1792751845.1596196,
+                "stop": 1792751845.1600387,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_values_finite",
+                "status": "passed",
+                "duration": 0.00022362400000019989,
+                "start": 1792751845.160096,
+                "stop": 1792751845.160383,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_glucose_normalization",
+                "status": "passed",
+                "duration": 0.00023774999988290801,
+                "start": 1792751845.160432,
+                "stop": 1792751845.1607385,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_directional_consistency",
+                "status": "passed",
+                "duration": 0.0002523329999348789,
+                "start": 1792751845.1607955,
+                "stop": 1792751845.161109,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_mass_balance",
+                "status": "passed",
+                "duration": 0.00036541599990869145,
+                "start": 1792751845.1611657,
+                "stop": 1792751845.1616275,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_pool_accuracy",
+                "status": "passed",
+                "duration": 0.0002554159999590411,
+                "start": 1792751845.1616988,
+                "stop": 1792751845.162028,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_flux_value",
+                "status": "passed",
+                "duration": 0.0002511669999876176,
+                "start": 1792751845.1620812,
+                "stop": 1792751845.1623979,
+                "retries": 5,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::key::['G6PDH_net', 'PDH_net', 'PC_net', 'ME_net', 'CS_net', 'IDH_reverse']"
+                ]
+            },
+            {
+                "name": "test_outputs.py::test_measurement_fit",
+                "status": "passed",
+                "duration": 0.9333116260000907,
+                "start": 1792751845.1640756,
+                "stop": 1792751846.0975733,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

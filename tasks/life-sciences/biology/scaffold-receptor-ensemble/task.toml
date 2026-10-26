@@ -1,0 +1,36 @@
+schema_version = "1.4"
+artifacts = ["/root/results/thermodynamics.csv", "/root/results/reporter_distribution.csv"]
+
+[task]
+name = "turing/scaffold-receptor-ensemble"
+description = "Compute the full conditional conformational ensemble of eight reporters in an receptor sheet with competing interactions, scaffold links and local biases."
+version = "1.0.0"
+keywords = ["statistical-biophysics", "allostery", "cooperativity", "joint-distribution"]
+
+[metadata]
+domain = "life-sciences"
+category = "biology"
+subcategory = "statistical-biophysics"
+reward_type = "binary"
+source = "original"
+public_overlap = false
+
+[environment]
+network_mode = "public"
+cpus = 1
+memory_mb = 2048
+storage_mb = 10240
+
+[agent]
+timeout_sec = 18000
+network_mode = "public"
+
+[verifier]
+timeout_sec = 120
+network_mode = "no-network"
+environment_mode = "separate"
+
+[verifier.environment]
+network_mode = "no-network"
+cpus = 1
+memory_mb = 2048

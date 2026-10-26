@@ -1,0 +1,31 @@
+{
+  "status": "DO_NOT_PACKAGE_SOLVED",
+  "worker_pid": 73624,
+  "zip_created": false,
+  "zip_path": null,
+  "package_fingerprint": "5253e4c18a71fb19664c5a5e12cfbd00bdf00ed59379d7d0a9d2c94a333bef4f",
+  "gpt_not_before_utc": "2026-10-24T13:52:35+00:00",
+  "trials": {
+    "opus": {
+      "result": "/Users/shubhamchhangani/harshita/jobs/receptor-torus-frontier/opus-5-5-low-phase-posterior/polyploid-phase-posterior__zJBk63t/result.json",
+      "model": "anthropic/claude-opus-5-5",
+      "effort": "low",
+      "status": "solved_do_not_package",
+      "reward": 1.0,
+      "completed_commands": 3,
+      "error_type": null,
+      "quota_interrupted": false,
+      "agent_seconds": 84.37186,
+      "full_budget_timeout": false,
+      "counts_as_model_failure": false,
+      "task_checksum": "9412c9e87dc83d39addbc0d4e4bafec2dd72eb8472fcafac3c4ae35be8b2c83e",
+      "agent": "claude-code"
+    },
+    "gpt": {
+      "status": "cancelled_obsolete_candidate_not_started"
+    }
+  },
+  "limitation": "Local trials do not guarantee a future Turing-harness result.",
+  "updated_at": "2026-10-24T09:47:16.356755+00:00",
+  "worker_status": "finished"
+}

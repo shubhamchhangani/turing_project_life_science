@@ -1,0 +1,16 @@
+{
+    "task": {
+        "path": "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/polyploid-phase-posterior"
+    },
+    "trial_name": "polyploid-phase-posterior__zJBk63t",
+    "trials_dir": "jobs/receptor-torus-frontier/opus-5-5-low-phase-posterior",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "anthropic/claude-opus-5-5",
+        "kwargs": {
+            "version": "2.1.300",
+            "reasoning_effort": "low"
+        }
+    },
+    "job_id": "b9120169-691e-41f6-b5a6-9339c79015da"
+}

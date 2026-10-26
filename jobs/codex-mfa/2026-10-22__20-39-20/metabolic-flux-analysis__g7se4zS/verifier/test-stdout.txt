@@ -1,0 +1,63 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.9, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 13 items
+
+tests/test_outputs.py ........F..F.                                      [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_flux_value[PDH_net] ___________________________
+
+key = 'PDH_net'
+
+    @pytest.mark.parametrize("key", list(EXPECTED["graded"]))
+    def test_flux_value(key):
+        """Graded flux is within its stated relative tolerance of the true (injected) value."""
+        spec = EXPECTED["graded"][key]
+        got = flux_table()[spec["reaction_id"]][spec["column"]]
+        want, rtol = spec["true"], spec["rel_tol"]
+>       assert abs(got - want) <= rtol * abs(want), (
+            f"{key} ({spec['reaction_id']} {spec['column']}): got {got:.3f}, true {want:.3f}, "
+            f"allowed relative error {rtol:.0%}")
+E       AssertionError: PDH_net (PDH net): got 48.023, true 42.000, allowed relative error 12%
+E       assert 6.023333000000001 <= (0.12 * 42.0)
+E        +  where 6.023333000000001 = abs((48.023333 - 42.0))
+E        +  and   42.0 = abs(42.0)
+
+tests/test_outputs.py:123: AssertionError
+___________________________ test_flux_value[CS_net] ____________________________
+
+key = 'CS_net'
+
+    @pytest.mark.parametrize("key", list(EXPECTED["graded"]))
+    def test_flux_value(key):
+        """Graded flux is within its stated relative tolerance of the true (injected) value."""
+        spec = EXPECTED["graded"][key]
+        got = flux_table()[spec["reaction_id"]][spec["column"]]
+        want, rtol = spec["true"], spec["rel_tol"]
+>       assert abs(got - want) <= rtol * abs(want), (
+            f"{key} ({spec['reaction_id']} {spec['column']}): got {got:.3f}, true {want:.3f}, "
+            f"allowed relative error {rtol:.0%}")
+E       AssertionError: CS_net (CS net): got 37.253, true 30.000, allowed relative error 10%
+E       assert 7.253332999999998 <= (0.1 * 30.0)
+E        +  where 7.253332999999998 = abs((37.253333 - 30.0))
+E        +  and   30.0 = abs(30.0)
+
+tests/test_outputs.py:123: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_outputs.py::test_file_exists
+PASSED tests/test_outputs.py::test_header
+PASSED tests/test_outputs.py::test_one_row_per_reaction
+PASSED tests/test_outputs.py::test_values_finite
+PASSED tests/test_outputs.py::test_glucose_normalization
+PASSED tests/test_outputs.py::test_directional_consistency
+PASSED tests/test_outputs.py::test_mass_balance
+PASSED tests/test_outputs.py::test_flux_value[G6PDH_net]
+PASSED tests/test_outputs.py::test_flux_value[PC_net]
+PASSED tests/test_outputs.py::test_flux_value[ME_net]
+PASSED tests/test_outputs.py::test_flux_value[IDH_reverse]
+FAILED tests/test_outputs.py::test_flux_value[PDH_net] - AssertionError: PDH_...
+FAILED tests/test_outputs.py::test_flux_value[CS_net] - AssertionError: CS_ne...
+========================= 2 failed, 11 passed in 0.02s =========================

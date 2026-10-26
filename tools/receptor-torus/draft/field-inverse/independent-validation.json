@@ -1,0 +1,89 @@
+{
+  "small_checks": [
+    {
+      "width": 3,
+      "height": 3,
+      "range": [
+        0.15,
+        0.35
+      ],
+      "max_error": 1.7763568394002505e-15
+    },
+    {
+      "width": 3,
+      "height": 3,
+      "range": [
+        0.35,
+        0.65
+      ],
+      "max_error": 1.5421691701433815e-15
+    },
+    {
+      "width": 3,
+      "height": 3,
+      "range": [
+        -0.2,
+        0.65
+      ],
+      "max_error": 1.7763568394002505e-15
+    },
+    {
+      "width": 3,
+      "height": 4,
+      "range": [
+        0.15,
+        0.35
+      ],
+      "max_error": 1.27675647831893e-15
+    },
+    {
+      "width": 3,
+      "height": 4,
+      "range": [
+        0.35,
+        0.65
+      ],
+      "max_error": 9.992007221626409e-16
+    },
+    {
+      "width": 3,
+      "height": 4,
+      "range": [
+        -0.2,
+        0.65
+      ],
+      "max_error": 1.7763568394002505e-15
+    },
+    {
+      "width": 4,
+      "height": 4,
+      "range": [
+        0.15,
+        0.35
+      ],
+      "max_error": 3.6914915568786455e-15
+    },
+    {
+      "width": 4,
+      "height": 4,
+      "range": [
+        0.35,
+        0.65
+      ],
+      "max_error": 1.176836406102666e-14
+    },
+    {
+      "width": 4,
+      "height": 4,
+      "range": [
+        -0.2,
+        0.65
+      ],
+      "max_error": 6.938893903907228e-15
+    }
+  ],
+  "full_gradient_max_difference": 1.0519363158323358e-13,
+  "full_logz_difference": 2.8421709430404007e-13,
+  "seconds": 20.32655416700436,
+  "all_passed": true
+}

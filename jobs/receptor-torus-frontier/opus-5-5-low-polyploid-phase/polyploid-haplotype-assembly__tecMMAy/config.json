@@ -1,0 +1,16 @@
+{
+    "task": {
+        "path": "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/polyploid-haplotype-assembly"
+    },
+    "trial_name": "polyploid-haplotype-assembly__tecMMAy",
+    "trials_dir": "jobs/receptor-torus-frontier/opus-5-5-low-polyploid-phase",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "anthropic/claude-opus-5-5",
+        "kwargs": {
+            "version": "2.1.300",
+            "reasoning_effort": "low"
+        }
+    },
+    "job_id": "a558a61d-97f4-4ddf-baf8-fd184fdfe104"
+}

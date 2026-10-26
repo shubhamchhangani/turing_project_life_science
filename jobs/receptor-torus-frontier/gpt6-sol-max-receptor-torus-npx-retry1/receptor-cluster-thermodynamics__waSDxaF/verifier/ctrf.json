@@ -1,0 +1,74 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 6,
+            "passed": 6,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1792792230.9014587,
+            "stop": 1792792553.0426636
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_01_complete_contract",
+                "status": "passed",
+                "duration": 0.0007557929999393309,
+                "start": 1792792231.0943077,
+                "stop": 1792792231.0952578,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_02_normalization",
+                "status": "passed",
+                "duration": 0.0004169569998566658,
+                "start": 1792792231.0953724,
+                "stop": 1792792231.0959237,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_03_inversion_symmetry",
+                "status": "passed",
+                "duration": 0.00033683399988149176,
+                "start": 1792792231.0960426,
+                "stop": 1792792231.0964994,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_04_all_probe_marginals",
+                "status": "passed",
+                "duration": 0.0003760010000632974,
+                "start": 1792792231.0965846,
+                "stop": 1792792231.0970643,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_05_full_joint_distribution",
+                "status": "passed",
+                "duration": 321.9430831890004,
+                "start": 1792792231.0971625,
+                "stop": 1792792553.0413675,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_06_absolute_partition_function",
+                "status": "passed",
+                "duration": 0.0004159580000759888,
+                "start": 1792792553.0418577,
+                "stop": 1792792553.0423677,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

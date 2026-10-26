@@ -1,0 +1,7 @@
+{
+  "success": true,
+  "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+  "max_coupling_error": 6.882205484393111e-07,
+  "calls": 65,
+  "seconds": 203.3758288750032
+}

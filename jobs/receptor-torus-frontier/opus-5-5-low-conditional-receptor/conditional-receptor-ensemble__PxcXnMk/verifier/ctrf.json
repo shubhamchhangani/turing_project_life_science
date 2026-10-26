@@ -1,0 +1,56 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 4,
+            "passed": 4,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1792921054.4904878,
+            "stop": 1792921054.5005116
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_01_complete_contract",
+                "status": "passed",
+                "duration": 0.0007794169999328915,
+                "start": 1792921054.4983828,
+                "stop": 1792921054.4992993,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_02_thermodynamics",
+                "status": "passed",
+                "duration": 0.00024041600005375585,
+                "start": 1792921054.4993658,
+                "stop": 1792921054.499702,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_03_normalization",
+                "status": "passed",
+                "duration": 0.0002148330000295573,
+                "start": 1792921054.4997666,
+                "stop": 1792921054.500072,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_04_every_joint_probability",
+                "status": "passed",
+                "duration": 0.00023154099994826538,
+                "start": 1792921054.5001235,
+                "stop": 1792921054.5004182,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

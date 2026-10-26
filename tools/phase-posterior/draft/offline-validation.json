@@ -1,0 +1,11 @@
+{
+  "separate_offline_verifier_passed": true,
+  "reference_inference_seconds": 115.595960969,
+  "reference_log_evidence": -588.3850821948286,
+  "cpus": 1,
+  "memory_mb": 2048,
+  "network": "none",
+  "verifier_tests_passed": 3,
+  "verifier_seconds": 0.01,
+  "validated_at": "2026-10-24T09:40:13.546280+00:00"
+}

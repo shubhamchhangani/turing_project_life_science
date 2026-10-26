@@ -1,0 +1,43 @@
+{
+    "id": "bb0b7196-788b-4dca-922d-04480e09aa30",
+    "started_at": "2026-10-23T11:59:53.794940",
+    "updated_at": "2026-10-23T12:02:39.833914",
+    "finished_at": "2026-10-23T12:02:39.833914",
+    "n_total_trials": 1,
+    "stats": {
+        "n_completed_trials": 1,
+        "n_errored_trials": 1,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "codex__gpt-6-sol__adhoc": {
+                "n_trials": 1,
+                "n_errors": 1,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "metabolic-flux-analysis-v2__LyPpc4t"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "ApiUsageLimitError": [
+                        "metabolic-flux-analysis-v2__LyPpc4t"
+                    ]
+                }
+            }
+        },
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null
+    }
+}

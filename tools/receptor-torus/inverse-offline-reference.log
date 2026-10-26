@@ -1,0 +1,8 @@
+Newton iteration 0 calls 1 objective 104.86208193916664 gradient 0.472868400631158 elapsed 15.514470506999942
+Newton iteration 1 calls 2 objective 93.26670791263862 gradient 0.41872788983695985 elapsed 31.018724180999925
+Newton iteration 2 calls 3 objective 91.46843789235348 gradient 0.14844854823766318 elapsed 46.23869610499992
+Newton iteration 3 calls 4 objective 91.34681073029614 gradient 0.028845460450372507 elapsed 63.939699737999945
+Newton iteration 4 calls 5 objective 91.34414857114902 gradient 0.0018995441673212987 elapsed 82.06874641299987
+Newton iteration 5 calls 6 objective 91.34413936848318 gradient 1.1067420222721225e-05 elapsed 99.98855167099987
+Newton iteration 6 calls 7 objective 91.34413936822864 gradient 3.6352143517603963e-10 elapsed 115.62467492799988
+{'iterations': 6, 'calls': 7, 'seconds': 115.62471267799992, 'max_moment_error': 3.6352143517603963e-10, 'converged': True, 'minimum_fisher_eigenvalue': 0.07568302984842462}

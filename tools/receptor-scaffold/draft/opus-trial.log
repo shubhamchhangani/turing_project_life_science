@@ -1,0 +1,22 @@
+  1/1 Mean: 1.000 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0:17:21 0:00:00
+adhoc • claude-code • claude-opus-5-5
+┏━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━┓
+┃ Trials ┃ Exceptions ┃  Mean ┃
+┡━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━┩
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┏━━━━━━━━┳━━━━━━━┓
+┃ Reward ┃ Count ┃
+┡━━━━━━━━╇━━━━━━━┩
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 17m 21s
+Results written to 
+jobs/receptor-torus-frontier/opus-5-5-low-scaffold-receptor/result.json
+Inspect results by running `harbor view jobs/receptor-torus-frontier`
+Share results by running `harbor upload 
+jobs/receptor-torus-frontier/opus-5-5-low-scaffold-receptor`
+

@@ -1,0 +1,56 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 4,
+            "passed": 4,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1792792971.3712008,
+            "stop": 1792792996.103969
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_01_complete_contract",
+                "status": "passed",
+                "duration": 0.0032604579998860572,
+                "start": 1792792971.4331207,
+                "stop": 1792792971.4364848,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_02_every_coupling",
+                "status": "passed",
+                "duration": 0.00017595799977243587,
+                "start": 1792792971.4365873,
+                "stop": 1792792971.4368253,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_03_every_bias",
+                "status": "passed",
+                "duration": 0.00013470799990500382,
+                "start": 1792792971.4368901,
+                "stop": 1792792971.4370828,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_04_all_equilibrium_moments",
+                "status": "passed",
+                "duration": 24.66644717899976,
+                "start": 1792792971.4371517,
+                "stop": 1792792996.1037939,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

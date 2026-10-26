@@ -1,0 +1,194 @@
+{
+  "task": "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/polyploid-haplotype-assembly",
+  "static_checks_passed": true,
+  "portal_acceptance_guaranteed": false,
+  "package_fingerprint": "a7ce73b19acb76b8310eb092787f62b54479113651cf95588904f1c823397a37",
+  "files": {
+    "README.md": "32c52a48f75469948c48b708f01a927972ce0447bc817a17c191062341ba6d64",
+    "environment/Dockerfile": "d6540c5be3525c1b05cf2b11b8faea8a069deeb3b33476076729d76fb9fc73c2",
+    "environment/data/model.json": "12ec6e525fc494f07b9393dd45af88904639a83046c24c427133d0d8457b0b56",
+    "environment/data/read_calls.csv": "125b5858456f4b3eeac7fb70b29f732bbe4da727d2a0e6aa003892f6b9a96ad8",
+    "environment/data/variants.csv": "f82569f1ba991056e3e205e84a01b7bf4c236685406d3609669bbee5ffc7da40",
+    "instruction.md": "fb4db50099eca856e29dd1829d3ce9e8c81a8860c227bb6fbf59512a8d9f3e5d",
+    "solution/search.py": "b5013d6db2d00bbfee52efd0fb64e609bd2cfaccbcd47753f25a48ec92c7bcfc",
+    "solution/solve.py": "795aa6400b192076f3a2afde67d07ddc5b46f98936d51683e04d608cd902caa3",
+    "solution/solve.sh": "2f14ea977ec3d1929c939868793ea38fa32e960a800af5dc9c6a90a3e4c81297",
+    "task.toml": "3e62bb7fd9d3242ddd2fdd5aacfa0e722071d73d2f60b5bfa8f3be603843bb5d",
+    "tests/Dockerfile": "40a472d43c9c11c874d50c944ce495e6e05a25e74680cd19ba5688af7954d221",
+    "tests/data/model.json": "12ec6e525fc494f07b9393dd45af88904639a83046c24c427133d0d8457b0b56",
+    "tests/data/read_calls.csv": "125b5858456f4b3eeac7fb70b29f732bbe4da727d2a0e6aa003892f6b9a96ad8",
+    "tests/data/variants.csv": "f82569f1ba991056e3e205e84a01b7bf4c236685406d3609669bbee5ffc7da40",
+    "tests/test.sh": "f1fca86ffbdd524f14cbaf25f036bb99264a827de070965f68dd260dd61500e7",
+    "tests/test_outputs.py": "e19adad669a4dd4f0d86b22d19898b9f01525f3d14cd30a1d4a90e3cdc9d81bb"
+  },
+  "checks": [
+    {
+      "check": "root structure",
+      "passed": true,
+      "detail": "missing=[], extra=[]"
+    },
+    {
+      "check": "environment is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "tests is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "solution is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no hidden/cache files",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no canary markers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no symlinks in package",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "schema 1.4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "top-level artifacts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "task required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "metadata required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "environment required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "turing task namespace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no legacy metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "life sciences biology category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "binary reward and overlap type",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent execution contract",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent environment network",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "isolated offline verifier",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent resources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier resources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier timeout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test runner errexit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test runner shell syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/search.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/solve.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/test_outputs.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "execution-contract closing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all artifacts stated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no scoring language in instructions",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "errors": [],
+  "required_additional_evidence": [
+    "offline reference solution and verifier",
+    "valid and invalid artifact regressions",
+    "scientific coverage and independent truth review",
+    "completed substantive trials on the required model roster"
+  ],
+  "zip_created": false
+}

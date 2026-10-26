@@ -1,0 +1,11 @@
+2026-10-25 13:26:57,937 INFO [aspire.source.image] Creating Simulation with 128 images.
+2026-10-25 13:26:57,965 INFO [aspire.source.image] Attempting to create an Image object from Numpy array.
+2026-10-25 13:26:57,965 INFO [aspire.source.image] Creating ArrayImageSource with 128 images.
+2026-10-25 13:26:57,966 INFO [aspire.abinitio.commonline_matrix] cupy not found, defaulting to numpy.
+2026-10-25 13:26:57,966 INFO [aspire.abinitio.commonline_matrix] Begin building Common Lines Matrix
+2026-10-25 13:26:57,966 INFO [aspire.operators.polar_ft] Represent 2D image in a polar Fourier grid
+Searching over common line pairs:   0%|          | 0/8128 [00:00<?, ?it/s]Searching over common line pairs:  61%|██████    | 4969/8128 [00:00<00:00, 49684.12it/s]Searching over common line pairs: 100%|██████████| 8128/8128 [00:00<00:00, 49519.07it/s]
+2026-10-25 13:26:59,150 INFO [aspire.abinitio.commonline_sync] Top 10 eigenvalues from synchronization voting matrix: [89.60032    86.69274    79.654495    0.25980908  0.2511667   0.24683724
+  0.24383186 -0.25034115 -0.25227425 -0.261979  ]
+2026-10-25 13:26:59,151 INFO [aspire.abinitio.commonline_base] Using existing estimated `rotations`.
+{"states": 1, "images": 128, "seconds": 1.1859900839990587, "rotation_mse_after_global_registration": 1.563876623204056e-05, "note": "Clean synthetic screening only; no release acceptance threshold."}

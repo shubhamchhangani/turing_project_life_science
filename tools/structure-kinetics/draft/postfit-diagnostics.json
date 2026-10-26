@@ -1,0 +1,40 @@
+{
+  "scope": "post-fit diagnostic only; truth never used to initialize or fit",
+  "photon_baseline_seconds": 35.64985549999983,
+  "generator_log_likelihood": 324410.981213272,
+  "runs": [
+    {
+      "start": 0,
+      "geometry_rmsd_angstrom": [
+        1.6438584302465211,
+        15.630831646177139,
+        24.542304069425462,
+        10.457258149024643
+      ],
+      "log_rate_rmse": 0.6365864800750961,
+      "log_likelihood_gain_over_generator": 8.481544881360605
+    },
+    {
+      "start": 1,
+      "geometry_rmsd_angstrom": [
+        2.8662040798531287,
+        3.7327462024438502,
+        40.25625057842538,
+        7.4606136667508105
+      ],
+      "log_rate_rmse": 1.937570625687065,
+      "log_likelihood_gain_over_generator": 2.6874843384721316
+    },
+    {
+      "start": 2,
+      "geometry_rmsd_angstrom": [
+        1.6233665925833383,
+        7.752479552432348,
+        5.824119925676227,
+        3.848370068127023
+      ],
+      "log_rate_rmse": 0.8033470700976519,
+      "log_likelihood_gain_over_generator": 8.996981777949259
+    }
+  ]
+}

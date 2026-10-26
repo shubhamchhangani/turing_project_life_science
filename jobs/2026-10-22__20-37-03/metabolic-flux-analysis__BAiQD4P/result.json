@@ -1,0 +1,116 @@
+{
+    "id": "90e4592f-fa8e-40ac-99e4-b013d8e429bc",
+    "task_name": "terminal-bench-science/metabolic-flux-analysis",
+    "trial_name": "metabolic-flux-analysis__BAiQD4P",
+    "trial_uri": "file:///Users/shubhamchhangani/harshita/jobs/2026-10-22__20-37-03/metabolic-flux-analysis__BAiQD4P",
+    "task_id": {
+        "path": "tasks/life-sciences/biology/metabolic-flux-analysis"
+    },
+    "source": null,
+    "task_checksum": "17a673294e497b1ae7b7949630f800ec79381d8222afd884bbaab249d844838b",
+    "config": {
+        "task": {
+            "path": "tasks/life-sciences/biology/metabolic-flux-analysis",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "metabolic-flux-analysis__BAiQD4P",
+        "trials_dir": "jobs/2026-10-22__20-37-03",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "oracle",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "stream": false,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "4bb18192-bb7d-46f6-84da-69cce528f0b9",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "oracle",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "model_usage": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-10-22T15:07:03.517103Z",
+    "finished_at": "2026-10-22T15:08:47.111974Z",
+    "environment_setup": {
+        "started_at": "2026-10-22T15:07:03.542620Z",
+        "finished_at": "2026-10-22T15:07:07.329727Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-22T15:07:07.329800Z",
+        "finished_at": "2026-10-22T15:07:07.329846Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-22T15:07:07.329933Z",
+        "finished_at": "2026-10-22T15:08:33.428984Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-22T15:08:37.475682Z",
+        "finished_at": "2026-10-22T15:08:47.111929Z"
+    },
+    "step_results": null
+}

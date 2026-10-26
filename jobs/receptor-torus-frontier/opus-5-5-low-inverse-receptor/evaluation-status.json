@@ -1,0 +1,6 @@
+{
+  "status": "CANCELLED_OBSOLETE_CANDIDATE",
+  "reason": "GPT solved the same frozen task. Stopped Opus to conserve quota.",
+  "counts_as_model_failure": false,
+  "zip_created": false
+}

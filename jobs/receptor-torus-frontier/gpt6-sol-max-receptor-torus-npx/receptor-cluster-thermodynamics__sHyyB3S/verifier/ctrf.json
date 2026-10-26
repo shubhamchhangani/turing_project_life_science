@@ -1,0 +1,80 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 6,
+            "passed": 0,
+            "failed": 6,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1792772988.13873,
+            "stop": 1792772988.219771
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_01_complete_contract",
+                "status": "failed",
+                "duration": 0.00026750000006359187,
+                "start": 1792772988.198837,
+                "stop": 1792772988.207808,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "@pytest.fixture(scope='module')\n    def submitted():\n>       return contract(RESULTS)\n               ^^^^^^^^^^^^^^^^^\n\ntests/test_outputs.py:63: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:50: in contract\n    rows=read_csv(directory/'joint.csv',['pattern','probability'],64)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = PosixPath('/root/results/joint.csv'), header = ['pattern', 'probability']\ncount = 64\n\n    def read_csv(path,header,count):\n        \"\"\"Bounded, nonblocking read before parsing any submitted values.\"\"\"\n>       descriptor=os.open(path,os.O_RDONLY|os.O_NONBLOCK|os.O_NOFOLLOW)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/joint.csv'\n\ntests/test_outputs.py:22: FileNotFoundError"
+            },
+            {
+                "name": "test_outputs.py::test_02_normalization",
+                "status": "failed",
+                "duration": 0.00018504199999824777,
+                "start": 1792772988.207898,
+                "stop": 1792772988.210223,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "@pytest.fixture(scope='module')\n    def submitted():\n>       return contract(RESULTS)\n               ^^^^^^^^^^^^^^^^^\n\ntests/test_outputs.py:63: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:50: in contract\n    rows=read_csv(directory/'joint.csv',['pattern','probability'],64)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = PosixPath('/root/results/joint.csv'), header = ['pattern', 'probability']\ncount = 64\n\n    def read_csv(path,header,count):\n        \"\"\"Bounded, nonblocking read before parsing any submitted values.\"\"\"\n>       descriptor=os.open(path,os.O_RDONLY|os.O_NONBLOCK|os.O_NOFOLLOW)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/joint.csv'\n\ntests/test_outputs.py:22: FileNotFoundError"
+            },
+            {
+                "name": "test_outputs.py::test_03_inversion_symmetry",
+                "status": "failed",
+                "duration": 0.00015166599996518926,
+                "start": 1792772988.2102916,
+                "stop": 1792772988.2127366,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "@pytest.fixture(scope='module')\n    def submitted():\n>       return contract(RESULTS)\n               ^^^^^^^^^^^^^^^^^\n\ntests/test_outputs.py:63: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:50: in contract\n    rows=read_csv(directory/'joint.csv',['pattern','probability'],64)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = PosixPath('/root/results/joint.csv'), header = ['pattern', 'probability']\ncount = 64\n\n    def read_csv(path,header,count):\n        \"\"\"Bounded, nonblocking read before parsing any submitted values.\"\"\"\n>       descriptor=os.open(path,os.O_RDONLY|os.O_NONBLOCK|os.O_NOFOLLOW)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/joint.csv'\n\ntests/test_outputs.py:22: FileNotFoundError"
+            },
+            {
+                "name": "test_outputs.py::test_04_all_probe_marginals",
+                "status": "failed",
+                "duration": 0.00016116600011173432,
+                "start": 1792772988.2127957,
+                "stop": 1792772988.2150426,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "@pytest.fixture(scope='module')\n    def submitted():\n>       return contract(RESULTS)\n               ^^^^^^^^^^^^^^^^^\n\ntests/test_outputs.py:63: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:50: in contract\n    rows=read_csv(directory/'joint.csv',['pattern','probability'],64)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = PosixPath('/root/results/joint.csv'), header = ['pattern', 'probability']\ncount = 64\n\n    def read_csv(path,header,count):\n        \"\"\"Bounded, nonblocking read before parsing any submitted values.\"\"\"\n>       descriptor=os.open(path,os.O_RDONLY|os.O_NONBLOCK|os.O_NOFOLLOW)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/joint.csv'\n\ntests/test_outputs.py:22: FileNotFoundError"
+            },
+            {
+                "name": "test_outputs.py::test_05_full_joint_distribution",
+                "status": "failed",
+                "duration": 0.0001442919999590231,
+                "start": 1792772988.2151272,
+                "stop": 1792772988.2172956,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "@pytest.fixture(scope='module')\n    def submitted():\n>       return contract(RESULTS)\n               ^^^^^^^^^^^^^^^^^\n\ntests/test_outputs.py:63: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:50: in contract\n    rows=read_csv(directory/'joint.csv',['pattern','probability'],64)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = PosixPath('/root/results/joint.csv'), header = ['pattern', 'probability']\ncount = 64\n\n    def read_csv(path,header,count):\n        \"\"\"Bounded, nonblocking read before parsing any submitted values.\"\"\"\n>       descriptor=os.open(path,os.O_RDONLY|os.O_NONBLOCK|os.O_NOFOLLOW)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/joint.csv'\n\ntests/test_outputs.py:22: FileNotFoundError"
+            },
+            {
+                "name": "test_outputs.py::test_06_absolute_partition_function",
+                "status": "failed",
+                "duration": 0.00015608399996835942,
+                "start": 1792772988.2173584,
+                "stop": 1792772988.2196577,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "@pytest.fixture(scope='module')\n    def submitted():\n>       return contract(RESULTS)\n               ^^^^^^^^^^^^^^^^^\n\ntests/test_outputs.py:63: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:50: in contract\n    rows=read_csv(directory/'joint.csv',['pattern','probability'],64)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\npath = PosixPath('/root/results/joint.csv'), header = ['pattern', 'probability']\ncount = 64\n\n    def read_csv(path,header,count):\n        \"\"\"Bounded, nonblocking read before parsing any submitted values.\"\"\"\n>       descriptor=os.open(path,os.O_RDONLY|os.O_NONBLOCK|os.O_NOFOLLOW)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/joint.csv'\n\ntests/test_outputs.py:22: FileNotFoundError"
+            }
+        ]
+    }
+}

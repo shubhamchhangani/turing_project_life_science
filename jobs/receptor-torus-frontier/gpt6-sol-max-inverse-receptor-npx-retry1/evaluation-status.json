@@ -1,0 +1,8 @@
+{
+  "status": "SOLVED_DO_NOT_PACKAGE",
+  "reward": 1,
+  "agent_seconds": 1358.607648,
+  "model": "openai/gpt-6-sol",
+  "effort": "max",
+  "zip_created": false
+}

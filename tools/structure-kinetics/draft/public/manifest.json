@@ -1,0 +1,13 @@
+{
+  "status": "prototype_dataset_not_a_task_package",
+  "images": 128,
+  "traces": 24,
+  "photons": 31891,
+  "seconds": 0.37102837501151953,
+  "files": {
+    "config.json": "9aff4ac62ed4e12b0ee121b1e5d8b7ecec2d8a3c67102240ee05020fd9a5bf9b",
+    "images.npz": "8485bbd6df6402a875ded0a03ef595001d2d40f46e3c3a706bfd4b2c8f8a8022",
+    "photons.npz": "7f412b9ce6c62dfc83515b12e17693d31117e1a6c6301cb0749174a7831ff851",
+    "traces.json": "94feda82f1037ee97935055760214a65bc350664cf81d956460ff745a69bdc2d"
+  }
+}

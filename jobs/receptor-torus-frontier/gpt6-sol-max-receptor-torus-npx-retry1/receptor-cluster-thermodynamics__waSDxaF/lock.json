@@ -1,0 +1,41 @@
+{
+    "schema_version": 2,
+    "task": {
+        "name": "receptor-cluster-thermodynamics",
+        "version": "1.0.0",
+        "type": "local",
+        "digest": "sha256:686c9d91dc0781091dfb751331cdc25ccc5fa39bf4da1346ba2576dd1e92930d",
+        "path": "tasks/life-sciences/biology/receptor-cluster-thermodynamics"
+    },
+    "install_only": false,
+    "timeout_multiplier": 1.0,
+    "agent": {
+        "name": "npx_codex_agent:NpxCodex",
+        "model_name": "openai/gpt-6-sol",
+        "skills": [],
+        "resume_trajectory": false,
+        "extra_allowed_hosts": [],
+        "kwargs": {
+            "version": "0.164.0",
+            "reasoning_effort": "max"
+        },
+        "mcp_servers": []
+    },
+    "bridge_inputs": {},
+    "skills": [],
+    "environment": {
+        "type": "docker",
+        "force_build": false,
+        "delete": true,
+        "stream": false,
+        "cpu_enforcement_policy": "auto",
+        "memory_enforcement_policy": "auto",
+        "extra_docker_compose": [],
+        "kwargs": {},
+        "extra_allowed_hosts": []
+    },
+    "verifier": {
+        "disable": false,
+        "environment_mode": "separate"
+    }
+}

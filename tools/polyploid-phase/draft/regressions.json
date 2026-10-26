@@ -1,0 +1,160 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "name": "original_boundary",
+      "expected": "accept",
+      "passed": true
+    },
+    {
+      "name": "reverse_rows",
+      "expected": "accept",
+      "passed": true
+    },
+    {
+      "name": "CRLF",
+      "expected": "accept",
+      "passed": true
+    },
+    {
+      "name": "quoted_fields",
+      "expected": "accept",
+      "passed": true
+    },
+    {
+      "name": "permuted_homolog_labels",
+      "expected": "accept",
+      "passed": true
+    },
+    {
+      "name": "leading_space",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "trailing_space",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "unicode_digit",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "embedded_newline",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "too_short",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "too_long",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "missing_row",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "duplicate_id",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "extra_row",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "wrong_id",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "wrong_id_space",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "empty",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "extra_column",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "wrong_header",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "blank_row",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "BOM",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bare_CR",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "non_binary",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "wrong_dosage",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "too_large",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "invalid_utf8",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "dosage_correct_bad_phase",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "missing",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "symlink",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "fifo",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "directory",
+      "expected": "reject",
+      "passed": true
+    }
+  ]
+}

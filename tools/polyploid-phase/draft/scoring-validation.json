@@ -1,0 +1,65 @@
+{
+  "cases": [
+    {
+      "case": 0,
+      "exhaustive_min": 27,
+      "search_score": 27
+    },
+    {
+      "case": 1,
+      "exhaustive_min": 28,
+      "search_score": 28
+    },
+    {
+      "case": 2,
+      "exhaustive_min": 27,
+      "search_score": 27
+    },
+    {
+      "case": 3,
+      "exhaustive_min": 34,
+      "search_score": 34
+    },
+    {
+      "case": 4,
+      "exhaustive_min": 29,
+      "search_score": 29
+    },
+    {
+      "case": 5,
+      "exhaustive_min": 21,
+      "search_score": 21
+    },
+    {
+      "case": 6,
+      "exhaustive_min": 22,
+      "search_score": 22
+    },
+    {
+      "case": 7,
+      "exhaustive_min": 29,
+      "search_score": 29
+    },
+    {
+      "case": 8,
+      "exhaustive_min": 25,
+      "search_score": 25
+    },
+    {
+      "case": 9,
+      "exhaustive_min": 24,
+      "search_score": 24
+    },
+    {
+      "case": 10,
+      "exhaustive_min": 34,
+      "search_score": 34
+    },
+    {
+      "case": 11,
+      "exhaustive_min": 27,
+      "search_score": 27
+    }
+  ],
+  "passed": true
+}

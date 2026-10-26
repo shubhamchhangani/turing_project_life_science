@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "max_probability_difference": 6.505213034913027e-17,
+  "log_partition_difference": 0.0,
+  "log_clamp_difference": 0.0,
+  "reference_seconds": 121.20037970801059,
+  "independent_source_seconds": 96.84107258400763,
+  "min_probability": 0.0019471175993120001
+}

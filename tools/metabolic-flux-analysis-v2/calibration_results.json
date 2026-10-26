@@ -1,0 +1,1004 @@
+[
+  {
+    "seed": 1000,
+    "pools": {
+      "OAA": 7.462311,
+      "Cit": 45.084098,
+      "AKG": 21.60128,
+      "Mal": 30.04645
+    },
+    "fluxes": {
+      "GLCup": {
+        "net_flux": 100.0,
+        "forward_flux": 100.0,
+        "reverse_flux": 0.0
+      },
+      "PGI": {
+        "net_flux": 83.299777,
+        "forward_flux": 143.009271,
+        "reverse_flux": 59.709494
+      },
+      "PFK": {
+        "net_flux": 92.513451,
+        "forward_flux": 92.513451,
+        "reverse_flux": 0.0
+      },
+      "G6PDH": {
+        "net_flux": 16.700223,
+        "forward_flux": 16.700223,
+        "reverse_flux": 0.0
+      },
+      "TK1": {
+        "net_flux": 4.606837,
+        "forward_flux": 21.522163,
+        "reverse_flux": 16.915326
+      },
+      "TA": {
+        "net_flux": 4.606837,
+        "forward_flux": 30.417941,
+        "reverse_flux": 25.811104
+      },
+      "TK2": {
+        "net_flux": 4.606837,
+        "forward_flux": 11.411035,
+        "reverse_flux": 6.804198
+      },
+      "GAPDH": {
+        "net_flux": 189.63374,
+        "forward_flux": 189.63374,
+        "reverse_flux": 0.0
+      },
+      "PK": {
+        "net_flux": 185.609097,
+        "forward_flux": 185.609097,
+        "reverse_flux": 0.0
+      },
+      "LDH": {
+        "net_flux": 166.878313,
+        "forward_flux": 166.878313,
+        "reverse_flux": 0.0
+      },
+      "ALT": {
+        "net_flux": 6.010576,
+        "forward_flux": 6.010576,
+        "reverse_flux": 0.0
+      },
+      "PHGDH": {
+        "net_flux": 4.024643,
+        "forward_flux": 4.024643,
+        "reverse_flux": 0.0
+      },
+      "PDH": {
+        "net_flux": 41.526047,
+        "forward_flux": 41.526047,
+        "reverse_flux": 0.0
+      },
+      "PC": {
+        "net_flux": 11.073361,
+        "forward_flux": 11.073361,
+        "reverse_flux": 0.0
+      },
+      "CS": {
+        "net_flux": 29.917363,
+        "forward_flux": 29.917363,
+        "reverse_flux": 0.0
+      },
+      "IDH": {
+        "net_flux": 29.917363,
+        "forward_flux": 37.888485,
+        "reverse_flux": 7.971123
+      },
+      "AKGDH": {
+        "net_flux": 63.695193,
+        "forward_flux": 63.695193,
+        "reverse_flux": 0.0
+      },
+      "SDH": {
+        "net_flux": 63.695193,
+        "forward_flux": 63.695193,
+        "reverse_flux": 0.0
+      },
+      "FH": {
+        "net_flux": 63.695193,
+        "forward_flux": 143.622087,
+        "reverse_flux": 79.926894
+      },
+      "MDH": {
+        "net_flux": 23.815994,
+        "forward_flux": 64.139168,
+        "reverse_flux": 40.323174
+      },
+      "ME": {
+        "net_flux": 39.8792,
+        "forward_flux": 39.8792,
+        "reverse_flux": 0.0
+      },
+      "GOT": {
+        "net_flux": 4.971992,
+        "forward_flux": 4.971992,
+        "reverse_flux": 0.0
+      },
+      "GLNup": {
+        "net_flux": 40.012229,
+        "forward_flux": 40.012229,
+        "reverse_flux": 0.0
+      },
+      "GLUDH": {
+        "net_flux": 33.77783,
+        "forward_flux": 84.050984,
+        "reverse_flux": 50.273153
+      },
+      "LACout": {
+        "net_flux": 166.878313,
+        "forward_flux": 166.878313,
+        "reverse_flux": 0.0
+      },
+      "ALAout": {
+        "net_flux": 6.010576,
+        "forward_flux": 6.010576,
+        "reverse_flux": 0.0
+      },
+      "SERout": {
+        "net_flux": 4.024643,
+        "forward_flux": 4.024643,
+        "reverse_flux": 0.0
+      },
+      "ASPout": {
+        "net_flux": 4.971992,
+        "forward_flux": 4.971992,
+        "reverse_flux": 0.0
+      },
+      "GLUout": {
+        "net_flux": 6.234398,
+        "forward_flux": 6.234398,
+        "reverse_flux": 0.0
+      },
+      "P5Pout": {
+        "net_flux": 2.879711,
+        "forward_flux": 2.879711,
+        "reverse_flux": 0.0
+      },
+      "ACCOAout": {
+        "net_flux": 11.608684,
+        "forward_flux": 11.608684,
+        "reverse_flux": 0.0
+      }
+    },
+    "log": "start 0 SSR 1851.8828690175828 nfev 18 sec 19.613985790998413\nunknown pools {'OAA': 7.462311302396354, 'Cit': 45.08409766686769, 'AKG': 21.601279752666933, 'Mal': 30.046450167192834}\nstart 1 SSR 1851.8848929309424 nfev 20 sec 45.272853707996546\ntotal residual evaluations 522\n"
+  },
+  {
+    "seed": 1001,
+    "pools": {
+      "OAA": 8.008575,
+      "Cit": 44.824422,
+      "AKG": 21.701042,
+      "Mal": 29.643954
+    },
+    "fluxes": {
+      "GLCup": {
+        "net_flux": 100.0,
+        "forward_flux": 100.0,
+        "reverse_flux": 0.0
+      },
+      "PGI": {
+        "net_flux": 84.333573,
+        "forward_flux": 141.743984,
+        "reverse_flux": 57.410411
+      },
+      "PFK": {
+        "net_flux": 92.808339,
+        "forward_flux": 92.808339,
+        "reverse_flux": 0.0
+      },
+      "G6PDH": {
+        "net_flux": 15.666427,
+        "forward_flux": 15.666427,
+        "reverse_flux": 0.0
+      },
+      "TK1": {
+        "net_flux": 4.237383,
+        "forward_flux": 18.133935,
+        "reverse_flux": 13.896552
+      },
+      "TA": {
+        "net_flux": 4.237383,
+        "forward_flux": 32.190789,
+        "reverse_flux": 27.953406
+      },
+      "TK2": {
+        "net_flux": 4.237383,
+        "forward_flux": 13.475734,
+        "reverse_flux": 9.238351
+      },
+      "GAPDH": {
+        "net_flux": 189.854061,
+        "forward_flux": 189.854061,
+        "reverse_flux": 0.0
+      },
+      "PK": {
+        "net_flux": 185.840476,
+        "forward_flux": 185.840476,
+        "reverse_flux": 0.0
+      },
+      "LDH": {
+        "net_flux": 166.492687,
+        "forward_flux": 166.492687,
+        "reverse_flux": 0.0
+      },
+      "ALT": {
+        "net_flux": 6.049096,
+        "forward_flux": 6.049096,
+        "reverse_flux": 0.0
+      },
+      "PHGDH": {
+        "net_flux": 4.013585,
+        "forward_flux": 4.013585,
+        "reverse_flux": 0.0
+      },
+      "PDH": {
+        "net_flux": 42.007248,
+        "forward_flux": 42.007248,
+        "reverse_flux": 0.0
+      },
+      "PC": {
+        "net_flux": 10.99094,
+        "forward_flux": 10.99094,
+        "reverse_flux": 0.0
+      },
+      "CS": {
+        "net_flux": 29.650492,
+        "forward_flux": 29.650492,
+        "reverse_flux": 0.0
+      },
+      "IDH": {
+        "net_flux": 29.650492,
+        "forward_flux": 37.716788,
+        "reverse_flux": 8.066296
+      },
+      "AKGDH": {
+        "net_flux": 63.376317,
+        "forward_flux": 63.376317,
+        "reverse_flux": 0.0
+      },
+      "SDH": {
+        "net_flux": 63.376317,
+        "forward_flux": 63.376317,
+        "reverse_flux": 0.0
+      },
+      "FH": {
+        "net_flux": 63.376317,
+        "forward_flux": 138.874714,
+        "reverse_flux": 75.498397
+      },
+      "MDH": {
+        "net_flux": 23.67682,
+        "forward_flux": 64.777258,
+        "reverse_flux": 41.100438
+      },
+      "ME": {
+        "net_flux": 39.699496,
+        "forward_flux": 39.699496,
+        "reverse_flux": 0.0
+      },
+      "GOT": {
+        "net_flux": 5.017269,
+        "forward_flux": 5.017269,
+        "reverse_flux": 0.0
+      },
+      "GLNup": {
+        "net_flux": 39.908806,
+        "forward_flux": 39.908806,
+        "reverse_flux": 0.0
+      },
+      "GLUDH": {
+        "net_flux": 33.725825,
+        "forward_flux": 83.81159,
+        "reverse_flux": 50.085765
+      },
+      "LACout": {
+        "net_flux": 166.492687,
+        "forward_flux": 166.492687,
+        "reverse_flux": 0.0
+      },
+      "ALAout": {
+        "net_flux": 6.049096,
+        "forward_flux": 6.049096,
+        "reverse_flux": 0.0
+      },
+      "SERout": {
+        "net_flux": 4.013585,
+        "forward_flux": 4.013585,
+        "reverse_flux": 0.0
+      },
+      "ASPout": {
+        "net_flux": 5.017269,
+        "forward_flux": 5.017269,
+        "reverse_flux": 0.0
+      },
+      "GLUout": {
+        "net_flux": 6.182981,
+        "forward_flux": 6.182981,
+        "reverse_flux": 0.0
+      },
+      "P5Pout": {
+        "net_flux": 2.954278,
+        "forward_flux": 2.954278,
+        "reverse_flux": 0.0
+      },
+      "ACCOAout": {
+        "net_flux": 12.356757,
+        "forward_flux": 12.356757,
+        "reverse_flux": 0.0
+      }
+    },
+    "log": "start 0 SSR 1868.2345919210754 nfev 22 sec 30.931936125001812\nunknown pools {'OAA': 8.008574570716444, 'Cit': 44.82442217701554, 'AKG': 21.701042311924695, 'Mal': 29.643954405881402}\nstart 1 SSR 1868.2350835225 nfev 16 sec 56.70165658300175\ntotal residual evaluations 654\n"
+  },
+  {
+    "seed": 1002,
+    "pools": {
+      "OAA": 8.1286,
+      "Cit": 45.535538,
+      "AKG": 22.388457,
+      "Mal": 29.757318
+    },
+    "fluxes": {
+      "GLCup": {
+        "net_flux": 100.0,
+        "forward_flux": 100.0,
+        "reverse_flux": 0.0
+      },
+      "PGI": {
+        "net_flux": 85.371697,
+        "forward_flux": 126.693081,
+        "reverse_flux": 41.321384
+      },
+      "PFK": {
+        "net_flux": 93.157671,
+        "forward_flux": 93.157671,
+        "reverse_flux": 0.0
+      },
+      "G6PDH": {
+        "net_flux": 14.628303,
+        "forward_flux": 14.628303,
+        "reverse_flux": 0.0
+      },
+      "TK1": {
+        "net_flux": 3.892987,
+        "forward_flux": 20.747295,
+        "reverse_flux": 16.854308
+      },
+      "TA": {
+        "net_flux": 3.892987,
+        "forward_flux": 23.741515,
+        "reverse_flux": 19.848528
+      },
+      "TK2": {
+        "net_flux": 3.892987,
+        "forward_flux": 14.456665,
+        "reverse_flux": 10.563678
+      },
+      "GAPDH": {
+        "net_flux": 190.208329,
+        "forward_flux": 190.208329,
+        "reverse_flux": 0.0
+      },
+      "PK": {
+        "net_flux": 186.216089,
+        "forward_flux": 186.216089,
+        "reverse_flux": 0.0
+      },
+      "LDH": {
+        "net_flux": 166.4127,
+        "forward_flux": 166.4127,
+        "reverse_flux": 0.0
+      },
+      "ALT": {
+        "net_flux": 6.006352,
+        "forward_flux": 6.006352,
+        "reverse_flux": 0.0
+      },
+      "PHGDH": {
+        "net_flux": 3.99224,
+        "forward_flux": 3.99224,
+        "reverse_flux": 0.0
+      },
+      "PDH": {
+        "net_flux": 42.887246,
+        "forward_flux": 42.887246,
+        "reverse_flux": 0.0
+      },
+      "PC": {
+        "net_flux": 11.026474,
+        "forward_flux": 11.026474,
+        "reverse_flux": 0.0
+      },
+      "CS": {
+        "net_flux": 30.213083,
+        "forward_flux": 30.213083,
+        "reverse_flux": 0.0
+      },
+      "IDH": {
+        "net_flux": 30.213083,
+        "forward_flux": 38.416457,
+        "reverse_flux": 8.203374
+      },
+      "AKGDH": {
+        "net_flux": 64.317405,
+        "forward_flux": 64.317405,
+        "reverse_flux": 0.0
+      },
+      "SDH": {
+        "net_flux": 64.317405,
+        "forward_flux": 64.317405,
+        "reverse_flux": 0.0
+      },
+      "FH": {
+        "net_flux": 64.317405,
+        "forward_flux": 143.716247,
+        "reverse_flux": 79.398842
+      },
+      "MDH": {
+        "net_flux": 24.200721,
+        "forward_flux": 66.520529,
+        "reverse_flux": 42.319808
+      },
+      "ME": {
+        "net_flux": 40.116683,
+        "forward_flux": 40.116683,
+        "reverse_flux": 0.0
+      },
+      "GOT": {
+        "net_flux": 5.014113,
+        "forward_flux": 5.014113,
+        "reverse_flux": 0.0
+      },
+      "GLNup": {
+        "net_flux": 40.122601,
+        "forward_flux": 40.122601,
+        "reverse_flux": 0.0
+      },
+      "GLUDH": {
+        "net_flux": 34.104322,
+        "forward_flux": 83.941465,
+        "reverse_flux": 49.837143
+      },
+      "LACout": {
+        "net_flux": 166.4127,
+        "forward_flux": 166.4127,
+        "reverse_flux": 0.0
+      },
+      "ALAout": {
+        "net_flux": 6.006352,
+        "forward_flux": 6.006352,
+        "reverse_flux": 0.0
+      },
+      "SERout": {
+        "net_flux": 3.99224,
+        "forward_flux": 3.99224,
+        "reverse_flux": 0.0
+      },
+      "ASPout": {
+        "net_flux": 5.014113,
+        "forward_flux": 5.014113,
+        "reverse_flux": 0.0
+      },
+      "GLUout": {
+        "net_flux": 6.018279,
+        "forward_flux": 6.018279,
+        "reverse_flux": 0.0
+      },
+      "P5Pout": {
+        "net_flux": 2.949342,
+        "forward_flux": 2.949342,
+        "reverse_flux": 0.0
+      },
+      "ACCOAout": {
+        "net_flux": 12.674163,
+        "forward_flux": 12.674163,
+        "reverse_flux": 0.0
+      }
+    },
+    "log": "start 0 SSR 1910.5961728518685 nfev 21 sec 42.73616074999882\nunknown pools {'OAA': 8.124461139368414, 'Cit': 45.53904547077451, 'AKG': 22.389275609523906, 'Mal': 29.759924605195298}\nstart 1 SSR 1910.5958209997398 nfev 18 sec 81.96342533300049\nunknown pools {'OAA': 8.128600246948709, 'Cit': 45.53553769418007, 'AKG': 22.388456573544588, 'Mal': 29.757317538576874}\ntotal residual evaluations 743\n"
+  },
+  {
+    "seed": 1003,
+    "pools": {
+      "OAA": 8.415782,
+      "Cit": 44.914029,
+      "AKG": 21.090617,
+      "Mal": 29.838154
+    },
+    "fluxes": {
+      "GLCup": {
+        "net_flux": 100.0,
+        "forward_flux": 100.0,
+        "reverse_flux": 0.0
+      },
+      "PGI": {
+        "net_flux": 85.554292,
+        "forward_flux": 149.858677,
+        "reverse_flux": 64.304385
+      },
+      "PFK": {
+        "net_flux": 93.238633,
+        "forward_flux": 93.238633,
+        "reverse_flux": 0.0
+      },
+      "G6PDH": {
+        "net_flux": 14.445708,
+        "forward_flux": 14.445708,
+        "reverse_flux": 0.0
+      },
+      "TK1": {
+        "net_flux": 3.842171,
+        "forward_flux": 15.054991,
+        "reverse_flux": 11.21282
+      },
+      "TA": {
+        "net_flux": 3.842171,
+        "forward_flux": 27.004989,
+        "reverse_flux": 23.162819
+      },
+      "TK2": {
+        "net_flux": 3.842171,
+        "forward_flux": 18.597382,
+        "reverse_flux": 14.755212
+      },
+      "GAPDH": {
+        "net_flux": 190.319437,
+        "forward_flux": 190.319437,
+        "reverse_flux": 0.0
+      },
+      "PK": {
+        "net_flux": 186.306882,
+        "forward_flux": 186.306882,
+        "reverse_flux": 0.0
+      },
+      "LDH": {
+        "net_flux": 167.354646,
+        "forward_flux": 167.354646,
+        "reverse_flux": 0.0
+      },
+      "ALT": {
+        "net_flux": 5.98733,
+        "forward_flux": 5.98733,
+        "reverse_flux": 0.0
+      },
+      "PHGDH": {
+        "net_flux": 4.012555,
+        "forward_flux": 4.012555,
+        "reverse_flux": 0.0
+      },
+      "PDH": {
+        "net_flux": 42.001089,
+        "forward_flux": 42.001089,
+        "reverse_flux": 0.0
+      },
+      "PC": {
+        "net_flux": 11.086046,
+        "forward_flux": 11.086046,
+        "reverse_flux": 0.0
+      },
+      "CS": {
+        "net_flux": 29.806326,
+        "forward_flux": 29.806326,
+        "reverse_flux": 0.0
+      },
+      "IDH": {
+        "net_flux": 29.806326,
+        "forward_flux": 37.706158,
+        "reverse_flux": 7.899831
+      },
+      "AKGDH": {
+        "net_flux": 63.818585,
+        "forward_flux": 63.818585,
+        "reverse_flux": 0.0
+      },
+      "SDH": {
+        "net_flux": 63.818585,
+        "forward_flux": 63.818585,
+        "reverse_flux": 0.0
+      },
+      "FH": {
+        "net_flux": 63.818585,
+        "forward_flux": 147.50837,
+        "reverse_flux": 83.689785
+      },
+      "MDH": {
+        "net_flux": 23.696357,
+        "forward_flux": 66.544355,
+        "reverse_flux": 42.847999
+      },
+      "ME": {
+        "net_flux": 40.122229,
+        "forward_flux": 40.122229,
+        "reverse_flux": 0.0
+      },
+      "GOT": {
+        "net_flux": 4.976076,
+        "forward_flux": 4.976076,
+        "reverse_flux": 0.0
+      },
+      "GLNup": {
+        "net_flux": 39.753612,
+        "forward_flux": 39.753612,
+        "reverse_flux": 0.0
+      },
+      "GLUDH": {
+        "net_flux": 34.012259,
+        "forward_flux": 84.16417,
+        "reverse_flux": 50.151911
+      },
+      "LACout": {
+        "net_flux": 167.354646,
+        "forward_flux": 167.354646,
+        "reverse_flux": 0.0
+      },
+      "ALAout": {
+        "net_flux": 5.98733,
+        "forward_flux": 5.98733,
+        "reverse_flux": 0.0
+      },
+      "SERout": {
+        "net_flux": 4.012555,
+        "forward_flux": 4.012555,
+        "reverse_flux": 0.0
+      },
+      "ASPout": {
+        "net_flux": 4.976076,
+        "forward_flux": 4.976076,
+        "reverse_flux": 0.0
+      },
+      "GLUout": {
+        "net_flux": 5.741353,
+        "forward_flux": 5.741353,
+        "reverse_flux": 0.0
+      },
+      "P5Pout": {
+        "net_flux": 2.919196,
+        "forward_flux": 2.919196,
+        "reverse_flux": 0.0
+      },
+      "ACCOAout": {
+        "net_flux": 12.194763,
+        "forward_flux": 12.194763,
+        "reverse_flux": 0.0
+      }
+    },
+    "log": "start 0 SSR 1823.0756088110516 nfev 20 sec 21.747959999996965\nunknown pools {'OAA': 8.415781783062304, 'Cit': 44.914029458967875, 'AKG': 21.090616932308482, 'Mal': 29.83815420433414}\nstart 1 SSR 1823.0756271483 nfev 14 sec 86.28761633300019\ntotal residual evaluations 540\n"
+  },
+  {
+    "seed": 1004,
+    "pools": {
+      "OAA": 6.672101,
+      "Cit": 45.298423,
+      "AKG": 22.088956,
+      "Mal": 31.111596
+    },
+    "fluxes": {
+      "GLCup": {
+        "net_flux": 100.0,
+        "forward_flux": 100.0,
+        "reverse_flux": 0.0
+      },
+      "PGI": {
+        "net_flux": 85.128787,
+        "forward_flux": 148.489585,
+        "reverse_flux": 63.360799
+      },
+      "PFK": {
+        "net_flux": 93.046818,
+        "forward_flux": 93.046818,
+        "reverse_flux": 0.0
+      },
+      "G6PDH": {
+        "net_flux": 14.871213,
+        "forward_flux": 14.871213,
+        "reverse_flux": 0.0
+      },
+      "TK1": {
+        "net_flux": 3.959016,
+        "forward_flux": 20.630342,
+        "reverse_flux": 16.671326
+      },
+      "TA": {
+        "net_flux": 3.959016,
+        "forward_flux": 30.572981,
+        "reverse_flux": 26.613965
+      },
+      "TK2": {
+        "net_flux": 3.959016,
+        "forward_flux": 12.043584,
+        "reverse_flux": 8.084568
+      },
+      "GAPDH": {
+        "net_flux": 190.052652,
+        "forward_flux": 190.052652,
+        "reverse_flux": 0.0
+      },
+      "PK": {
+        "net_flux": 186.038099,
+        "forward_flux": 186.038099,
+        "reverse_flux": 0.0
+      },
+      "LDH": {
+        "net_flux": 166.288639,
+        "forward_flux": 166.288639,
+        "reverse_flux": 0.0
+      },
+      "ALT": {
+        "net_flux": 5.957841,
+        "forward_flux": 5.957841,
+        "reverse_flux": 0.0
+      },
+      "PHGDH": {
+        "net_flux": 4.014552,
+        "forward_flux": 4.014552,
+        "reverse_flux": 0.0
+      },
+      "PDH": {
+        "net_flux": 43.006378,
+        "forward_flux": 43.006378,
+        "reverse_flux": 0.0
+      },
+      "PC": {
+        "net_flux": 11.225551,
+        "forward_flux": 11.225551,
+        "reverse_flux": 0.0
+      },
+      "CS": {
+        "net_flux": 29.973575,
+        "forward_flux": 29.973575,
+        "reverse_flux": 0.0
+      },
+      "IDH": {
+        "net_flux": 29.973575,
+        "forward_flux": 37.972771,
+        "reverse_flux": 7.999196
+      },
+      "AKGDH": {
+        "net_flux": 64.130211,
+        "forward_flux": 64.130211,
+        "reverse_flux": 0.0
+      },
+      "SDH": {
+        "net_flux": 64.130211,
+        "forward_flux": 64.130211,
+        "reverse_flux": 0.0
+      },
+      "FH": {
+        "net_flux": 64.130211,
+        "forward_flux": 146.763756,
+        "reverse_flux": 82.633545
+      },
+      "MDH": {
+        "net_flux": 23.689902,
+        "forward_flux": 65.056805,
+        "reverse_flux": 41.366903
+      },
+      "ME": {
+        "net_flux": 40.44031,
+        "forward_flux": 40.44031,
+        "reverse_flux": 0.0
+      },
+      "GOT": {
+        "net_flux": 4.941878,
+        "forward_flux": 4.941878,
+        "reverse_flux": 0.0
+      },
+      "GLNup": {
+        "net_flux": 40.095351,
+        "forward_flux": 40.095351,
+        "reverse_flux": 0.0
+      },
+      "GLUDH": {
+        "net_flux": 34.156636,
+        "forward_flux": 84.778158,
+        "reverse_flux": 50.621522
+      },
+      "LACout": {
+        "net_flux": 166.288639,
+        "forward_flux": 166.288639,
+        "reverse_flux": 0.0
+      },
+      "ALAout": {
+        "net_flux": 5.957841,
+        "forward_flux": 5.957841,
+        "reverse_flux": 0.0
+      },
+      "SERout": {
+        "net_flux": 4.014552,
+        "forward_flux": 4.014552,
+        "reverse_flux": 0.0
+      },
+      "ASPout": {
+        "net_flux": 4.941878,
+        "forward_flux": 4.941878,
+        "reverse_flux": 0.0
+      },
+      "GLUout": {
+        "net_flux": 5.938715,
+        "forward_flux": 5.938715,
+        "reverse_flux": 0.0
+      },
+      "P5Pout": {
+        "net_flux": 2.994166,
+        "forward_flux": 2.994166,
+        "reverse_flux": 0.0
+      },
+      "ACCOAout": {
+        "net_flux": 13.032802,
+        "forward_flux": 13.032802,
+        "reverse_flux": 0.0
+      }
+    },
+    "log": "start 0 SSR 1907.2544830612333 nfev 20 sec 51.54168641599972\nunknown pools {'OAA': 6.718017666043976, 'Cit': 45.284695468458885, 'AKG': 22.091327942673715, 'Mal': 31.08406303967912}\nstart 1 SSR 1907.250006948296 nfev 15 sec 85.14435562500148\nunknown pools {'OAA': 6.672100645747138, 'Cit': 45.298422684585766, 'AKG': 22.088956056665495, 'Mal': 31.111596305707742}\ntotal residual evaluations 607\n"
+  },
+  {
+    "seed": 1005,
+    "pools": {
+      "OAA": 7.054734,
+      "Cit": 45.551118,
+      "AKG": 22.625057,
+      "Mal": 30.66728
+    },
+    "fluxes": {
+      "GLCup": {
+        "net_flux": 100.0,
+        "forward_flux": 100.0,
+        "reverse_flux": 0.0
+      },
+      "PGI": {
+        "net_flux": 84.764724,
+        "forward_flux": 132.239686,
+        "reverse_flux": 47.474962
+      },
+      "PFK": {
+        "net_flux": 92.983608,
+        "forward_flux": 92.983608,
+        "reverse_flux": 0.0
+      },
+      "G6PDH": {
+        "net_flux": 15.235276,
+        "forward_flux": 15.235276,
+        "reverse_flux": 0.0
+      },
+      "TK1": {
+        "net_flux": 4.109442,
+        "forward_flux": 22.249367,
+        "reverse_flux": 18.139926
+      },
+      "TA": {
+        "net_flux": 4.109442,
+        "forward_flux": 27.10143,
+        "reverse_flux": 22.991989
+      },
+      "TK2": {
+        "net_flux": 4.109442,
+        "forward_flux": 12.621115,
+        "reverse_flux": 8.511673
+      },
+      "GAPDH": {
+        "net_flux": 190.076657,
+        "forward_flux": 190.076657,
+        "reverse_flux": 0.0
+      },
+      "PK": {
+        "net_flux": 186.088397,
+        "forward_flux": 186.088397,
+        "reverse_flux": 0.0
+      },
+      "LDH": {
+        "net_flux": 166.705044,
+        "forward_flux": 166.705044,
+        "reverse_flux": 0.0
+      },
+      "ALT": {
+        "net_flux": 6.042378,
+        "forward_flux": 6.042378,
+        "reverse_flux": 0.0
+      },
+      "PHGDH": {
+        "net_flux": 3.98826,
+        "forward_flux": 3.98826,
+        "reverse_flux": 0.0
+      },
+      "PDH": {
+        "net_flux": 42.619769,
+        "forward_flux": 42.619769,
+        "reverse_flux": 0.0
+      },
+      "PC": {
+        "net_flux": 10.989806,
+        "forward_flux": 10.989806,
+        "reverse_flux": 0.0
+      },
+      "CS": {
+        "net_flux": 30.287334,
+        "forward_flux": 30.287334,
+        "reverse_flux": 0.0
+      },
+      "IDH": {
+        "net_flux": 30.287334,
+        "forward_flux": 38.67607,
+        "reverse_flux": 8.388736
+      },
+      "AKGDH": {
+        "net_flux": 64.557592,
+        "forward_flux": 64.557592,
+        "reverse_flux": 0.0
+      },
+      "SDH": {
+        "net_flux": 64.557592,
+        "forward_flux": 64.557592,
+        "reverse_flux": 0.0
+      },
+      "FH": {
+        "net_flux": 64.557592,
+        "forward_flux": 144.858993,
+        "reverse_flux": 80.301401
+      },
+      "MDH": {
+        "net_flux": 24.288992,
+        "forward_flux": 62.286097,
+        "reverse_flux": 37.997105
+      },
+      "ME": {
+        "net_flux": 40.2686,
+        "forward_flux": 40.2686,
+        "reverse_flux": 0.0
+      },
+      "GOT": {
+        "net_flux": 4.991464,
+        "forward_flux": 4.991464,
+        "reverse_flux": 0.0
+      },
+      "GLNup": {
+        "net_flux": 40.117515,
+        "forward_flux": 40.117515,
+        "reverse_flux": 0.0
+      },
+      "GLUDH": {
+        "net_flux": 34.270258,
+        "forward_flux": 84.055149,
+        "reverse_flux": 49.784891
+      },
+      "LACout": {
+        "net_flux": 166.705044,
+        "forward_flux": 166.705044,
+        "reverse_flux": 0.0
+      },
+      "ALAout": {
+        "net_flux": 6.042378,
+        "forward_flux": 6.042378,
+        "reverse_flux": 0.0
+      },
+      "SERout": {
+        "net_flux": 3.98826,
+        "forward_flux": 3.98826,
+        "reverse_flux": 0.0
+      },
+      "ASPout": {
+        "net_flux": 4.991464,
+        "forward_flux": 4.991464,
+        "reverse_flux": 0.0
+      },
+      "GLUout": {
+        "net_flux": 5.847257,
+        "forward_flux": 5.847257,
+        "reverse_flux": 0.0
+      },
+      "P5Pout": {
+        "net_flux": 2.906951,
+        "forward_flux": 2.906951,
+        "reverse_flux": 0.0
+      },
+      "ACCOAout": {
+        "net_flux": 12.332435,
+        "forward_flux": 12.332435,
+        "reverse_flux": 0.0
+      }
+    },
+    "log": "start 0 SSR 1861.130250769621 nfev 18 sec 42.51590262500031\nunknown pools {'OAA': 7.031993192582843, 'Cit': 45.55109427211971, 'AKG': 22.61624581036036, 'Mal': 30.686255957140038}\nstart 1 SSR 1861.1255450923868 nfev 22 sec 77.44951062499968\nunknown pools {'OAA': 7.054734354029466, 'Cit': 45.551117576756496, 'AKG': 22.62505730422298, 'Mal': 30.667280072119965}\ntotal residual evaluations 612\n"
+  }
+]

@@ -1,0 +1,23 @@
+  1/1 Mean: 1.000 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0:25:20 0:00:00
+adhoc • codex • gpt-6-sol
+┏━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━┓
+┃ Trials ┃ Exceptions ┃  Mean ┃
+┡━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━┩
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┏━━━━━━━━┳━━━━━━━┓
+┃ Reward ┃ Count ┃
+┡━━━━━━━━╇━━━━━━━┩
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 25m 20s
+Results written to 
+jobs/receptor-torus-frontier/gpt6-sol-max-inverse-receptor-npx-retry1/result.jso
+n
+Inspect results by running `harbor view jobs/receptor-torus-frontier`
+Share results by running `harbor upload 
+jobs/receptor-torus-frontier/gpt6-sol-max-inverse-receptor-npx-retry1`
+

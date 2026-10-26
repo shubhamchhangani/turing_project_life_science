@@ -1,0 +1,45 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 228B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11.9-slim-bookworm
+#2 ...
+
+#3 [auth] library/python:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11.9-slim-bookworm
+#2 DONE 2.8s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 84.61kB done
+#5 DONE 0.0s
+
+#6 [1/4] FROM docker.io/library/python:3.11.9-slim-bookworm@sha256:8fb099199b9f2d70342674bd9dbccd3ed03a258f26bbd1d556822c6dfc60c317
+#6 resolve docker.io/library/python:3.11.9-slim-bookworm@sha256:8fb099199b9f2d70342674bd9dbccd3ed03a258f26bbd1d556822c6dfc60c317 0.0s done
+#6 DONE 0.0s
+
+#7 [2/4] RUN pip install --no-cache-dir pytest==8.4.1 pytest-json-ctrf==0.3.5
+#7 CACHED
+
+#8 [3/4] RUN mkdir -p /root/results /logs/verifier
+#8 CACHED
+
+#9 [4/4] COPY . /tests/
+#9 DONE 0.0s
+
+#10 exporting to image
+#10 exporting layers 0.0s done
+#10 exporting manifest sha256:193da9ddb8c789e9e7a6d40799d855e2d6defc19edfa30582919362f682562df done
+#10 exporting config sha256:952771487a0ebdf7356383f182de710f624290626bc571e41a644d574119cf07 done
+#10 exporting attestation manifest sha256:8a84df3a591771a6e7bff83956e0f82398c71aad73d0619524841a935f73b61f done
+#10 exporting manifest list sha256:321d056d471293bd65cd8066d1d3acc331f86f61d0241b1ca996301bf3e9a936 done
+#10 naming to docker.io/library/scaffold-receptor-verifier:latest done
+#10 unpacking to docker.io/library/scaffold-receptor-verifier:latest done
+#10 DONE 0.1s

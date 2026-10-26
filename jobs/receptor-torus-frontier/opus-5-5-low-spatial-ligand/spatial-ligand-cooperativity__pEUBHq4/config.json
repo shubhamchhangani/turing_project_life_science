@@ -1,0 +1,16 @@
+{
+    "task": {
+        "path": "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/spatial-ligand-cooperativity"
+    },
+    "trial_name": "spatial-ligand-cooperativity__pEUBHq4",
+    "trials_dir": "jobs/receptor-torus-frontier/opus-5-5-low-spatial-ligand",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "anthropic/claude-opus-5-5",
+        "kwargs": {
+            "version": "2.1.300",
+            "reasoning_effort": "low"
+        }
+    },
+    "job_id": "779d0788-e43a-4a5f-b0e7-ac70ded0efde"
+}

@@ -1,0 +1,66 @@
+2026-10-25 13:26:00,080 DEBUG [root] ASPIRE configuration directory is /Users/shubhamchhangani/harshita/tools/cryo-conformers/draft/config
+2026-10-25 13:26:00,080 DEBUG [root] ASPIRE configuration resolution details [({'logging': {'log_dir': '/Users/shubhamchhangani/harshita/logs'}}, ConfigSource(<super: <class 'ConfigSource'>, <ConfigSource object>>, None, False, False)), ({}, ConfigSource(<super: <class 'ConfigSource'>, <YamlSource object>>, '/Users/shubhamchhangani/harshita/tools/cryo-conformers/draft/config/config.yaml', False, False)), ({'version': '0.14.3', 'common': OrderedDict({'numeric': 'numpy', 'fft': 'scipy'}), 'cache': OrderedDict({'cache_dir': '', 'grid_cache_size': None, 'filter_cache_size': 2}), 'logging': OrderedDict({'log_dir': 'logs', 'log_exceptions': 1, 'tqdm_disable': False, 'console_level': 'INFO', 'log_file_level': 'DEBUG', 'log_prefix': 'aspire'}), 'nufft': OrderedDict({'backends': ['cufinufft', 'finufft', 'pynfft']})}, ConfigSource(<super: <class 'ConfigSource'>, <YamlSource object>>, '/Users/shubhamchhangani/harshita/tools/.venv-cryo/lib/python3.12/site-packages/aspire/config_default.yaml', True, False))]
+2026-10-25 13:26:00,081 DEBUG [root] Resolved config.yaml:
+
+logging:
+    log_dir: /Users/shubhamchhangani/harshita/logs
+    log_exceptions: 1
+    tqdm_disable: no
+    console_level: INFO
+    log_file_level: DEBUG
+    log_prefix: aspire
+version: 0.14.3
+common:
+    numeric: numpy
+    fft: scipy
+
+cache:
+    cache_dir: ''
+    grid_cache_size:
+    filter_cache_size: 2
+
+nufft:
+    backends: [cufinufft, finufft, pynfft]
+
+
+2026-10-25 13:26:12,906 DEBUG [matplotlib] matplotlib data path: /Users/shubhamchhangani/harshita/tools/.venv-cryo/lib/python3.12/site-packages/matplotlib/mpl-data
+2026-10-25 13:26:12,910 DEBUG [matplotlib] CONFIGDIR=/Users/shubhamchhangani/harshita/tools/cryo-conformers/draft/matplotlib
+2026-10-25 13:26:12,912 DEBUG [matplotlib] interactive is False
+2026-10-25 13:26:12,912 DEBUG [matplotlib] platform is darwin
+2026-10-25 13:26:13,023 DEBUG [matplotlib] CACHEDIR=/Users/shubhamchhangani/harshita/tools/cryo-conformers/draft/matplotlib
+2026-10-25 13:26:13,023 DEBUG [matplotlib.font_manager] font search path [PosixPath('/Users/shubhamchhangani/harshita/tools/.venv-cryo/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/ttf'), PosixPath('/Users/shubhamchhangani/harshita/tools/.venv-cryo/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/afm'), PosixPath('/Users/shubhamchhangani/harshita/tools/.venv-cryo/lib/python3.12/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts')]
+2026-10-25 13:26:18,034 WARNING [matplotlib.font_manager] Matplotlib is building the font cache; this may take a moment.
+2026-10-25 13:26:22,510 INFO [matplotlib.font_manager] Failed to extract font properties from /System/Library/Fonts/Apple Color Emoji.ttc: Non-scalable fonts are not supported
+2026-10-25 13:26:22,521 INFO [matplotlib.font_manager] Failed to extract font properties from /System/Library/Fonts/Supplemental/NISC18030.ttf: Non-scalable fonts are not supported
+2026-10-25 13:26:22,553 INFO [matplotlib.font_manager] Failed to extract font properties from /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc: FT_Open_Face (ft2font.cpp line 200) failed with error 0x02: unknown file format
+2026-10-25 13:26:22,564 INFO [matplotlib.font_manager] Failed to extract font properties from /System/Library/Fonts/LastResort.otf: tuple indices must be integers or slices, not str
+2026-10-25 13:26:22,611 INFO [matplotlib.font_manager] generated new fontManager
+2026-10-25 13:26:26,893 INFO [aspire.source.image] Creating Simulation with 128 images.
+2026-10-25 13:26:26,901 DEBUG [aspire.nufft] nufft passed real_type for signal, converting
+2026-10-25 13:26:26,901 DEBUG [aspire.nufft] Trying NFFT backend cufinufft
+2026-10-25 13:26:26,902 DEBUG [aspire.nufft] NFFT backend cufinufft not usable:
+	No module named 'cupy'
+2026-10-25 13:26:26,902 DEBUG [aspire.nufft] Trying NFFT backend finufft
+2026-10-25 13:26:27,691 DEBUG [aspire.nufft] NFFT backend finufft usable.
+2026-10-25 13:26:27,691 DEBUG [aspire.nufft] Trying NFFT backend pynfft
+2026-10-25 13:26:27,691 DEBUG [aspire.nufft] NFFT backend pynfft not usable:
+	No module named 'pynfft'
+2026-10-25 13:26:27,692 DEBUG [aspire.nufft] Selected NFFT backend = finufft.
+2026-10-25 13:26:27,694 DEBUG [aspire.nufft.finufft] FinufftPlan adjusted eps=1.1920928955078125e-07 from requested 1e-08.
+2026-10-25 13:26:27,738 DEBUG [aspire.image.xform] Applying forward transformations in pipeline
+2026-10-25 13:26:27,738 DEBUG [aspire.image.xform] All forward transformations applied
+2026-10-25 13:26:27,738 INFO [aspire.source.image] Attempting to create an Image object from Numpy array.
+2026-10-25 13:26:27,780 CRITICAL [root] No pixel size found in metadata. Please provide `pixel_size` argument.
+Traceback:
+  File "/Users/shubhamchhangani/harshita/tools/cryo-conformers/screen.py", line 53, in <module>
+    main()
+  File "/Users/shubhamchhangani/harshita/tools/cryo-conformers/screen.py", line 39, in main
+    source = ArrayImageSource(images)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shubhamchhangani/harshita/tools/.venv-cryo/lib/python3.12/site-packages/aspire/source/image.py", line 2017, in __init__
+    super().__init__(
+  File "/Users/shubhamchhangani/harshita/tools/.venv-cryo/lib/python3.12/site-packages/aspire/source/image.py", line 214, in __init__
+    self._populate_pixel_size(pixel_size)
+  File "/Users/shubhamchhangani/harshita/tools/.venv-cryo/lib/python3.12/site-packages/aspire/source/image.py", line 250, in _populate_pixel_size
+    raise ValueError(
+

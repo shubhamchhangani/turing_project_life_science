@@ -1,0 +1,146 @@
+[
+  {
+    "trace_id": 0,
+    "temperature": 285.0,
+    "label_pair": 0,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 1,
+    "temperature": 285.0,
+    "label_pair": 0,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 2,
+    "temperature": 285.0,
+    "label_pair": 0,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 3,
+    "temperature": 285.0,
+    "label_pair": 1,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 4,
+    "temperature": 285.0,
+    "label_pair": 1,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 5,
+    "temperature": 285.0,
+    "label_pair": 1,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 6,
+    "temperature": 285.0,
+    "label_pair": 2,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 7,
+    "temperature": 285.0,
+    "label_pair": 2,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 8,
+    "temperature": 285.0,
+    "label_pair": 2,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 9,
+    "temperature": 285.0,
+    "label_pair": 3,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 10,
+    "temperature": 285.0,
+    "label_pair": 3,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 11,
+    "temperature": 285.0,
+    "label_pair": 3,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 12,
+    "temperature": 315.0,
+    "label_pair": 0,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 13,
+    "temperature": 315.0,
+    "label_pair": 0,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 14,
+    "temperature": 315.0,
+    "label_pair": 0,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 15,
+    "temperature": 315.0,
+    "label_pair": 1,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 16,
+    "temperature": 315.0,
+    "label_pair": 1,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 17,
+    "temperature": 315.0,
+    "label_pair": 1,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 18,
+    "temperature": 315.0,
+    "label_pair": 2,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 19,
+    "temperature": 315.0,
+    "label_pair": 2,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 20,
+    "temperature": 315.0,
+    "label_pair": 2,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 21,
+    "temperature": 315.0,
+    "label_pair": 3,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 22,
+    "temperature": 315.0,
+    "label_pair": 3,
+    "duration": 0.008
+  },
+  {
+    "trace_id": 23,
+    "temperature": 315.0,
+    "label_pair": 3,
+    "duration": 0.008
+  }
+]

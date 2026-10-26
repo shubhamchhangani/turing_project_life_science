@@ -1,0 +1,15 @@
+{
+    "jobs_dir": "jobs/codex-mfa",
+    "n_attempts": 2,
+    "agents": [
+        {
+            "name": "codex",
+            "model_name": "openai/gpt-5.6-sol"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "tasks/life-sciences/biology/metabolic-flux-analysis"
+        }
+    ]
+}

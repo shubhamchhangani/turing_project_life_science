@@ -1,0 +1,302 @@
+{
+  "all_passed": true,
+  "valid_cases": 4,
+  "invalid_cases": 33,
+  "results": [
+    {
+      "name": "genuine_input_only_fit",
+      "accepted": true,
+      "expected": true,
+      "passed": true,
+      "reason": "",
+      "seconds": 24.115264166997804
+    },
+    {
+      "name": "reordered_rows",
+      "accepted": true,
+      "expected": true,
+      "passed": true,
+      "reason": "",
+      "seconds": 0.002455250003549736
+    },
+    {
+      "name": "CRLF",
+      "accepted": true,
+      "expected": true,
+      "passed": true,
+      "reason": "",
+      "seconds": 0.0023780419942340814
+    },
+    {
+      "name": "scientific_notation",
+      "accepted": true,
+      "expected": true,
+      "passed": true,
+      "reason": "",
+      "seconds": 0.0024128329969244078
+    },
+    {
+      "name": "leading_space",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Invalid decimal field",
+      "seconds": 0.0001637919995118864
+    },
+    {
+      "name": "trailing_space",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Invalid decimal field",
+      "seconds": 0.0001576670038048178
+    },
+    {
+      "name": "underscore",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Invalid decimal field",
+      "seconds": 0.0001540000012028031
+    },
+    {
+      "name": "unicode",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Invalid decimal field",
+      "seconds": 0.00015679099305998534
+    },
+    {
+      "name": "nan",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Invalid decimal field",
+      "seconds": 0.00015750000602565706
+    },
+    {
+      "name": "infinity",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Invalid decimal field",
+      "seconds": 0.0001531249945401214
+    },
+    {
+      "name": "overflow",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Nonfinite parameter",
+      "seconds": 0.0001568750012665987
+    },
+    {
+      "name": "empty",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Invalid decimal field",
+      "seconds": 0.00015150000399444252
+    },
+    {
+      "name": "below_bound",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Parameter outside stated bounds",
+      "seconds": 0.00015416699898196384
+    },
+    {
+      "name": "above_bound",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Parameter outside stated bounds",
+      "seconds": 0.00015349999739555642
+    },
+    {
+      "name": "bias_whitespace",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Invalid decimal field",
+      "seconds": 0.001809208006307017
+    },
+    {
+      "name": "bias_bound",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Parameter outside stated bounds",
+      "seconds": 0.001795875003153924
+    },
+    {
+      "name": "bias_wrong_sign",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: ",
+      "seconds": 0.0018783340055961162
+    },
+    {
+      "name": "six_hundredth_coupling_wrong",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: ",
+      "seconds": 0.0018433750010444783
+    },
+    {
+      "name": "leading_zero_coordinate",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Invalid coordinate syntax",
+      "seconds": 0.00015433399676112458
+    },
+    {
+      "name": "signed_coordinate",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Invalid coordinate syntax",
+      "seconds": 0.00019220799731556326
+    },
+    {
+      "name": "out_of_range_coordinate",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Unknown or duplicate edge",
+      "seconds": 0.00016412499826401472
+    },
+    {
+      "name": "unknown_direction",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Unknown or duplicate edge",
+      "seconds": 0.00015770900063216686
+    },
+    {
+      "name": "duplicate_edge",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Unknown or duplicate edge",
+      "seconds": 0.00015666699619032443
+    },
+    {
+      "name": "duplicate_site",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Unknown or duplicate receptor",
+      "seconds": 0.0017290420000790618
+    },
+    {
+      "name": "unknown_site",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Unknown or duplicate receptor",
+      "seconds": 0.0017362090002279729
+    },
+    {
+      "name": "quoted_header",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Incorrect literal header",
+      "seconds": 3.508300142129883e-05
+    },
+    {
+      "name": "missing_row",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Incorrect row count",
+      "seconds": 0.00011145800090162084
+    },
+    {
+      "name": "extra_row",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Incorrect row count",
+      "seconds": 0.0018023749944404699
+    },
+    {
+      "name": "blank_row",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Incorrect row count",
+      "seconds": 0.00012045900075463578
+    },
+    {
+      "name": "extra_column",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Incorrect literal header",
+      "seconds": 3.741599357454106e-05
+    },
+    {
+      "name": "oversize",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Artifact exceeds 1 MiB",
+      "seconds": 3.216700133634731e-05
+    },
+    {
+      "name": "invalid_utf8",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte",
+      "seconds": 3.137499879812822e-05
+    },
+    {
+      "name": "bare_CR",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Use LF or CRLF endings",
+      "seconds": 4.7458997869398445e-05
+    },
+    {
+      "name": "missing",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "FileNotFoundError: [Errno 2] No such file or directory: '/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/inverse-receptor-check-bsuzce_p/couplings.csv'",
+      "seconds": 1.5042001905385405e-05
+    },
+    {
+      "name": "fifo",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "AssertionError: Artifact must be a regular file",
+      "seconds": 3.308400482637808e-05
+    },
+    {
+      "name": "symlink",
+      "accepted": false,
+      "expected": false,
+      "passed": true,
+      "reason": "OSError: [Errno 62] Too many levels of symbolic links: '/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/inverse-receptor-check-whbzfp44/couplings.csv'",
+      "seconds": 7.125003321561962e-06
+    },
+    {
+      "name": "collective_error_within_parameter_tolerance",
+      "expected": false,
+      "accepted": false,
+      "passed": true,
+      "moment_error": 0.0002568485677367782
+    }
+  ]
+}

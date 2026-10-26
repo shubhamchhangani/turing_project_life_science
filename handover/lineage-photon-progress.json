@@ -1,0 +1,27 @@
+{
+  "status": "DO_NOT_PACKAGE_SOLVED",
+  "worker_pid": 94472,
+  "zip_created": false,
+  "zip_path": null,
+  "order": "Claude first; GPT only after a valid Claude failure",
+  "package_fingerprint": "50d5815bdb2285689ebdd02944e126f50b625d80a74b314cf8b7cd695db31e96",
+  "trials": {
+    "opus": {
+      "result": "/Users/shubhamchhangani/harshita/jobs/receptor-torus-frontier/opus-5-5-low-lineage-photon/lineage-photon-inference__jmHJXGN/result.json",
+      "model": "anthropic/claude-opus-5-5",
+      "effort": "low",
+      "status": "solved_do_not_package",
+      "reward": 1.0,
+      "completed_commands": 2,
+      "error_type": null,
+      "quota_interrupted": false,
+      "agent_seconds": 49.361426,
+      "full_budget_timeout": false,
+      "counts_as_model_failure": false,
+      "task_checksum": "ba325ba5e3be09bc3b8fbb28cace85c592c445a8be421cfe5c6500fe1694a28a",
+      "agent": "claude-code"
+    }
+  },
+  "updated_at": "2026-10-26T01:13:23.972460+00:00",
+  "worker_finished": true
+}

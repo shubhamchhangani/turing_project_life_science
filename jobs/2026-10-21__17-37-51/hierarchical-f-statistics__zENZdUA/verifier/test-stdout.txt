@@ -1,0 +1,1113 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.9, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 31 items
+
+tests/test_outputs.py FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF                    [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_fstats_exists ______________________________
+
+    def test_fstats_exists():
+        """fstats.csv exists at /root/results/fstats.csv."""
+>       assert FSTATS.is_file(), f"missing output file {FSTATS}"
+E       AssertionError: missing output file /root/results/fstats.csv
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/root/results/fstats.csv').is_file
+
+tests/test_outputs.py:43: AssertionError
+______________________________ test_fstats_header ______________________________
+
+    def test_fstats_header():
+        """fstats.csv header is exactly locus,F_IS,F_SC,F_CT,F_IT,identity_holds in that order."""
+>       header, _ = read_csv(FSTATS)
+                    ^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+__________________________ test_fstats_rows_and_order __________________________
+
+    def test_fstats_rows_and_order():
+        """fstats.csv has exactly 4 data rows, one per locus, sorted by locus ascending."""
+>       _, rows = read_csv(FSTATS)
+                  ^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:54: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+_____________________ test_fstats_values_parse_and_finite ______________________
+
+    def test_fstats_values_parse_and_finite():
+        """Every F value in fstats.csv parses as a finite float."""
+>       rows = rows_by_locus(FSTATS)
+               ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:62: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_fstat_value[F_IS-Locus_A] ________________________
+
+locus = 'Locus_A', stat = 'F_IS'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    @pytest.mark.parametrize("stat", STATS)
+    def test_fstat_value(locus, stat):
+        """Each per-locus Weir & Cockerham hierarchical F-statistic is within relative tolerance 1e-4 of the reference."""
+>       got = float(rows_by_locus(FSTATS)[locus][stat])
+                    ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_fstat_value[F_IS-Locus_B] ________________________
+
+locus = 'Locus_B', stat = 'F_IS'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    @pytest.mark.parametrize("stat", STATS)
+    def test_fstat_value(locus, stat):
+        """Each per-locus Weir & Cockerham hierarchical F-statistic is within relative tolerance 1e-4 of the reference."""
+>       got = float(rows_by_locus(FSTATS)[locus][stat])
+                    ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_fstat_value[F_IS-Locus_C] ________________________
+
+locus = 'Locus_C', stat = 'F_IS'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    @pytest.mark.parametrize("stat", STATS)
+    def test_fstat_value(locus, stat):
+        """Each per-locus Weir & Cockerham hierarchical F-statistic is within relative tolerance 1e-4 of the reference."""
+>       got = float(rows_by_locus(FSTATS)[locus][stat])
+                    ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_fstat_value[F_IS-Locus_D] ________________________
+
+locus = 'Locus_D', stat = 'F_IS'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    @pytest.mark.parametrize("stat", STATS)
+    def test_fstat_value(locus, stat):
+        """Each per-locus Weir & Cockerham hierarchical F-statistic is within relative tolerance 1e-4 of the reference."""
+>       got = float(rows_by_locus(FSTATS)[locus][stat])
+                    ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_fstat_value[F_SC-Locus_A] ________________________
+
+locus = 'Locus_A', stat = 'F_SC'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    @pytest.mark.parametrize("stat", STATS)
+    def test_fstat_value(locus, stat):
+        """Each per-locus Weir & Cockerham hierarchical F-statistic is within relative tolerance 1e-4 of the reference."""
+>       got = float(rows_by_locus(FSTATS)[locus][stat])
+                    ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_fstat_value[F_SC-Locus_B] ________________________
+
+locus = 'Locus_B', stat = 'F_SC'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    @pytest.mark.parametrize("stat", STATS)
+    def test_fstat_value(locus, stat):
+        """Each per-locus Weir & Cockerham hierarchical F-statistic is within relative tolerance 1e-4 of the reference."""
+>       got = float(rows_by_locus(FSTATS)[locus][stat])
+                    ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_fstat_value[F_SC-Locus_C] ________________________
+
+locus = 'Locus_C', stat = 'F_SC'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    @pytest.mark.parametrize("stat", STATS)
+    def test_fstat_value(locus, stat):
+        """Each per-locus Weir & Cockerham hierarchical F-statistic is within relative tolerance 1e-4 of the reference."""
+>       got = float(rows_by_locus(FSTATS)[locus][stat])
+                    ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_fstat_value[F_SC-Locus_D] ________________________
+
+locus = 'Locus_D', stat = 'F_SC'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    @pytest.mark.parametrize("stat", STATS)
+    def test_fstat_value(locus, stat):
+        """Each per-locus Weir & Cockerham hierarchical F-statistic is within relative tolerance 1e-4 of the reference."""
+>       got = float(rows_by_locus(FSTATS)[locus][stat])
+                    ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_fstat_value[F_CT-Locus_A] ________________________
+
+locus = 'Locus_A', stat = 'F_CT'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    @pytest.mark.parametrize("stat", STATS)
+    def test_fstat_value(locus, stat):
+        """Each per-locus Weir & Cockerham hierarchical F-statistic is within relative tolerance 1e-4 of the reference."""
+>       got = float(rows_by_locus(FSTATS)[locus][stat])
+                    ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_fstat_value[F_CT-Locus_B] ________________________
+
+locus = 'Locus_B', stat = 'F_CT'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    @pytest.mark.parametrize("stat", STATS)
+    def test_fstat_value(locus, stat):
+        """Each per-locus Weir & Cockerham hierarchical F-statistic is within relative tolerance 1e-4 of the reference."""
+>       got = float(rows_by_locus(FSTATS)[locus][stat])
+                    ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_fstat_value[F_CT-Locus_C] ________________________
+
+locus = 'Locus_C', stat = 'F_CT'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    @pytest.mark.parametrize("stat", STATS)
+    def test_fstat_value(locus, stat):
+        """Each per-locus Weir & Cockerham hierarchical F-statistic is within relative tolerance 1e-4 of the reference."""
+>       got = float(rows_by_locus(FSTATS)[locus][stat])
+                    ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_fstat_value[F_CT-Locus_D] ________________________
+
+locus = 'Locus_D', stat = 'F_CT'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    @pytest.mark.parametrize("stat", STATS)
+    def test_fstat_value(locus, stat):
+        """Each per-locus Weir & Cockerham hierarchical F-statistic is within relative tolerance 1e-4 of the reference."""
+>       got = float(rows_by_locus(FSTATS)[locus][stat])
+                    ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_fstat_value[F_IT-Locus_A] ________________________
+
+locus = 'Locus_A', stat = 'F_IT'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    @pytest.mark.parametrize("stat", STATS)
+    def test_fstat_value(locus, stat):
+        """Each per-locus Weir & Cockerham hierarchical F-statistic is within relative tolerance 1e-4 of the reference."""
+>       got = float(rows_by_locus(FSTATS)[locus][stat])
+                    ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_fstat_value[F_IT-Locus_B] ________________________
+
+locus = 'Locus_B', stat = 'F_IT'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    @pytest.mark.parametrize("stat", STATS)
+    def test_fstat_value(locus, stat):
+        """Each per-locus Weir & Cockerham hierarchical F-statistic is within relative tolerance 1e-4 of the reference."""
+>       got = float(rows_by_locus(FSTATS)[locus][stat])
+                    ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_fstat_value[F_IT-Locus_C] ________________________
+
+locus = 'Locus_C', stat = 'F_IT'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    @pytest.mark.parametrize("stat", STATS)
+    def test_fstat_value(locus, stat):
+        """Each per-locus Weir & Cockerham hierarchical F-statistic is within relative tolerance 1e-4 of the reference."""
+>       got = float(rows_by_locus(FSTATS)[locus][stat])
+                    ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_fstat_value[F_IT-Locus_D] ________________________
+
+locus = 'Locus_D', stat = 'F_IT'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    @pytest.mark.parametrize("stat", STATS)
+    def test_fstat_value(locus, stat):
+        """Each per-locus Weir & Cockerham hierarchical F-statistic is within relative tolerance 1e-4 of the reference."""
+>       got = float(rows_by_locus(FSTATS)[locus][stat])
+                    ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+_____________________ test_identity_holds_column[Locus_A] ______________________
+
+locus = 'Locus_A'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    def test_identity_holds_column(locus):
+        """identity_holds is 'yes' for every locus (the identity holds exactly for the variance-component estimators)."""
+        f = EXPECTED[locus]
+        lhs = 1 - f["F_IT"]
+        rhs = (1 - f["F_IS"]) * (1 - f["F_SC"]) * (1 - f["F_CT"])
+        want = "yes" if abs(lhs - rhs) <= RTOL * abs(lhs) else "no"
+>       got = rows_by_locus(FSTATS)[locus]["identity_holds"]
+              ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+_____________________ test_identity_holds_column[Locus_B] ______________________
+
+locus = 'Locus_B'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    def test_identity_holds_column(locus):
+        """identity_holds is 'yes' for every locus (the identity holds exactly for the variance-component estimators)."""
+        f = EXPECTED[locus]
+        lhs = 1 - f["F_IT"]
+        rhs = (1 - f["F_IS"]) * (1 - f["F_SC"]) * (1 - f["F_CT"])
+        want = "yes" if abs(lhs - rhs) <= RTOL * abs(lhs) else "no"
+>       got = rows_by_locus(FSTATS)[locus]["identity_holds"]
+              ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+_____________________ test_identity_holds_column[Locus_C] ______________________
+
+locus = 'Locus_C'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    def test_identity_holds_column(locus):
+        """identity_holds is 'yes' for every locus (the identity holds exactly for the variance-component estimators)."""
+        f = EXPECTED[locus]
+        lhs = 1 - f["F_IT"]
+        rhs = (1 - f["F_IS"]) * (1 - f["F_SC"]) * (1 - f["F_CT"])
+        want = "yes" if abs(lhs - rhs) <= RTOL * abs(lhs) else "no"
+>       got = rows_by_locus(FSTATS)[locus]["identity_holds"]
+              ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+_____________________ test_identity_holds_column[Locus_D] ______________________
+
+locus = 'Locus_D'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    def test_identity_holds_column(locus):
+        """identity_holds is 'yes' for every locus (the identity holds exactly for the variance-component estimators)."""
+        f = EXPECTED[locus]
+        lhs = 1 - f["F_IT"]
+        rhs = (1 - f["F_IS"]) * (1 - f["F_SC"]) * (1 - f["F_CT"])
+        want = "yes" if abs(lhs - rhs) <= RTOL * abs(lhs) else "no"
+>       got = rows_by_locus(FSTATS)[locus]["identity_holds"]
+              ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/fstats.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fstats.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+____________________________ test_structure_exists _____________________________
+
+    def test_structure_exists():
+        """structure.csv exists at /root/results/structure.csv."""
+>       assert STRUCTURE.is_file(), f"missing output file {STRUCTURE}"
+E       AssertionError: missing output file /root/results/structure.csv
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/root/results/structure.csv').is_file
+
+tests/test_outputs.py:99: AssertionError
+____________________________ test_structure_header _____________________________
+
+    def test_structure_header():
+        """structure.csv header is exactly locus,among_region_structure,among_deme_within_region_structure."""
+>       header, _ = read_csv(STRUCTURE)
+                    ^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/structure.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/structure.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_structure_rows_and_order _________________________
+
+    def test_structure_rows_and_order():
+        """structure.csv has exactly 4 data rows, one per locus, sorted by locus ascending."""
+>       _, rows = read_csv(STRUCTURE)
+                  ^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:112: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/structure.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/structure.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_structure_flags[Locus_A] _________________________
+
+locus = 'Locus_A'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    def test_structure_flags(locus):
+        """among_region_structure is 'yes' iff F_CT > 0.05 and among_deme_within_region_structure is 'yes' iff F_SC > 0.05."""
+>       row = rows_by_locus(STRUCTURE)[locus]
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/structure.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/structure.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_structure_flags[Locus_B] _________________________
+
+locus = 'Locus_B'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    def test_structure_flags(locus):
+        """among_region_structure is 'yes' iff F_CT > 0.05 and among_deme_within_region_structure is 'yes' iff F_SC > 0.05."""
+>       row = rows_by_locus(STRUCTURE)[locus]
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/structure.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/structure.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_structure_flags[Locus_C] _________________________
+
+locus = 'Locus_C'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    def test_structure_flags(locus):
+        """among_region_structure is 'yes' iff F_CT > 0.05 and among_deme_within_region_structure is 'yes' iff F_SC > 0.05."""
+>       row = rows_by_locus(STRUCTURE)[locus]
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/structure.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/structure.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+________________________ test_structure_flags[Locus_D] _________________________
+
+locus = 'Locus_D'
+
+    @pytest.mark.parametrize("locus", LOCI)
+    def test_structure_flags(locus):
+        """among_region_structure is 'yes' iff F_CT > 0.05 and among_deme_within_region_structure is 'yes' iff F_SC > 0.05."""
+>       row = rows_by_locus(STRUCTURE)[locus]
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:36: in rows_by_locus
+    header, rows = read_csv(path)
+                   ^^^^^^^^^^^^^^
+tests/test_outputs.py:29: in read_csv
+    with path.open(newline="") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/root/results/structure.csv'), mode = 'r', buffering = -1
+encoding = 'locale', errors = None, newline = ''
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/structure.csv'
+
+usr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_outputs.py::test_fstats_exists - AssertionError: missing ou...
+FAILED tests/test_outputs.py::test_fstats_header - FileNotFoundError: [Errno ...
+FAILED tests/test_outputs.py::test_fstats_rows_and_order - FileNotFoundError:...
+FAILED tests/test_outputs.py::test_fstats_values_parse_and_finite - FileNotFo...
+FAILED tests/test_outputs.py::test_fstat_value[F_IS-Locus_A] - FileNotFoundEr...
+FAILED tests/test_outputs.py::test_fstat_value[F_IS-Locus_B] - FileNotFoundEr...
+FAILED tests/test_outputs.py::test_fstat_value[F_IS-Locus_C] - FileNotFoundEr...
+FAILED tests/test_outputs.py::test_fstat_value[F_IS-Locus_D] - FileNotFoundEr...
+FAILED tests/test_outputs.py::test_fstat_value[F_SC-Locus_A] - FileNotFoundEr...
+FAILED tests/test_outputs.py::test_fstat_value[F_SC-Locus_B] - FileNotFoundEr...
+FAILED tests/test_outputs.py::test_fstat_value[F_SC-Locus_C] - FileNotFoundEr...
+FAILED tests/test_outputs.py::test_fstat_value[F_SC-Locus_D] - FileNotFoundEr...
+FAILED tests/test_outputs.py::test_fstat_value[F_CT-Locus_A] - FileNotFoundEr...
+FAILED tests/test_outputs.py::test_fstat_value[F_CT-Locus_B] - FileNotFoundEr...
+FAILED tests/test_outputs.py::test_fstat_value[F_CT-Locus_C] - FileNotFoundEr...
+FAILED tests/test_outputs.py::test_fstat_value[F_CT-Locus_D] - FileNotFoundEr...
+FAILED tests/test_outputs.py::test_fstat_value[F_IT-Locus_A] - FileNotFoundEr...
+FAILED tests/test_outputs.py::test_fstat_value[F_IT-Locus_B] - FileNotFoundEr...
+FAILED tests/test_outputs.py::test_fstat_value[F_IT-Locus_C] - FileNotFoundEr...
+FAILED tests/test_outputs.py::test_fstat_value[F_IT-Locus_D] - FileNotFoundEr...
+FAILED tests/test_outputs.py::test_identity_holds_column[Locus_A] - FileNotFo...
+FAILED tests/test_outputs.py::test_identity_holds_column[Locus_B] - FileNotFo...
+FAILED tests/test_outputs.py::test_identity_holds_column[Locus_C] - FileNotFo...
+FAILED tests/test_outputs.py::test_identity_holds_column[Locus_D] - FileNotFo...
+FAILED tests/test_outputs.py::test_structure_exists - AssertionError: missing...
+FAILED tests/test_outputs.py::test_structure_header - FileNotFoundError: [Err...
+FAILED tests/test_outputs.py::test_structure_rows_and_order - FileNotFoundErr...
+FAILED tests/test_outputs.py::test_structure_flags[Locus_A] - FileNotFoundErr...
+FAILED tests/test_outputs.py::test_structure_flags[Locus_B] - FileNotFoundErr...
+FAILED tests/test_outputs.py::test_structure_flags[Locus_C] - FileNotFoundErr...
+FAILED tests/test_outputs.py::test_structure_flags[Locus_D] - FileNotFoundErr...
+============================== 31 failed in 0.24s ==============================

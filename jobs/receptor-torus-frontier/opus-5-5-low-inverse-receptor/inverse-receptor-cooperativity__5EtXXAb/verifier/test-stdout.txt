@@ -1,0 +1,107 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.9, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 4 items
+
+tests/test_outputs.py EEEE                                               [100%]
+
+==================================== ERRORS ====================================
+_________________ ERROR at setup of test_01_complete_contract __________________
+
+    @pytest.fixture(scope='module')
+    def submitted():
+>       return contract(Path('/root/results'))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:51: in contract
+    for x, y, direction, raw in read_csv(directory / 'couplings.csv', 'x,y,direction,K', len(EDGES)):
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/couplings.csv'), header = 'x,y,direction,K'
+count = 646
+
+    def read_csv(path, header, count):
+>       descriptor = os.open(path, os.O_RDONLY | os.O_NONBLOCK | os.O_NOFOLLOW)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/couplings.csv'
+
+tests/test_outputs.py:25: FileNotFoundError
+___________________ ERROR at setup of test_02_every_coupling ___________________
+
+    @pytest.fixture(scope='module')
+    def submitted():
+>       return contract(Path('/root/results'))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:51: in contract
+    for x, y, direction, raw in read_csv(directory / 'couplings.csv', 'x,y,direction,K', len(EDGES)):
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/couplings.csv'), header = 'x,y,direction,K'
+count = 646
+
+    def read_csv(path, header, count):
+>       descriptor = os.open(path, os.O_RDONLY | os.O_NONBLOCK | os.O_NOFOLLOW)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/couplings.csv'
+
+tests/test_outputs.py:25: FileNotFoundError
+_____________________ ERROR at setup of test_03_every_bias _____________________
+
+    @pytest.fixture(scope='module')
+    def submitted():
+>       return contract(Path('/root/results'))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:51: in contract
+    for x, y, direction, raw in read_csv(directory / 'couplings.csv', 'x,y,direction,K', len(EDGES)):
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/couplings.csv'), header = 'x,y,direction,K'
+count = 646
+
+    def read_csv(path, header, count):
+>       descriptor = os.open(path, os.O_RDONLY | os.O_NONBLOCK | os.O_NOFOLLOW)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/couplings.csv'
+
+tests/test_outputs.py:25: FileNotFoundError
+______________ ERROR at setup of test_04_all_equilibrium_moments _______________
+
+    @pytest.fixture(scope='module')
+    def submitted():
+>       return contract(Path('/root/results'))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:51: in contract
+    for x, y, direction, raw in read_csv(directory / 'couplings.csv', 'x,y,direction,K', len(EDGES)):
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/couplings.csv'), header = 'x,y,direction,K'
+count = 646
+
+    def read_csv(path, header, count):
+>       descriptor = os.open(path, os.O_RDONLY | os.O_NONBLOCK | os.O_NOFOLLOW)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/couplings.csv'
+
+tests/test_outputs.py:25: FileNotFoundError
+=========================== short test summary info ============================
+ERROR tests/test_outputs.py::test_01_complete_contract - FileNotFoundError: [...
+ERROR tests/test_outputs.py::test_02_every_coupling - FileNotFoundError: [Err...
+ERROR tests/test_outputs.py::test_03_every_bias - FileNotFoundError: [Errno 2...
+ERROR tests/test_outputs.py::test_04_all_equilibrium_moments - FileNotFoundEr...
+============================== 4 errors in 0.13s ===============================

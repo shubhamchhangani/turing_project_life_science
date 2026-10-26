@@ -1,0 +1,59 @@
+2026-10-25 13:27:12,036 DEBUG [root] ASPIRE configuration directory is /Users/shubhamchhangani/harshita/tools/cryo-conformers/draft/config
+2026-10-25 13:27:12,037 DEBUG [root] ASPIRE configuration resolution details [({'logging': {'log_dir': '/Users/shubhamchhangani/harshita/logs'}}, ConfigSource(<super: <class 'ConfigSource'>, <ConfigSource object>>, None, False, False)), ({}, ConfigSource(<super: <class 'ConfigSource'>, <YamlSource object>>, '/Users/shubhamchhangani/harshita/tools/cryo-conformers/draft/config/config.yaml', False, False)), ({'version': '0.14.3', 'common': OrderedDict({'numeric': 'numpy', 'fft': 'scipy'}), 'cache': OrderedDict({'cache_dir': '', 'grid_cache_size': None, 'filter_cache_size': 2}), 'logging': OrderedDict({'log_dir': 'logs', 'log_exceptions': 1, 'tqdm_disable': False, 'console_level': 'INFO', 'log_file_level': 'DEBUG', 'log_prefix': 'aspire'}), 'nufft': OrderedDict({'backends': ['cufinufft', 'finufft', 'pynfft']})}, ConfigSource(<super: <class 'ConfigSource'>, <YamlSource object>>, '/Users/shubhamchhangani/harshita/tools/.venv-cryo/lib/python3.12/site-packages/aspire/config_default.yaml', True, False))]
+2026-10-25 13:27:12,037 DEBUG [root] Resolved config.yaml:
+
+logging:
+    log_dir: /Users/shubhamchhangani/harshita/logs
+    log_exceptions: 1
+    tqdm_disable: no
+    console_level: INFO
+    log_file_level: DEBUG
+    log_prefix: aspire
+version: 0.14.3
+common:
+    numeric: numpy
+    fft: scipy
+
+cache:
+    cache_dir: ''
+    grid_cache_size:
+    filter_cache_size: 2
+
+nufft:
+    backends: [cufinufft, finufft, pynfft]
+
+
+2026-10-25 13:27:12,604 DEBUG [matplotlib] matplotlib data path: /Users/shubhamchhangani/harshita/tools/.venv-cryo/lib/python3.12/site-packages/matplotlib/mpl-data
+2026-10-25 13:27:12,606 DEBUG [matplotlib] CONFIGDIR=/Users/shubhamchhangani/harshita/tools/cryo-conformers/draft/matplotlib
+2026-10-25 13:27:12,606 DEBUG [matplotlib] interactive is False
+2026-10-25 13:27:12,607 DEBUG [matplotlib] platform is darwin
+2026-10-25 13:27:12,619 DEBUG [matplotlib] CACHEDIR=/Users/shubhamchhangani/harshita/tools/cryo-conformers/draft/matplotlib
+2026-10-25 13:27:12,620 DEBUG [matplotlib.font_manager] Using fontManager instance from /Users/shubhamchhangani/harshita/tools/cryo-conformers/draft/matplotlib/fontlist-v3.11.0.json
+2026-10-25 13:27:12,808 INFO [aspire.source.image] Creating Simulation with 128 images.
+2026-10-25 13:27:12,810 DEBUG [aspire.nufft] nufft passed real_type for signal, converting
+2026-10-25 13:27:12,810 DEBUG [aspire.nufft] Trying NFFT backend cufinufft
+2026-10-25 13:27:12,810 DEBUG [aspire.nufft] NFFT backend cufinufft not usable:
+	No module named 'cupy'
+2026-10-25 13:27:12,810 DEBUG [aspire.nufft] Trying NFFT backend finufft
+2026-10-25 13:27:12,815 DEBUG [aspire.nufft] NFFT backend finufft usable.
+2026-10-25 13:27:12,816 DEBUG [aspire.nufft] Trying NFFT backend pynfft
+2026-10-25 13:27:12,816 DEBUG [aspire.nufft] NFFT backend pynfft not usable:
+	No module named 'pynfft'
+2026-10-25 13:27:12,816 DEBUG [aspire.nufft] Selected NFFT backend = finufft.
+2026-10-25 13:27:12,816 DEBUG [aspire.nufft.finufft] FinufftPlan adjusted eps=1.1920928955078125e-07 from requested 1e-08.
+2026-10-25 13:27:12,829 DEBUG [aspire.nufft] nufft passed real_type for signal, converting
+2026-10-25 13:27:12,829 DEBUG [aspire.nufft.finufft] FinufftPlan adjusted eps=1.1920928955078125e-07 from requested 1e-08.
+2026-10-25 13:27:12,840 DEBUG [aspire.image.xform] Applying forward transformations in pipeline
+2026-10-25 13:27:12,840 DEBUG [aspire.image.xform] All forward transformations applied
+2026-10-25 13:27:12,840 INFO [aspire.source.image] Attempting to create an Image object from Numpy array.
+2026-10-25 13:27:12,841 INFO [aspire.source.image] Creating ArrayImageSource with 128 images.
+2026-10-25 13:27:12,841 INFO [aspire.abinitio.commonline_matrix] cupy not found, defaulting to numpy.
+2026-10-25 13:27:12,841 INFO [aspire.abinitio.commonline_matrix] Begin building Common Lines Matrix
+2026-10-25 13:27:12,841 DEBUG [aspire.image.xform] Applying forward transformations in pipeline
+2026-10-25 13:27:12,842 DEBUG [aspire.image.xform] All forward transformations applied
+2026-10-25 13:27:12,842 INFO [aspire.operators.polar_ft] Represent 2D image in a polar Fourier grid
+2026-10-25 13:27:12,842 DEBUG [aspire.nufft] nufft passed real_type for signal, converting
+2026-10-25 13:27:12,842 DEBUG [aspire.nufft.finufft] FinufftPlan adjusted eps=1.1920928955078125e-07 from requested 1e-08.
+2026-10-25 13:27:13,692 INFO [aspire.abinitio.commonline_sync] Top 10 eigenvalues from synchronization voting matrix: [ 85.454575  69.71221   59.04352   36.372562  21.060627  17.29276
+  14.15225  -13.312903 -16.01347  -19.12147 ]
+2026-10-25 13:27:13,693 INFO [aspire.abinitio.commonline_base] Using existing estimated `rotations`.

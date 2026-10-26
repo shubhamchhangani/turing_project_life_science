@@ -1,0 +1,36 @@
+{
+  "status": "COUPLED_COOLING_KINETIC_PILOT_RUNNING",
+  "zip_created": false,
+  "frontier_trial_started": false,
+  "completed": [
+    "prototype_dataset",
+    "independent_forward_checks",
+    "photon_only_inverse_baseline",
+    "128_image_pose_geometry_baseline",
+    "crossmodal_initialization_pilot",
+    "short_trace_local_uncertainty_screen",
+    "longer_trace_calibration_pilot",
+    "all_128_image_assignments_and_poses",
+    "postfit_hidden_truth_audit"
+  ],
+  "pending": [
+    "full_joint_inverse_solution",
+    "uncertainty_and_identifiability_calibration",
+    "resource_limited_reference",
+    "complete_verifier",
+    "Claude_first_trial"
+  ],
+  "findings": {
+    "images": 128,
+    "short_photons": 31891,
+    "long_photons": 317957,
+    "noise_level_image_fits": 128,
+    "max_geometry_rmsd_angstrom": 0.09187464831025215,
+    "short_trace_max_rate_fold_error": 4.3824231473327,
+    "correct_image_classes": 128,
+    "median_pose_error_degrees": 0.11329368597730421,
+    "long_trace_local_uncertainty_factor": 10.059934479536116
+  },
+  "active_command": "fit_cooling_pilot.py on draft/long-traces",
+  "note": "Actual inverse prototypes now work. Kinetic uncertainty remains a release blocker; no model trial or ZIP."
+}

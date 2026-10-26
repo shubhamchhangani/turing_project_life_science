@@ -1,0 +1,27 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.9, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 16 items
+
+tests/test_outputs.py ................                                   [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_outputs.py::test_pool_contract
+PASSED tests/test_outputs.py::test_file_exists
+PASSED tests/test_outputs.py::test_header
+PASSED tests/test_outputs.py::test_one_row_per_reaction
+PASSED tests/test_outputs.py::test_values_finite
+PASSED tests/test_outputs.py::test_glucose_normalization
+PASSED tests/test_outputs.py::test_directional_consistency
+PASSED tests/test_outputs.py::test_mass_balance
+PASSED tests/test_outputs.py::test_pool_accuracy
+PASSED tests/test_outputs.py::test_flux_value[G6PDH_net]
+PASSED tests/test_outputs.py::test_flux_value[PDH_net]
+PASSED tests/test_outputs.py::test_flux_value[PC_net]
+PASSED tests/test_outputs.py::test_flux_value[ME_net]
+PASSED tests/test_outputs.py::test_flux_value[CS_net]
+PASSED tests/test_outputs.py::test_flux_value[IDH_reverse]
+PASSED tests/test_outputs.py::test_measurement_fit
+============================== 16 passed in 0.95s ==============================

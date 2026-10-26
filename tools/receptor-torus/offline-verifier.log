@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.9, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 6 items
+
+tests/test_outputs.py ......                                             [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_outputs.py::test_01_complete_contract
+PASSED tests/test_outputs.py::test_02_normalization
+PASSED tests/test_outputs.py::test_03_inversion_symmetry
+PASSED tests/test_outputs.py::test_04_all_probe_marginals
+PASSED tests/test_outputs.py::test_05_full_joint_distribution
+PASSED tests/test_outputs.py::test_06_absolute_partition_function
+======================== 6 passed in 215.44s (0:03:35) =========================

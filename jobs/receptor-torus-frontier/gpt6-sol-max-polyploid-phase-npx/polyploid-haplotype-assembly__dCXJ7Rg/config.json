@@ -1,0 +1,16 @@
+{
+    "task": {
+        "path": "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/polyploid-haplotype-assembly"
+    },
+    "trial_name": "polyploid-haplotype-assembly__dCXJ7Rg",
+    "trials_dir": "/Users/shubhamchhangani/harshita/jobs/receptor-torus-frontier/gpt6-sol-max-polyploid-phase-npx",
+    "agent": {
+        "name": "npx_codex_agent:NpxCodex",
+        "model_name": "openai/gpt-6-sol",
+        "kwargs": {
+            "version": "0.164.0",
+            "reasoning_effort": "max"
+        }
+    },
+    "job_id": "6a043c7e-6209-4e71-8e0c-4638f539910f"
+}

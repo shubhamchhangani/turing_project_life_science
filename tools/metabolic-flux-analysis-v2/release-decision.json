@@ -1,0 +1,41 @@
+{
+  "decision": "DO_NOT_PACKAGE_SOLVED",
+  "zip_allowed": false,
+  "trials": [
+    {
+      "result": "/Users/shubhamchhangani/harshita/jobs/mfa-v2-frontier/gpt6-sol-max-v2/metabolic-flux-analysis-v2__LyPpc4t/result.json",
+      "model": "openai/gpt-6-sol",
+      "effort": "max",
+      "status": "inconclusive_infrastructure_or_no_attempt",
+      "reward": 0.0,
+      "completed_commands": 0,
+      "error_type": "ApiUsageLimitError",
+      "counts_as_model_failure": false,
+      "task_checksum": "b8b740e9937e8a76d8027eead0a6b5f7dbe1551c379a1ca5e691b600643ca222",
+      "agent": "codex"
+    },
+    {
+      "result": "/Users/shubhamchhangani/harshita/jobs/mfa-v2-frontier/gpt6-sol-max-v2-npx-chatgpt/metabolic-flux-analysis-v2__8Pk2XXs/result.json",
+      "model": "openai/gpt-6-sol",
+      "effort": "max",
+      "status": "solved_do_not_package",
+      "reward": 1.0,
+      "completed_commands": 28,
+      "error_type": null,
+      "counts_as_model_failure": false,
+      "task_checksum": "91c624835caa0260983176b21fbd58b33123d9b4a4915fdf15a04a50e0d36870",
+      "agent": "codex"
+    }
+  ],
+  "required_roster_without_local_failure": [
+    {
+      "model": "anthropic/claude-opus-5-5",
+      "effort": "low"
+    },
+    {
+      "model": "openai/gpt-6-sol",
+      "effort": "max"
+    }
+  ],
+  "limitation": "Single local trials do not guarantee failure on future runs or the Turing harness."
+}

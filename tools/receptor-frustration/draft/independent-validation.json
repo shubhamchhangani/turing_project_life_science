@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "max_probability_difference": 2.5326962749261384e-16,
+  "log_partition_difference": 5.684341886080801e-13,
+  "log_clamp_difference": 1.7763568394002505e-15,
+  "reference_seconds": 2.1277875829982804,
+  "source_seconds": 1.5564528329996392
+}

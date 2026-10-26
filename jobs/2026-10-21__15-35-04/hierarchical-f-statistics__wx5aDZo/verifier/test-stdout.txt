@@ -1,0 +1,42 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.9, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 31 items
+
+tests/test_outputs.py ...............................                    [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_outputs.py::test_fstats_exists
+PASSED tests/test_outputs.py::test_fstats_header
+PASSED tests/test_outputs.py::test_fstats_rows_and_order
+PASSED tests/test_outputs.py::test_fstats_values_parse_and_finite
+PASSED tests/test_outputs.py::test_fstat_value[F_IS-Locus_A]
+PASSED tests/test_outputs.py::test_fstat_value[F_IS-Locus_B]
+PASSED tests/test_outputs.py::test_fstat_value[F_IS-Locus_C]
+PASSED tests/test_outputs.py::test_fstat_value[F_IS-Locus_D]
+PASSED tests/test_outputs.py::test_fstat_value[F_SC-Locus_A]
+PASSED tests/test_outputs.py::test_fstat_value[F_SC-Locus_B]
+PASSED tests/test_outputs.py::test_fstat_value[F_SC-Locus_C]
+PASSED tests/test_outputs.py::test_fstat_value[F_SC-Locus_D]
+PASSED tests/test_outputs.py::test_fstat_value[F_CT-Locus_A]
+PASSED tests/test_outputs.py::test_fstat_value[F_CT-Locus_B]
+PASSED tests/test_outputs.py::test_fstat_value[F_CT-Locus_C]
+PASSED tests/test_outputs.py::test_fstat_value[F_CT-Locus_D]
+PASSED tests/test_outputs.py::test_fstat_value[F_IT-Locus_A]
+PASSED tests/test_outputs.py::test_fstat_value[F_IT-Locus_B]
+PASSED tests/test_outputs.py::test_fstat_value[F_IT-Locus_C]
+PASSED tests/test_outputs.py::test_fstat_value[F_IT-Locus_D]
+PASSED tests/test_outputs.py::test_identity_holds_column[Locus_A]
+PASSED tests/test_outputs.py::test_identity_holds_column[Locus_B]
+PASSED tests/test_outputs.py::test_identity_holds_column[Locus_C]
+PASSED tests/test_outputs.py::test_identity_holds_column[Locus_D]
+PASSED tests/test_outputs.py::test_structure_exists
+PASSED tests/test_outputs.py::test_structure_header
+PASSED tests/test_outputs.py::test_structure_rows_and_order
+PASSED tests/test_outputs.py::test_structure_flags[Locus_A]
+PASSED tests/test_outputs.py::test_structure_flags[Locus_B]
+PASSED tests/test_outputs.py::test_structure_flags[Locus_C]
+PASSED tests/test_outputs.py::test_structure_flags[Locus_D]
+============================== 31 passed in 0.02s ==============================

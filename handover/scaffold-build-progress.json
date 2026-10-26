@@ -1,0 +1,14 @@
+{
+  "status": "TRIAL_WORKER_FINISHED",
+  "worker_pid": 86129,
+  "zip_created": false,
+  "model_sha256": "7c1b68435b8247c1a1e3fc95be97c5453dde37925232440a0b4101709086e01c",
+  "updated_at": "2026-10-25T15:40:43.297916+00:00",
+  "reference_finished": true,
+  "independent_source_finished": true,
+  "trial_status": "DO_NOT_PACKAGE_SOLVED",
+  "zip_path": null,
+  "worker_finished": true,
+  "reference_seconds": 4703.688881181,
+  "source_seconds": 3411.5270232500043
+}

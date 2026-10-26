@@ -1,0 +1,7 @@
+{
+  "ssr": 3896.9885337211927,
+  "residual_evaluations": 1991,
+  "elapsed_sec": 738.0538040000029,
+  "smallest_jacobian_singular_value": 0.09807635069590312,
+  "condition_number": 770.387067030668
+}

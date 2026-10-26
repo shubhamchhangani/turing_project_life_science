@@ -1,0 +1,95 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 8,
+            "passed": 8,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1792681723.6453943,
+            "stop": 1792681723.658866
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_file_exists",
+                "status": "passed",
+                "duration": 0.0003264169999965816,
+                "start": 1792681723.6534538,
+                "stop": 1792681723.6538916,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_header",
+                "status": "passed",
+                "duration": 0.0002766659999906551,
+                "start": 1792681723.6539567,
+                "stop": 1792681723.6543198,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_one_row_per_reaction",
+                "status": "passed",
+                "duration": 0.00024950099995635355,
+                "start": 1792681723.6543908,
+                "stop": 1792681723.654711,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_values_finite",
+                "status": "passed",
+                "duration": 0.0003352079999956459,
+                "start": 1792681723.6547656,
+                "stop": 1792681723.6551836,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_glucose_normalization",
+                "status": "passed",
+                "duration": 0.00025279200002614743,
+                "start": 1792681723.655243,
+                "stop": 1792681723.6555574,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_directional_consistency",
+                "status": "passed",
+                "duration": 0.0002311249999706888,
+                "start": 1792681723.6556075,
+                "stop": 1792681723.6559,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_mass_balance",
+                "status": "passed",
+                "duration": 0.00048279200001388745,
+                "start": 1792681723.6559508,
+                "stop": 1792681723.656506,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_flux_value",
+                "status": "passed",
+                "duration": 0.0003841680000107317,
+                "start": 1792681723.6565733,
+                "stop": 1792681723.6570346,
+                "retries": 5,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::key::['G6PDH_net', 'PDH_net', 'PC_net', 'ME_net', 'CS_net', 'IDH_reverse']"
+                ]
+            }
+        ]
+    }
+}

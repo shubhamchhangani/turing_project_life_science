@@ -1,0 +1,1695 @@
+{
+  "passed": true,
+  "valid_cases": 3,
+  "invalid_cases": 419,
+  "cases": [
+    {
+      "case": "independent expectations",
+      "expected_accept": true
+    },
+    {
+      "case": "wrong evidence.csv log_evidence",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv decimal ' 0.1'",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv decimal '0.1 '",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv decimal 'NaN'",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv decimal 'inf'",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv decimal '1_0'",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv decimal '\uff10.\uff11'",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv decimal '1e999'",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv decimal ''",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv decimal '0x1p-2'",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv missing",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv extra",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv column",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv header",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv symlink",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv fifo",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv directory",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv oversize",
+      "expected_accept": false
+    },
+    {
+      "case": "evidence.csv utf8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:0:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:0:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:0:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:0:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:0:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:0:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:0:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:0:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:0:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:0:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:0:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:0:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:0:12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:1:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:1:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:1:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:1:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:1:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:1:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:1:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:1:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:1:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:1:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:1:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:1:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:1:12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:2:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:2:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:2:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:2:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:2:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:2:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:2:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:2:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:2:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:2:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:2:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:2:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:2:12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:3:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:3:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:3:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:3:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:3:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:3:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:3:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:3:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:3:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:3:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:3:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:3:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:3:12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:4:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:4:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:4:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:4:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:4:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:4:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:4:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:4:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:4:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:4:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:4:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:4:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:4:12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:5:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:5:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:5:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:5:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:5:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:5:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:5:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:5:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:5:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:5:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:5:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:5:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:5:12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:6:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:6:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:6:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:6:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:6:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:6:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:6:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:6:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:6:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:6:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:6:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:6:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:6:12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:7:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:7:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:7:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:7:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:7:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:7:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:7:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:7:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:7:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:7:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:7:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:7:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:7:12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:8:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:8:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:8:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:8:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:8:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:8:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:8:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:8:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:8:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:8:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:8:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:8:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 0:8:12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:0:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:0:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:0:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:0:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:0:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:0:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:0:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:0:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:0:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:0:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:0:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:0:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:0:12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:1:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:1:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:1:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:1:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:1:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:1:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:1:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:1:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:1:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:1:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:1:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:1:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:1:12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:2:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:2:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:2:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:2:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:2:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:2:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:2:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:2:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:2:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:2:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:2:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:2:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:2:12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:3:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:3:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:3:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:3:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:3:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:3:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:3:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:3:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:3:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:3:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:3:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:3:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:3:12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:4:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:4:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:4:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:4:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:4:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:4:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:4:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:4:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:4:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:4:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:4:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:4:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:4:12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:5:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:5:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:5:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:5:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:5:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:5:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:5:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:5:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:5:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:5:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:5:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:5:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:5:12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:6:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:6:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:6:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:6:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:6:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:6:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:6:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:6:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:6:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:6:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:6:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:6:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:6:12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:7:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:7:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:7:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:7:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:7:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:7:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:7:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:7:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:7:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:7:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:7:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:7:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:7:12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:8:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:8:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:8:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:8:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:8:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:8:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:8:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:8:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:8:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:8:9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:8:10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:8:11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong division_posterior.csv 1:8:12",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv decimal ' 0.1'",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv decimal '0.1 '",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv decimal 'NaN'",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv decimal 'inf'",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv decimal '1_0'",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv decimal '\uff10.\uff11'",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv decimal '1e999'",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv decimal ''",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv decimal '0x1p-2'",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv duplicate",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv missing",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv extra",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv column",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv header",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv symlink",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv fifo",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv directory",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv oversize",
+      "expected_accept": false
+    },
+    {
+      "case": "division_posterior.csv utf8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 0:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 0:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 0:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 0:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 0:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 0:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 0:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 0:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 0:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 1:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 1:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 1:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 1:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 1:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 1:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 1:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 1:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 1:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 2:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 2:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 2:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 2:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 2:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 2:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 2:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 2:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 2:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 3:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 3:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 3:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 3:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 3:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 3:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 3:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 3:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 3:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 4:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 4:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 4:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 4:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 4:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 4:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 4:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 4:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 4:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 5:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 5:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 5:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 5:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 5:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 5:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 5:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 5:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 5:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 6:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 6:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 6:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 6:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 6:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 6:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 6:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 6:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 6:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 7:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 7:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 7:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 7:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 7:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 7:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 7:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 7:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 7:8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 8:0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 8:1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 8:2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 8:3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 8:4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 8:5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 8:6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 8:7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong daughter_rna.csv 8:8",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv decimal ' 0.1'",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv decimal '0.1 '",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv decimal 'NaN'",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv decimal 'inf'",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv decimal '1_0'",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv decimal '\uff10.\uff11'",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv decimal '1e999'",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv decimal ''",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv decimal '0x1p-2'",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv duplicate",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv missing",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv extra",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv column",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv header",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv symlink",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv fifo",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv directory",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv oversize",
+      "expected_accept": false
+    },
+    {
+      "case": "daughter_rna.csv utf8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 0",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 1",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 2",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 3",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 4",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 5",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 6",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 7",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 8",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 9",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 10",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 11",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 12",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 13",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 14",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 15",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 16",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 17",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 18",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 19",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 20",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 21",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 22",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 23",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv 24",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong transcription_counts.csv overflow",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv decimal ' 0.1'",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv decimal '0.1 '",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv decimal 'NaN'",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv decimal 'inf'",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv decimal '1_0'",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv decimal '\uff10.\uff11'",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv decimal '1e999'",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv decimal ''",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv decimal '0x1p-2'",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv duplicate",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv missing",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv extra",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv column",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv header",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv symlink",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv fifo",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv directory",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv oversize",
+      "expected_accept": false
+    },
+    {
+      "case": "transcription_counts.csv utf8",
+      "expected_accept": false
+    },
+    {
+      "case": "reordered CRLF",
+      "expected_accept": true
+    },
+    {
+      "case": "scientific notation",
+      "expected_accept": true
+    },
+    {
+      "case": "independent daughters with correct marginals",
+      "expected_accept": false
+    },
+    {
+      "case": "conditioning away event-count overflow",
+      "expected_accept": false
+    }
+  ]
+}

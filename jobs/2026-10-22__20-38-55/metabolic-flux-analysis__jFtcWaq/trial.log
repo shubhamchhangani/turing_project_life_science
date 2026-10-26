@@ -1,0 +1,25 @@
+Skipping image OS validation for hb__9681d25955271426f952e44f8a8279ea: docker inspect returned 1
+Collecting main service artifacts
+compose cp failed; retrying download with engine cp: Docker compose command failed for environment metabolic-flux-analysis. Command: docker compose --project-name metabolic-flux-analysis__jftcwaq__env --project-directory /Users/shubhamchhangani/harshita/tasks/life-sciences/biology/metabolic-flux-analysis/environment -f /private/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/tmp7y4zk76o/metabolic-flux-analysis__jFtcWaq__env-docker-compose-resources.json -f /Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml -f /private/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/tmp279m4k11/docker-compose-environment.json -f /private/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/tmptwvaumre/docker-compose-mounts.json cp main:/root/results/fluxes.csv jobs/2026-10-22__20-38-55/metabolic-flux-analysis__jFtcWaq/artifacts/root/results/fluxes.csv. Return code: 1. Stdout:  metabolic-flux-analysis__jftcwaq__env-main-1 Copying metabolic-flux-analysis__jftcwaq__env-main-1:/root/results/fluxes.csv to jobs/2026-10-22__20-38-55/metabolic-flux-analysis__jFtcWaq/artifacts/root/results/fluxes.csv
+invalid output path: directory "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/metabolic-flux-analysis/environment/jobs/2026-10-22__20-38-55/metabolic-flux-analysis__jFtcWaq/artifacts/root/results" does not exist
+. Stderr: None. 
+Failed to download artifact '/root/results/fluxes.csv' from service 'main' (best-effort)
+Traceback (most recent call last):
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/artifact_handler.py", line 313, in _download_artifact
+    await source_env.service_download_file(
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py", line 1315, in service_download_file
+    await self.download_file(source_path, target_path)
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py", line 1300, in download_file
+    await self._platform.download_file(source_path, target_path)
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker_unix.py", line 256, in download_file
+    await self._download_via_engine_cp(source_path, target_path, service)
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker_unix.py", line 235, in _download_via_engine_cp
+    await self._engine_cp(f"{container}:{container_path}", str(target_path))
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker_unix.py", line 226, in _engine_cp
+    raise RuntimeError(
+RuntimeError: Engine cp failed ('f8d630b1daa2:/root/results/fluxes.csv' -> 'jobs/2026-10-22__20-38-55/metabolic-flux-analysis__jFtcWaq/artifacts/root/results/fluxes.csv'): Error response from daemon: Could not find the file /root/results/fluxes.csv in container f8d630b1daa2
+
+Skipping image OS validation for hb__825059ea0b19d1a5f45792dd4fd79041: docker inspect returned 1
+docker compose cp failed; retrying upload with tar stream: Docker compose command failed for environment metabolic-flux-analysis. Command: docker compose --project-name metabolic-flux-analysis__jftcwaq__verifier__trial --project-directory /Users/shubhamchhangani/harshita/tasks/life-sciences/biology/metabolic-flux-analysis/tests -f /private/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/tmpdrvqzieq/metabolic-flux-analysis__jFtcWaq__verifier__trial-docker-compose-resources.json -f /Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml -f /private/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/tmpthg6yemm/docker-compose-environment.json -f /private/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/tmplj1pnzsb/docker-compose-mounts.json -f /Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-egress-control.yaml -f /private/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/tmpoyujszc6/docker-compose-egress-control-services.json cp jobs/2026-10-22__20-38-55/metabolic-flux-analysis__jFtcWaq/artifacts/logs/artifacts/. main:/logs/artifacts. Return code: 1. Stdout:  metabolic-flux-analysis__jftcwaq__verifier__trial-main-1 Copying jobs/2026-10-22__20-38-55/metabolic-flux-analysis__jFtcWaq/artifacts/logs/artifacts/. to metabolic-flux-analysis__jftcwaq__verifier__trial-main-1:/logs/artifacts
+lstat /Users/shubhamchhangani/harshita/tasks/life-sciences/biology/metabolic-flux-analysis/tests/jobs: no such file or directory
+. Stderr: None. 

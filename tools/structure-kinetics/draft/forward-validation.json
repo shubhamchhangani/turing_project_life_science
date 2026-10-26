@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "photon_likelihood_max_log_difference": 2.842170943040401e-14,
+  "zero_photon_tail_checked": true,
+  "projection_quadrature_max_difference": 6.938893903907228e-18,
+  "seconds": 0.4080879170069238,
+  "scope": "forward numerical checks only; no inverse validation or difficulty claim"
+}

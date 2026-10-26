@@ -1,0 +1,254 @@
+{
+  "task": "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/metabolic-population-deconvolution",
+  "static_checks_passed": true,
+  "portal_acceptance_guaranteed": false,
+  "package_fingerprint": "357dd252f59bc7baed226f95614c7b050dc52579418320e8989ac35d170915ac",
+  "files": {
+    "README.md": "4a53055423fac490ae19729699ca3fb1221b82fdf4beef68f5ff5df571b8e709",
+    "environment/Dockerfile": "1e971b64ca5755b9d5f2b1088273c732bac2bd31546258bfd47fa1f0ab76a14d",
+    "environment/data/extracellular_rates.csv": "a7a0339c7b221898e61a045d4301e30ba21d4d7c194283acf69e4beb4a39b891",
+    "environment/data/fragments.csv": "ab7dde85e3b2b51637ce8c0f6835b0cf322635fcd5ad3db9c96c98f5cdfd3f02",
+    "environment/data/isotope_abundances.csv": "ba00ee5805d77eeff6dfa293b30bb0669c2d16be8d6a526a923f889b26232b77",
+    "environment/data/labeling_schedule.csv": "36c64dd2284b9f4306907eaac885c6ce8f579170ad0e8bb3cb08ba04bd8f5f66",
+    "environment/data/mid_measurements.csv": "c81ac78361435128fe0914d03ff69276530f7003498d786af1ef0e68caebf87f",
+    "environment/data/network.tsv": "bef8419b5f8987f689b8023dde228b748ff9a34fe7dd335407648983d027a385",
+    "environment/data/pool_sizes.csv": "d6b07ea549b4df89db631dd72bde4f4c2b6a2932e904836cbf3177227f2e907c",
+    "environment/data/populations.csv": "0619e019234a6aab8e16685bce4713b38281bc9db4f190f40a478e7e43b99a84",
+    "instruction.md": "460713ac84c3faffe9223abf7427aac4b6e4794ac5958dc7ca41d2f2c9e20848",
+    "solution/dynamic_model.py": "9793f7b6d54498c2ac6d2b7b1b3de1ceaf6aa0b73cbb0faa3c736c11f38be56d",
+    "solution/forward_model.py": "f9472d3722c983194db7e31024c4dd1be836f41e9560154f0743a893c16cb9e2",
+    "solution/mixture_fit.py": "c233f53e8d65b0a468980236f19080cb1e0762f9a1a8535440a3f43b059e0d81",
+    "solution/mixture_model.py": "4f12124a4fa75db9c6e7e6834eb5ff06ac3d56307ec3c36de203e5de7beb952e",
+    "solution/network_model.py": "697ca9a014b7fa00f77d6554c877f171da3b849a53cdf55044d1fedca6f3f542",
+    "solution/solve.sh": "6952c01e5e60cce070876392e7296f3544aa645986e1d8859c37497738ef6efc",
+    "task.toml": "9ef4e01eec85e08bbd222e233abcd09201b639d0f7e0859a30932c29e9076967",
+    "tests/Dockerfile": "5894d16c649ce04c23565cb57c89964e1740a576cffb29a2c3e4d9430d6751ce",
+    "tests/check_fit.py": "185c871a69385406a68dfc8eda6ba168a642f4ae113f8910bc05584ea5c7a068",
+    "tests/data/extracellular_rates.csv": "a7a0339c7b221898e61a045d4301e30ba21d4d7c194283acf69e4beb4a39b891",
+    "tests/data/fragments.csv": "ab7dde85e3b2b51637ce8c0f6835b0cf322635fcd5ad3db9c96c98f5cdfd3f02",
+    "tests/data/isotope_abundances.csv": "ba00ee5805d77eeff6dfa293b30bb0669c2d16be8d6a526a923f889b26232b77",
+    "tests/data/labeling_schedule.csv": "36c64dd2284b9f4306907eaac885c6ce8f579170ad0e8bb3cb08ba04bd8f5f66",
+    "tests/data/mid_measurements.csv": "c81ac78361435128fe0914d03ff69276530f7003498d786af1ef0e68caebf87f",
+    "tests/data/network.tsv": "bef8419b5f8987f689b8023dde228b748ff9a34fe7dd335407648983d027a385",
+    "tests/data/pool_sizes.csv": "d6b07ea549b4df89db631dd72bde4f4c2b6a2932e904836cbf3177227f2e907c",
+    "tests/data/populations.csv": "0619e019234a6aab8e16685bce4713b38281bc9db4f190f40a478e7e43b99a84",
+    "tests/dynamic_model.py": "9793f7b6d54498c2ac6d2b7b1b3de1ceaf6aa0b73cbb0faa3c736c11f38be56d",
+    "tests/expected_fluxes.json": "ab2860c96631c8efb7aa047d3c973b0a403140daef8e3685ed9ea7f60ee11db4",
+    "tests/forward_model.py": "f9472d3722c983194db7e31024c4dd1be836f41e9560154f0743a893c16cb9e2",
+    "tests/mixture_model.py": "4f12124a4fa75db9c6e7e6834eb5ff06ac3d56307ec3c36de203e5de7beb952e",
+    "tests/network.tsv": "bef8419b5f8987f689b8023dde228b748ff9a34fe7dd335407648983d027a385",
+    "tests/network_model.py": "697ca9a014b7fa00f77d6554c877f171da3b849a53cdf55044d1fedca6f3f542",
+    "tests/test.sh": "7ee810212593b12f748f7df6da97422f588a8a4200c2c18553fc941e455c1122",
+    "tests/test_outputs.py": "cb55fcade0bbf43c95b9687f87db7ee1f9beeb8a31cdb61771ca66ffba7a484e"
+  },
+  "checks": [
+    {
+      "check": "root structure",
+      "passed": true,
+      "detail": "missing=[], extra=[]"
+    },
+    {
+      "check": "environment is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "tests is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "solution is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no hidden/cache files",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no canary markers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no symlinks in package",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "schema 1.4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "top-level artifacts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "task required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "metadata required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "environment required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "turing task namespace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no legacy metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "life sciences biology category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "binary reward and overlap type",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent execution contract",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent environment network",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "isolated offline verifier",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent resources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier resources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier timeout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test runner errexit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test runner shell syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/dynamic_model.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/forward_model.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/mixture_fit.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/mixture_model.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/network_model.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/check_fit.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/dynamic_model.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/forward_model.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/mixture_model.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/network_model.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/test_outputs.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "execution-contract closing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all artifacts stated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no scoring language in instructions",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "errors": [],
+  "required_additional_evidence": [
+    "offline reference solution and verifier",
+    "valid and invalid artifact regressions",
+    "scientific coverage and independent truth review",
+    "completed substantive trials on the required model roster"
+  ],
+  "zip_created": false
+}

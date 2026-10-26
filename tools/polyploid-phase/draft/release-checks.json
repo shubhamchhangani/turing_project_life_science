@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "cases": [
+    "two_valid_failures",
+    "sleep_interruption",
+    "missing_model",
+    "status=solved_do_not_package",
+    "status=incomplete",
+    "status=inconclusive_infrastructure_or_no_attempt",
+    "error_type=AgentTimeoutError",
+    "quota_interrupted=True",
+    "task_checksum=other",
+    "task_checksum=None",
+    "model=anthropic/other",
+    "effort=high"
+  ]
+}

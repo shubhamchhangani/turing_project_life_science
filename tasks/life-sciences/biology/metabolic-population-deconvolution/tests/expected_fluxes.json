@@ -1,0 +1,102 @@
+{
+  "graded": {
+    "A_G6PDH": {
+      "population": "A",
+      "reaction_id": "G6PDH",
+      "column": "net",
+      "true": 15.0,
+      "rel_tol": 0.45
+    },
+    "A_PDH": {
+      "population": "A",
+      "reaction_id": "PDH",
+      "column": "net",
+      "true": 42.0,
+      "rel_tol": 0.12
+    },
+    "A_PC": {
+      "population": "A",
+      "reaction_id": "PC",
+      "column": "net",
+      "true": 11.0,
+      "rel_tol": 0.12
+    },
+    "A_ME": {
+      "population": "A",
+      "reaction_id": "ME",
+      "column": "net",
+      "true": 40.0,
+      "rel_tol": 0.08
+    },
+    "A_CS": {
+      "population": "A",
+      "reaction_id": "CS",
+      "column": "net",
+      "true": 30.0,
+      "rel_tol": 0.1
+    },
+    "A_IDH": {
+      "population": "A",
+      "reaction_id": "IDH",
+      "column": "reverse",
+      "true": 8.0,
+      "rel_tol": 0.2
+    },
+    "B_G6PDH": {
+      "population": "B",
+      "reaction_id": "G6PDH",
+      "column": "net",
+      "true": 36.0,
+      "rel_tol": 0.45
+    },
+    "B_PDH": {
+      "population": "B",
+      "reaction_id": "PDH",
+      "column": "net",
+      "true": 29.999999999999922,
+      "rel_tol": 0.12
+    },
+    "B_PC": {
+      "population": "B",
+      "reaction_id": "PC",
+      "column": "net",
+      "true": 28.000000000000107,
+      "rel_tol": 0.12
+    },
+    "B_ME": {
+      "population": "B",
+      "reaction_id": "ME",
+      "column": "net",
+      "true": 65.0,
+      "rel_tol": 0.08
+    },
+    "B_CS": {
+      "population": "B",
+      "reaction_id": "CS",
+      "column": "net",
+      "true": 22.0,
+      "rel_tol": 0.1
+    },
+    "B_IDH": {
+      "population": "B",
+      "reaction_id": "IDH",
+      "column": "reverse",
+      "true": 24,
+      "rel_tol": 0.2
+    }
+  },
+  "pools": {
+    "A": {
+      "OAA": 8,
+      "Cit": 45,
+      "AKG": 22,
+      "Mal": 30
+    },
+    "B": {
+      "OAA": 20,
+      "Cit": 20,
+      "AKG": 42,
+      "Mal": 14
+    }
+  }
+}

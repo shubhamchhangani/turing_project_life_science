@@ -1,0 +1,19 @@
+{
+    "job_name": "gpt6-sol-max-mixture-npx-chatgpt",
+    "jobs_dir": "jobs/mfa-mixture-frontier",
+    "agents": [
+        {
+            "name": "npx_codex_agent:NpxCodex",
+            "model_name": "openai/gpt-6-sol",
+            "kwargs": {
+                "version": "0.164.0",
+                "reasoning_effort": "max"
+            }
+        }
+    ],
+    "tasks": [
+        {
+            "path": "tasks/life-sciences/biology/metabolic-population-deconvolution"
+        }
+    ]
+}

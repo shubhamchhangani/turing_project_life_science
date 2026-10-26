@@ -1,0 +1,85 @@
+{
+  "status": "solved_do_not_submit",
+  "zip_created": false,
+  "static_checks": {
+    "passed": 40,
+    "total": 40,
+    "report": "preflight-report.json"
+  },
+  "artifact_regressions": {
+    "valid_accepted": 4,
+    "invalid_rejected": 28,
+    "report": "regressions/regression-results.json"
+  },
+  "author_reference": {
+    "ssr": 3896.9885337211927,
+    "residual_evaluations": 1991,
+    "elapsed_sec": 738.0538040000029,
+    "smallest_jacobian_singular_value": 0.09807635069590312,
+    "condition_number": 770.387067030668
+  },
+  "author_reference_separate_verifier": {
+    "pytest_passed": 19,
+    "reward": 1,
+    "network": "none",
+    "cpus": 1,
+    "memory_gib": 2
+  },
+  "noise_calibration": {
+    "seeds": [
+      1000,
+      1001,
+      1002,
+      1003
+    ],
+    "all_target_tolerances_passed": true,
+    "report": "calibration_results.json",
+    "scope": "Fits initialized at an independently fitted reference estimate; local noise sensitivity, not global optimization certification."
+  },
+  "physics": {
+    "max_abs_difference_independent_pooled_ion_counts": 5.109402728686874e-08,
+    "max_pool_normalization_error": 7.771561172376096e-16,
+    "truth_mid_ssr": 3929.812438706215,
+    "omit_pool_amount_weighting_mid_ssr_at_truth": 90074.70343590251,
+    "scope": "Independent observation-model implementation and RK45 integration; reaction atom specification is shared. Negative control is not refitted."
+  },
+  "pending": [],
+  "claude_cli_login_status": "not logged in; no Claude trial started",
+  "portal_acceptance_guaranteed": false,
+  "packaged_offline_reference": {
+    "network": "none",
+    "cpus": 1,
+    "memory_gib": 2,
+    "starts": 2,
+    "elapsed_sec": 373.69097204499997,
+    "best_ssr": 3896.9939712754467,
+    "pytest_passed": 19,
+    "verifier_seconds": 0.82,
+    "reward": 1,
+    "outputs": "/private/tmp/mfa-mixture-oracle",
+    "diagnostic": {
+      "ssr": 3896.9939712754467,
+      "residual_evaluations": 1175,
+      "elapsed_sec": 242.54397952599993,
+      "smallest_jacobian_singular_value": 0.1032870188858054,
+      "condition_number": 731.8727660021525
+    }
+  },
+  "frontier_trial": {
+    "status": "solved_do_not_submit",
+    "model": "openai/gpt-6-sol",
+    "reasoning_effort": "max",
+    "authentication": "existing ChatGPT login",
+    "launcher": "npx @openai/codex@0.164.0 in isolated Harbor Docker",
+    "reward": 1,
+    "pytest_passed": 19,
+    "agent_reported_ssr": 3896.961822,
+    "allowed_ssr": 4090,
+    "agent_execution_seconds": 613.693551,
+    "raw_result": "jobs/mfa-mixture-frontier/gpt6-sol-max-mixture-npx-chatgpt/metabolic-population-deconvoluti__iNpGMmB/result.json",
+    "new_zip_created": false,
+    "counts_as_model_failure": false,
+    "note": "A successful GPT trial already disproves the all-models-fail condition; no Opus trial was launched."
+  },
+  "release_blocker": "GPT-6-sol max solved the task; required difficulty not met. No submission ZIP should be created."
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "case": "injected truth",
+    "expected_valid": true,
+    "actual_exit_code": 0
+  },
+  {
+    "case": "literal LF",
+    "expected_valid": true,
+    "actual_exit_code": 0
+  },
+  {
+    "case": "ASCII signed exponent",
+    "expected_valid": true,
+    "actual_exit_code": 0
+  },
+  {
+    "case": "row ordering",
+    "expected_valid": true,
+    "actual_exit_code": 0
+  },
+  {
+    "case": "header whitespace",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "quoted literal header",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "missing row",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "duplicate row",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "unknown population",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "leading numeric space",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "trailing numeric space",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "Unicode digits",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "underscore",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "NaN",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "infinite decimal",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "negative directional rate",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "PGI exchange inflation preserves all net fluxes and graded targets",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "opposite PPP shifts preserve balance bulk rates and truth tolerances",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "flux missing",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "flux empty",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "flux oversize",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "flux fifo",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "pool header whitespace",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "pool duplicate",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "pool unknown population",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "pool numeric whitespace",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "pool zero",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "pool wrong amount",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "pool missing",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "pool empty",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "pool oversize",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  },
+  {
+    "case": "pool fifo",
+    "expected_valid": false,
+    "actual_exit_code": 1
+  }
+]

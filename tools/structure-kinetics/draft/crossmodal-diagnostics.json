@@ -1,0 +1,38 @@
+{
+  "scope": "post-fit audit only; input-only fits completed before truth was read",
+  "results": [
+    {
+      "start": 0,
+      "mobile_domain_rmsd_angstrom": [
+        0.007437587098297636,
+        0.09187464831025215,
+        0.007429010587362449,
+        0.009807790386240947
+      ],
+      "log_rate_rmse": 0.7829775591600734,
+      "max_rate_fold_error": 4.3824231473327
+    },
+    {
+      "start": 1,
+      "mobile_domain_rmsd_angstrom": [
+        0.007437587098297636,
+        0.09187464831025215,
+        0.007429010587362449,
+        0.009807790386240947
+      ],
+      "log_rate_rmse": 0.7711369534848682,
+      "max_rate_fold_error": 4.367040930038396
+    },
+    {
+      "start": 2,
+      "mobile_domain_rmsd_angstrom": [
+        0.007437587098297636,
+        0.09187464831025215,
+        0.007429010587362449,
+        0.009807790386240947
+      ],
+      "log_rate_rmse": 0.777487956104243,
+      "max_rate_fold_error": 4.368928682943622
+    }
+  ]
+}

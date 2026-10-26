@@ -1,0 +1,36 @@
+schema_version = "1.4"
+artifacts = ["/root/results/fluxes.csv"]
+
+[task]
+name = "turing/metabolic-flux-analysis"
+description = "Estimate central-carbon metabolic fluxes (oxidative PPP, PDH, PC, malic enzyme, citrate synthase, reductive carboxylation) from parallel [1,2-13C]glucose and [U-13C]glutamine GC-MS labeling data."
+version = "1.1.0"
+keywords = ["13c-mfa", "metabolic-flux-analysis", "isotope-tracing", "gc-ms", "cancer-metabolism"]
+
+[metadata]
+domain = "life-sciences"
+category = "biology"
+subcategory = "systems-biology"
+reward_type = "binary"
+source = "original"
+public_overlap = false
+
+[environment]
+network_mode = "public"
+cpus = 1
+memory_mb = 2048
+storage_mb = 10240
+
+[agent]
+timeout_sec = 18000
+network_mode = "public"
+
+[verifier]
+timeout_sec = 120
+network_mode = "no-network"
+environment_mode = "separate"
+
+[verifier.environment]
+network_mode = "no-network"
+cpus = 1
+memory_mb = 2048

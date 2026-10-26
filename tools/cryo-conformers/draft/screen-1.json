@@ -1,0 +1,7 @@
+{
+  "states": 1,
+  "images": 128,
+  "seconds": 1.1859900839990587,
+  "rotation_mse_after_global_registration": 1.563876623204056e-05,
+  "note": "Clean synthetic screening only; no release acceptance threshold."
+}

@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "method": "independent modified-partition ratios",
+  "independent_source_seconds": 453.930945542,
+  "maximum_posterior_difference": 8.948397578478762e-13,
+  "log_evidence_difference": 5.684341886080801e-13,
+  "fixture_source": "forward-only modified partition ratios; no reference posterior used"
+}

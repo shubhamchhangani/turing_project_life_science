@@ -1,0 +1,47 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 3,
+            "passed": 3,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1792833417.2804205,
+            "stop": 1792833417.401625
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_01_complete_contract",
+                "status": "passed",
+                "duration": 0.000490166000076897,
+                "start": 1792833417.291457,
+                "stop": 1792833417.2920856,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_02_all_variant_dosages",
+                "status": "passed",
+                "duration": 0.0005194159999746262,
+                "start": 1792833417.2921655,
+                "stop": 1792833417.2927787,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_03_all_read_corrections",
+                "status": "passed",
+                "duration": 0.10838116500008255,
+                "start": 1792833417.292847,
+                "stop": 1792833417.4014199,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

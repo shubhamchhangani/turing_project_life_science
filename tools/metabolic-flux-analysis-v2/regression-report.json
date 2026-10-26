@@ -1,0 +1,41 @@
+{
+  "checked_at_utc": "2026-10-23T10:31:27.031328+00:00",
+  "execution": "Docker mfa-v2-verifier:latest; no network; 1 CPU; 2 GiB; current tests mounted read-only",
+  "exit_code": 0,
+  "valid_cases_accepted": [
+    "injected truth",
+    "literal header LF",
+    "literal header CRLF",
+    "ASCII exponent"
+  ],
+  "invalid_cases_rejected": [
+    "header whitespace",
+    "negative directional flux",
+    "missing row",
+    "duplicate row",
+    "nonfinite value",
+    "inaccurate flux",
+    "PGI exchange inflation preserves net and six targets",
+    "FIFO",
+    "empty file",
+    "oversize file",
+    "missing file",
+    "quoted first header field",
+    "fully quoted header",
+    "header leading whitespace",
+    "header trailing whitespace",
+    "leading numeric whitespace",
+    "trailing numeric whitespace",
+    "Unicode digits",
+    "numeric underscores",
+    "pool header whitespace",
+    "pool duplicate",
+    "pool numeric whitespace",
+    "pool zero",
+    "pool incorrect",
+    "pool FIFO"
+  ],
+  "total_cases": 29,
+  "package_fingerprint": "f3746b18a380c564c30d242d5ecd14f4dda28425832d70114946922840de4e68",
+  "scope": "Observed results of check_regressions.py; does not guarantee portal review or frontier difficulty."
+}

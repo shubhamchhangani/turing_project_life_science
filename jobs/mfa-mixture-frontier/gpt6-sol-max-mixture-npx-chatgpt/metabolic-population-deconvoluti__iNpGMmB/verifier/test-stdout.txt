@@ -1,0 +1,30 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.9, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 19 items
+
+tests/test_outputs.py ...................                                [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_outputs.py::test_flux_contract
+PASSED tests/test_outputs.py::test_pool_contract
+PASSED tests/test_outputs.py::test_glucose_normalization
+PASSED tests/test_outputs.py::test_directional_consistency
+PASSED tests/test_outputs.py::test_mass_balance
+PASSED tests/test_outputs.py::test_flux_accuracy[A_G6PDH]
+PASSED tests/test_outputs.py::test_flux_accuracy[A_PDH]
+PASSED tests/test_outputs.py::test_flux_accuracy[A_PC]
+PASSED tests/test_outputs.py::test_flux_accuracy[A_ME]
+PASSED tests/test_outputs.py::test_flux_accuracy[A_CS]
+PASSED tests/test_outputs.py::test_flux_accuracy[A_IDH]
+PASSED tests/test_outputs.py::test_flux_accuracy[B_G6PDH]
+PASSED tests/test_outputs.py::test_flux_accuracy[B_PDH]
+PASSED tests/test_outputs.py::test_flux_accuracy[B_PC]
+PASSED tests/test_outputs.py::test_flux_accuracy[B_ME]
+PASSED tests/test_outputs.py::test_flux_accuracy[B_CS]
+PASSED tests/test_outputs.py::test_flux_accuracy[B_IDH]
+PASSED tests/test_outputs.py::test_pool_accuracy
+PASSED tests/test_outputs.py::test_measurement_fit
+============================== 19 passed in 0.83s ==============================

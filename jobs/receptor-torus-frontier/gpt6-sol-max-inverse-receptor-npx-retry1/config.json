@@ -1,0 +1,19 @@
+{
+    "job_name": "gpt6-sol-max-inverse-receptor-npx-retry1",
+    "jobs_dir": "jobs/receptor-torus-frontier",
+    "agents": [
+        {
+            "name": "npx_codex_agent:NpxCodex",
+            "model_name": "openai/gpt-6-sol",
+            "kwargs": {
+                "version": "0.164.0",
+                "reasoning_effort": "max"
+            }
+        }
+    ],
+    "tasks": [
+        {
+            "path": "tasks/life-sciences/biology/inverse-receptor-cooperativity"
+        }
+    ]
+}

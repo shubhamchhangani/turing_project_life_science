@@ -1,0 +1,429 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.9, pytest-8.4.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 16 items
+
+tests/test_outputs.py FFFFFFFFFFFFFFFF                                   [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_pool_contract ______________________________
+
+    def test_pool_contract():
+        """pools.csv has the exact header, four unknown pools once each, and positive finite decimals."""
+>       header, rows = read_table(POOLS)
+                       ^^^^^^^^^^^^^^^^^
+
+tests/test_outputs.py:70: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/pools.csv')
+
+    def read_table(path):
+        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.
+>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/pools.csv'
+
+tests/test_outputs.py:41: FileNotFoundError
+_______________________________ test_file_exists _______________________________
+
+    def test_file_exists():
+        """fluxes.csv exists at /root/results/fluxes.csv."""
+>       assert FLUXES.is_file(), f"missing output file {FLUXES}"
+E       AssertionError: missing output file /root/results/fluxes.csv
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = PosixPath('/root/results/fluxes.csv').is_file
+
+tests/test_outputs.py:88: AssertionError
+_________________________________ test_header __________________________________
+
+    def test_header():
+        """Header is exactly reaction_id,net_flux,forward_flux,reverse_flux."""
+>       header, _ = read_fluxes()
+                    ^^^^^^^^^^^^^
+
+tests/test_outputs.py:93: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:60: in read_fluxes
+    return read_table(FLUXES)
+           ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/fluxes.csv')
+
+    def read_table(path):
+        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.
+>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+tests/test_outputs.py:41: FileNotFoundError
+__________________________ test_one_row_per_reaction ___________________________
+
+    def test_one_row_per_reaction():
+        """Exactly one row for each of the 31 reactions in network.tsv, no extra or duplicate rows."""
+>       _, rows = read_fluxes()
+                  ^^^^^^^^^^^^^
+
+tests/test_outputs.py:100: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:60: in read_fluxes
+    return read_table(FLUXES)
+           ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/fluxes.csv')
+
+    def read_table(path):
+        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.
+>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+tests/test_outputs.py:41: FileNotFoundError
+______________________________ test_values_finite ______________________________
+
+    def test_values_finite():
+        """Flux fields use whitespace-free ASCII decimal notation and have finite values."""
+>       _, rows = read_fluxes()
+                  ^^^^^^^^^^^^^
+
+tests/test_outputs.py:111: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:60: in read_fluxes
+    return read_table(FLUXES)
+           ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/fluxes.csv')
+
+    def read_table(path):
+        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.
+>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+tests/test_outputs.py:41: FileNotFoundError
+__________________________ test_glucose_normalization __________________________
+
+    def test_glucose_normalization():
+        """Glucose uptake (GLCup net flux) is reported as 100."""
+>       v = flux_table()["GLCup"]["net"]
+            ^^^^^^^^^^^^
+
+tests/test_outputs.py:125: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:81: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:60: in read_fluxes
+    return read_table(FLUXES)
+           ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/fluxes.csv')
+
+    def read_table(path):
+        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.
+>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+tests/test_outputs.py:41: FileNotFoundError
+_________________________ test_directional_consistency _________________________
+
+    def test_directional_consistency():
+        """One-way fluxes are nonnegative; direction identity and irreversibility use 0.05 tolerance."""
+>       f = flux_table()
+            ^^^^^^^^^^^^
+
+tests/test_outputs.py:131: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:81: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:60: in read_fluxes
+    return read_table(FLUXES)
+           ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/fluxes.csv')
+
+    def read_table(path):
+        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.
+>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+tests/test_outputs.py:41: FileNotFoundError
+______________________________ test_mass_balance _______________________________
+
+    def test_mass_balance():
+        """Reported net fluxes close the steady-state balance of every intracellular metabolite within 0.1."""
+>       f = flux_table()
+            ^^^^^^^^^^^^
+
+tests/test_outputs.py:145: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:81: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:60: in read_fluxes
+    return read_table(FLUXES)
+           ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/fluxes.csv')
+
+    def read_table(path):
+        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.
+>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+tests/test_outputs.py:41: FileNotFoundError
+______________________________ test_pool_accuracy ______________________________
+
+    def test_pool_accuracy():
+        """Each inferred pool is within 25 percent of its independently injected value."""
+>       test_pool_contract()
+
+tests/test_outputs.py:160: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:70: in test_pool_contract
+    header, rows = read_table(POOLS)
+                   ^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/pools.csv')
+
+    def read_table(path):
+        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.
+>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/pools.csv'
+
+tests/test_outputs.py:41: FileNotFoundError
+__________________________ test_flux_value[G6PDH_net] __________________________
+
+key = 'G6PDH_net'
+
+    @pytest.mark.parametrize("key", list(EXPECTED["graded"]))
+    def test_flux_value(key):
+        """Graded flux is within its stated relative tolerance of the true (injected) value."""
+        spec = EXPECTED["graded"][key]
+>       got = flux_table()[spec["reaction_id"]][spec["column"]]
+              ^^^^^^^^^^^^
+
+tests/test_outputs.py:171: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:81: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:60: in read_fluxes
+    return read_table(FLUXES)
+           ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/fluxes.csv')
+
+    def read_table(path):
+        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.
+>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+tests/test_outputs.py:41: FileNotFoundError
+___________________________ test_flux_value[PDH_net] ___________________________
+
+key = 'PDH_net'
+
+    @pytest.mark.parametrize("key", list(EXPECTED["graded"]))
+    def test_flux_value(key):
+        """Graded flux is within its stated relative tolerance of the true (injected) value."""
+        spec = EXPECTED["graded"][key]
+>       got = flux_table()[spec["reaction_id"]][spec["column"]]
+              ^^^^^^^^^^^^
+
+tests/test_outputs.py:171: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:81: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:60: in read_fluxes
+    return read_table(FLUXES)
+           ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/fluxes.csv')
+
+    def read_table(path):
+        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.
+>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+tests/test_outputs.py:41: FileNotFoundError
+___________________________ test_flux_value[PC_net] ____________________________
+
+key = 'PC_net'
+
+    @pytest.mark.parametrize("key", list(EXPECTED["graded"]))
+    def test_flux_value(key):
+        """Graded flux is within its stated relative tolerance of the true (injected) value."""
+        spec = EXPECTED["graded"][key]
+>       got = flux_table()[spec["reaction_id"]][spec["column"]]
+              ^^^^^^^^^^^^
+
+tests/test_outputs.py:171: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:81: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:60: in read_fluxes
+    return read_table(FLUXES)
+           ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/fluxes.csv')
+
+    def read_table(path):
+        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.
+>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+tests/test_outputs.py:41: FileNotFoundError
+___________________________ test_flux_value[ME_net] ____________________________
+
+key = 'ME_net'
+
+    @pytest.mark.parametrize("key", list(EXPECTED["graded"]))
+    def test_flux_value(key):
+        """Graded flux is within its stated relative tolerance of the true (injected) value."""
+        spec = EXPECTED["graded"][key]
+>       got = flux_table()[spec["reaction_id"]][spec["column"]]
+              ^^^^^^^^^^^^
+
+tests/test_outputs.py:171: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:81: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:60: in read_fluxes
+    return read_table(FLUXES)
+           ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/fluxes.csv')
+
+    def read_table(path):
+        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.
+>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+tests/test_outputs.py:41: FileNotFoundError
+___________________________ test_flux_value[CS_net] ____________________________
+
+key = 'CS_net'
+
+    @pytest.mark.parametrize("key", list(EXPECTED["graded"]))
+    def test_flux_value(key):
+        """Graded flux is within its stated relative tolerance of the true (injected) value."""
+        spec = EXPECTED["graded"][key]
+>       got = flux_table()[spec["reaction_id"]][spec["column"]]
+              ^^^^^^^^^^^^
+
+tests/test_outputs.py:171: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:81: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:60: in read_fluxes
+    return read_table(FLUXES)
+           ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/fluxes.csv')
+
+    def read_table(path):
+        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.
+>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+tests/test_outputs.py:41: FileNotFoundError
+_________________________ test_flux_value[IDH_reverse] _________________________
+
+key = 'IDH_reverse'
+
+    @pytest.mark.parametrize("key", list(EXPECTED["graded"]))
+    def test_flux_value(key):
+        """Graded flux is within its stated relative tolerance of the true (injected) value."""
+        spec = EXPECTED["graded"][key]
+>       got = flux_table()[spec["reaction_id"]][spec["column"]]
+              ^^^^^^^^^^^^
+
+tests/test_outputs.py:171: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:81: in flux_table
+    _header, rows = read_fluxes()
+                    ^^^^^^^^^^^^^
+tests/test_outputs.py:60: in read_fluxes
+    return read_table(FLUXES)
+           ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/fluxes.csv')
+
+    def read_table(path):
+        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.
+>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'
+
+tests/test_outputs.py:41: FileNotFoundError
+_____________________________ test_measurement_fit _____________________________
+
+    def test_measurement_fit():
+        """The full map predicts all MID fractions and positive-SD rates with weighted SSR <= 2110."""
+        # Validate cheap contract checks before starting any scientific computation.
+>       test_pool_contract()
+
+tests/test_outputs.py:181: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_outputs.py:70: in test_pool_contract
+    header, rows = read_table(POOLS)
+                   ^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/root/results/pools.csv')
+
+    def read_table(path):
+        # O_NONBLOCK prevents a FIFO from blocking before its type can be checked.
+>       fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/pools.csv'
+
+tests/test_outputs.py:41: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_outputs.py::test_pool_contract - FileNotFoundError: [Errno ...
+FAILED tests/test_outputs.py::test_file_exists - AssertionError: missing outp...
+FAILED tests/test_outputs.py::test_header - FileNotFoundError: [Errno 2] No s...
+FAILED tests/test_outputs.py::test_one_row_per_reaction - FileNotFoundError: ...
+FAILED tests/test_outputs.py::test_values_finite - FileNotFoundError: [Errno ...
+FAILED tests/test_outputs.py::test_glucose_normalization - FileNotFoundError:...
+FAILED tests/test_outputs.py::test_directional_consistency - FileNotFoundErro...
+FAILED tests/test_outputs.py::test_mass_balance - FileNotFoundError: [Errno 2...
+FAILED tests/test_outputs.py::test_pool_accuracy - FileNotFoundError: [Errno ...
+FAILED tests/test_outputs.py::test_flux_value[G6PDH_net] - FileNotFoundError:...
+FAILED tests/test_outputs.py::test_flux_value[PDH_net] - FileNotFoundError: [...
+FAILED tests/test_outputs.py::test_flux_value[PC_net] - FileNotFoundError: [E...
+FAILED tests/test_outputs.py::test_flux_value[ME_net] - FileNotFoundError: [E...
+FAILED tests/test_outputs.py::test_flux_value[CS_net] - FileNotFoundError: [E...
+FAILED tests/test_outputs.py::test_flux_value[IDH_reverse] - FileNotFoundErro...
+FAILED tests/test_outputs.py::test_measurement_fit - FileNotFoundError: [Errn...
+============================== 16 failed in 0.07s ==============================

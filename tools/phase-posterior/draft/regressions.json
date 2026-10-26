@@ -1,0 +1,320 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "name": "decimal",
+      "expected": "accept",
+      "passed": true
+    },
+    {
+      "name": "CRLF",
+      "expected": "accept",
+      "passed": true
+    },
+    {
+      "name": "quoted_fields",
+      "expected": "accept",
+      "passed": true
+    },
+    {
+      "name": "reversed_reads",
+      "expected": "accept",
+      "passed": true
+    },
+    {
+      "name": "scientific",
+      "expected": "accept",
+      "passed": true
+    },
+    {
+      "name": "nine_decimals",
+      "expected": "accept",
+      "passed": true
+    },
+    {
+      "name": "bad_probability_ 0.151672418587",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_probability_0.151672418587 ",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_probability_NaN",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_probability_inf",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_probability_-inf",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_probability_1e999",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_probability_0_5",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_probability_\uff10.\uff15",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_probability_.",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_probability_+",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_probability_0x1p0",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_probability_1,000",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_probability_-0.0001",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_probability_1.0001",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_expected_errors_ 0",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_expected_errors_NaN",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_expected_errors_1e999",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_expected_errors_9",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_expected_errors_-1",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_evidence_ -588.3850821948284",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_evidence_NaN",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_evidence_1e999",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "bad_evidence_-384.1245027028",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "accuracy_read_0_column_1",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "accuracy_read_0_column_2",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "accuracy_read_56_column_1",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "accuracy_read_56_column_2",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "accuracy_read_113_column_1",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "accuracy_read_113_column_2",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "wrong_evidence",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "missing_read",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "duplicate_read",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "extra_read",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "extra_column",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "unknown_read",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "whitespace_read_id",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "independent_read_posterior",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "evidence.csv_empty",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "evidence.csv_too_large",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "evidence.csv_invalid_utf8",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "evidence.csv_BOM",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "evidence.csv_blank_row",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "evidence.csv_bare_CR",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "evidence.csv_missing",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "evidence.csv_symlink",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "evidence.csv_fifo",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "evidence.csv_directory",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "read_posteriors.csv_empty",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "read_posteriors.csv_too_large",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "read_posteriors.csv_invalid_utf8",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "read_posteriors.csv_BOM",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "read_posteriors.csv_blank_row",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "read_posteriors.csv_bare_CR",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "read_posteriors.csv_missing",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "read_posteriors.csv_symlink",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "read_posteriors.csv_fifo",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "read_posteriors.csv_directory",
+      "expected": "reject",
+      "passed": true
+    }
+  ]
+}

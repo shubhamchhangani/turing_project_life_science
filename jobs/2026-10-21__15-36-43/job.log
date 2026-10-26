@@ -1,0 +1,45 @@
+Agent 'nop' does not declare an options_model; leftover kwargs are ignored
+Skipping image OS validation for hb__3dbff5db1f95c46c53f1d7cc6c1a65f8: docker inspect returned 1
+Collecting main service artifacts
+compose cp failed; retrying download with engine cp: Docker compose command failed for environment hierarchical-f-statistics. Command: docker compose --project-name hierarchical-f-statistics__xxbsnld__env --project-directory /Users/shubhamchhangani/harshita/tasks/life-sciences/biology/hierarchical-f-statistics/environment -f /private/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/tmpjwdwjtty/hierarchical-f-statistics__xXbsNLd__env-docker-compose-resources.json -f /Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml -f /private/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/tmpz7y00_gx/docker-compose-environment.json -f /private/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/tmpu0od72gw/docker-compose-mounts.json cp main:/root/results/fstats.csv jobs/2026-10-21__15-36-43/hierarchical-f-statistics__xXbsNLd/artifacts/root/results/fstats.csv. Return code: 1. Stdout:  hierarchical-f-statistics__xxbsnld__env-main-1 Copying hierarchical-f-statistics__xxbsnld__env-main-1:/root/results/fstats.csv to jobs/2026-10-21__15-36-43/hierarchical-f-statistics__xXbsNLd/artifacts/root/results/fstats.csv
+invalid output path: directory "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/hierarchical-f-statistics/environment/jobs/2026-10-21__15-36-43/hierarchical-f-statistics__xXbsNLd/artifacts/root/results" does not exist
+. Stderr: None. 
+Failed to download artifact '/root/results/fstats.csv' from service 'main' (best-effort)
+Traceback (most recent call last):
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/artifact_handler.py", line 313, in _download_artifact
+    await source_env.service_download_file(
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py", line 1315, in service_download_file
+    await self.download_file(source_path, target_path)
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py", line 1300, in download_file
+    await self._platform.download_file(source_path, target_path)
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker_unix.py", line 256, in download_file
+    await self._download_via_engine_cp(source_path, target_path, service)
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker_unix.py", line 235, in _download_via_engine_cp
+    await self._engine_cp(f"{container}:{container_path}", str(target_path))
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker_unix.py", line 226, in _engine_cp
+    raise RuntimeError(
+RuntimeError: Engine cp failed ('b7d8ce3fd85d:/root/results/fstats.csv' -> 'jobs/2026-10-21__15-36-43/hierarchical-f-statistics__xXbsNLd/artifacts/root/results/fstats.csv'): Error response from daemon: Could not find the file /root/results/fstats.csv in container b7d8ce3fd85d
+
+compose cp failed; retrying download with engine cp: Docker compose command failed for environment hierarchical-f-statistics. Command: docker compose --project-name hierarchical-f-statistics__xxbsnld__env --project-directory /Users/shubhamchhangani/harshita/tasks/life-sciences/biology/hierarchical-f-statistics/environment -f /private/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/tmpjwdwjtty/hierarchical-f-statistics__xXbsNLd__env-docker-compose-resources.json -f /Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml -f /private/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/tmpz7y00_gx/docker-compose-environment.json -f /private/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/tmpu0od72gw/docker-compose-mounts.json cp main:/root/results/structure.csv jobs/2026-10-21__15-36-43/hierarchical-f-statistics__xXbsNLd/artifacts/root/results/structure.csv. Return code: 1. Stdout:  hierarchical-f-statistics__xxbsnld__env-main-1 Copying hierarchical-f-statistics__xxbsnld__env-main-1:/root/results/structure.csv to jobs/2026-10-21__15-36-43/hierarchical-f-statistics__xXbsNLd/artifacts/root/results/structure.csv
+invalid output path: directory "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/hierarchical-f-statistics/environment/jobs/2026-10-21__15-36-43/hierarchical-f-statistics__xXbsNLd/artifacts/root/results" does not exist
+. Stderr: None. 
+Failed to download artifact '/root/results/structure.csv' from service 'main' (best-effort)
+Traceback (most recent call last):
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/artifact_handler.py", line 313, in _download_artifact
+    await source_env.service_download_file(
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py", line 1315, in service_download_file
+    await self.download_file(source_path, target_path)
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py", line 1300, in download_file
+    await self._platform.download_file(source_path, target_path)
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker_unix.py", line 256, in download_file
+    await self._download_via_engine_cp(source_path, target_path, service)
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker_unix.py", line 235, in _download_via_engine_cp
+    await self._engine_cp(f"{container}:{container_path}", str(target_path))
+  File "/Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker_unix.py", line 226, in _engine_cp
+    raise RuntimeError(
+RuntimeError: Engine cp failed ('b7d8ce3fd85d:/root/results/structure.csv' -> 'jobs/2026-10-21__15-36-43/hierarchical-f-statistics__xXbsNLd/artifacts/root/results/structure.csv'): Error response from daemon: Could not find the file /root/results/structure.csv in container b7d8ce3fd85d
+
+Skipping image OS validation for hb__dc3e2c3e23babe5e1f52708dbcc61487: docker inspect returned 1
+docker compose cp failed; retrying upload with tar stream: Docker compose command failed for environment hierarchical-f-statistics. Command: docker compose --project-name hierarchical-f-statistics__xxbsnld__verifier__trial --project-directory /Users/shubhamchhangani/harshita/tasks/life-sciences/biology/hierarchical-f-statistics/tests -f /private/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/tmp7rd41m97/hierarchical-f-statistics__xXbsNLd__verifier__trial-docker-compose-resources.json -f /Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml -f /private/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/tmp3ciw5txq/docker-compose-environment.json -f /private/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/tmp7xqpblvd/docker-compose-mounts.json -f /Users/shubhamchhangani/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-egress-control.yaml -f /private/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/tmp39u8hvjj/docker-compose-egress-control-services.json cp jobs/2026-10-21__15-36-43/hierarchical-f-statistics__xXbsNLd/artifacts/logs/artifacts/. main:/logs/artifacts. Return code: 1. Stdout:  hierarchical-f-statistics__xxbsnld__verifier__trial-main-1 Copying jobs/2026-10-21__15-36-43/hierarchical-f-statistics__xXbsNLd/artifacts/logs/artifacts/. to hierarchical-f-statistics__xxbsnld__verifier__trial-main-1:/logs/artifacts
+lstat /Users/shubhamchhangani/harshita/tasks/life-sciences/biology/hierarchical-f-statistics/tests/jobs: no such file or directory
+. Stderr: None. 

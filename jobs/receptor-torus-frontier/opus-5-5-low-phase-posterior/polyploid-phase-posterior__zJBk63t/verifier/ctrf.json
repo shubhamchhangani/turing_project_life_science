@@ -1,0 +1,47 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 3,
+            "passed": 3,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1792835231.47547,
+            "stop": 1792835231.4853983
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_01_complete_contract",
+                "status": "passed",
+                "duration": 0.0006325819999801752,
+                "start": 1792835231.4837575,
+                "stop": 1792835231.484513,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_02_normalized_log_evidence",
+                "status": "passed",
+                "duration": 0.00023904200008928456,
+                "start": 1792835231.4845827,
+                "stop": 1792835231.484907,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_03_every_read_posterior",
+                "status": "passed",
+                "duration": 0.00023499900009937846,
+                "start": 1792835231.4849722,
+                "stop": 1792835231.4852824,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

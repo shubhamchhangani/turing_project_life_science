@@ -1,0 +1,65 @@
+{
+    "schema_version": 3,
+    "created_at": "2026-10-21T12:07:52.394798Z",
+    "harbor": {
+        "version": "0.24.0",
+        "is_editable": false
+    },
+    "n_concurrent_trials": 4,
+    "retry": {
+        "max_retries": 0,
+        "exclude_exceptions": [
+            "VerifierOutputParseError",
+            "VerifierTimeoutError",
+            "AgentSafetyRefusalError",
+            "RewardFileEmptyError",
+            "AgentTimeoutError",
+            "ModelNotFoundError",
+            "ApiUsageLimitError",
+            "AgentAuthenticationError",
+            "RewardFileNotFoundError"
+        ],
+        "wait_multiplier": 1.0,
+        "min_wait_sec": 1.0,
+        "max_wait_sec": 60.0
+    },
+    "trials": [
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "hierarchical-f-statistics",
+                "type": "local",
+                "digest": "sha256:b3a1b1cbfb34b468f62ddf37df21f865fdf297b4ab74144059e5f5d14a7249ec",
+                "path": "tasks/life-sciences/biology/hierarchical-f-statistics"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "codex",
+                "model_name": "openai/gpt-5.6-sol",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "stream": false,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "separate"
+            }
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 8,
+            "passed": 0,
+            "failed": 8,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1792681747.1085498,
+            "stop": 1792681747.2307854
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_file_exists",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0003719999999987067,
+                "start": 1792681747.1162174,
+                "stop": 1792681747.1211114,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_file_exists():\n        \"\"\"fluxes.csv exists at /root/results/fluxes.csv.\"\"\"\n>       assert FLUXES.is_file(), f\"missing output file {FLUXES}\"\nE       AssertionError: missing output file /root/results/fluxes.csv\nE       assert False\nE        +  where False = is_file()\nE        +    where is_file = PosixPath('/root/results/fluxes.csv').is_file\n\ntests/test_outputs.py:48: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_header",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00028641800000173134,
+                "start": 1792681747.1211827,
+                "stop": 1792681747.1327045,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_header():\n        \"\"\"Header is exactly reaction_id,net_flux,forward_flux,reverse_flux.\"\"\"\n>       header, _ = read_fluxes()\n                    ^^^^^^^^^^^^^\n\ntests/test_outputs.py:53: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:35: in read_fluxes\n    with FLUXES.open(newline=\"\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'\n\nusr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_one_row_per_reaction",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0002687080000214337,
+                "start": 1792681747.132777,
+                "stop": 1792681747.1399238,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_one_row_per_reaction():\n        \"\"\"Exactly one row for each of the 31 reactions in network.tsv, no extra or duplicate rows.\"\"\"\n>       _, rows = read_fluxes()\n                  ^^^^^^^^^^^^^\n\ntests/test_outputs.py:59: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:35: in read_fluxes\n    with FLUXES.open(newline=\"\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'\n\nusr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_values_finite",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0006472079999753078,
+                "start": 1792681747.139998,
+                "stop": 1792681747.1542597,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_values_finite():\n        \"\"\"Every net_flux, forward_flux and reverse_flux parses as a finite float.\"\"\"\n>       _, rows = read_fluxes()\n                  ^^^^^^^^^^^^^\n\ntests/test_outputs.py:70: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:35: in read_fluxes\n    with FLUXES.open(newline=\"\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'\n\nusr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_glucose_normalization",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0011524170000143386,
+                "start": 1792681747.154651,
+                "stop": 1792681747.1660962,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_glucose_normalization():\n        \"\"\"Glucose uptake (GLCup net flux) is reported as 100.\"\"\"\n>       v = flux_table()[\"GLCup\"][\"net\"]\n            ^^^^^^^^^^^^\n\ntests/test_outputs.py:83: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:41: in flux_table\n    _header, rows = read_fluxes()\n                    ^^^^^^^^^^^^^\ntests/test_outputs.py:35: in read_fluxes\n    with FLUXES.open(newline=\"\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'\n\nusr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_directional_consistency",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0002878749999979391,
+                "start": 1792681747.166188,
+                "stop": 1792681747.1737213,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_directional_consistency():\n        \"\"\"forward - reverse = net for every reaction; irreversible reactions have reverse 0 and net >= 0.\"\"\"\n>       f = flux_table()\n            ^^^^^^^^^^^^\n\ntests/test_outputs.py:89: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:41: in flux_table\n    _header, rows = read_fluxes()\n                    ^^^^^^^^^^^^^\ntests/test_outputs.py:35: in read_fluxes\n    with FLUXES.open(newline=\"\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'\n\nusr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_mass_balance",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00029754199997000796,
+                "start": 1792681747.1738033,
+                "stop": 1792681747.1815217,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_mass_balance():\n        \"\"\"Reported net fluxes close the steady-state balance of every intracellular metabolite within 0.1.\"\"\"\n>       f = flux_table()\n            ^^^^^^^^^^^^\n\ntests/test_outputs.py:103: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:41: in flux_table\n    _header, rows = read_fluxes()\n                    ^^^^^^^^^^^^^\ntests/test_outputs.py:35: in read_fluxes\n    with FLUXES.open(newline=\"\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'\n\nusr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            },
+            {
+                "name": "test_outputs.py::test_flux_value",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.00031479200001172103,
+                "start": 1792681747.181602,
+                "stop": 1792681747.18961,
+                "retries": 5,
+                "file_path": "test_outputs.py",
+                "tags": [
+                    "parametrize::key::['G6PDH_net', 'PDH_net', 'PC_net', 'ME_net', 'CS_net', 'IDH_reverse']"
+                ],
+                "trace": "key = 'IDH_reverse'\n\n    @pytest.mark.parametrize(\"key\", list(EXPECTED[\"graded\"]))\n    def test_flux_value(key):\n        \"\"\"Graded flux is within its stated relative tolerance of the true (injected) value.\"\"\"\n        spec = EXPECTED[\"graded\"][key]\n>       got = flux_table()[spec[\"reaction_id\"]][spec[\"column\"]]\n              ^^^^^^^^^^^^\n\ntests/test_outputs.py:121: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_outputs.py:41: in flux_table\n    _header, rows = read_fluxes()\n                    ^^^^^^^^^^^^^\ntests/test_outputs.py:35: in read_fluxes\n    with FLUXES.open(newline=\"\") as fh:\n         ^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/root/results/fluxes.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/root/results/fluxes.csv'\n\nusr/local/lib/python3.11/pathlib.py:1044: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            }
+        ]
+    }
+}

@@ -1,0 +1,44 @@
+{
+  "status": "HOLD_INCOMPLETE_OR_INCONCLUSIVE_EVIDENCE",
+  "worker_pid": 60793,
+  "zip_created": false,
+  "zip_path": null,
+  "package_fingerprint": "a7ce73b19acb76b8310eb092787f62b54479113651cf95588904f1c823397a37",
+  "gpt_not_before_utc": "1970-01-01T00:00:00+00:00",
+  "trials": {
+    "opus": {
+      "status": "inconclusive_launch_failure_missing_cli",
+      "job": "/Users/shubhamchhangani/harshita/jobs/receptor-torus-frontier/opus-5-5-low-polyploid-phase"
+    },
+    "gpt": {
+      "status": "inconclusive_insufficient_subscription_capacity"
+    }
+  },
+  "limitation": "Local trials do not guarantee a future Turing-harness result.",
+  "updated_at": "2026-10-24T09:07:27.436502+00:00",
+  "gpt_capacity_at_launch": {
+    "limitId": "codex",
+    "limitName": null,
+    "normalModelSlug": null,
+    "primary": {
+      "usedPercent": 31,
+      "windowDurationMins": 300,
+      "resetsAt": 1792849895
+    },
+    "secondary": {
+      "usedPercent": 36,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793396161
+    },
+    "credits": {
+      "hasCredits": false,
+      "unlimited": false,
+      "balance": "0"
+    },
+    "individualLimit": null,
+    "spendControlReached": false,
+    "planType": "plus",
+    "rateLimitReachedType": null
+  },
+  "worker_status": "finished"
+}

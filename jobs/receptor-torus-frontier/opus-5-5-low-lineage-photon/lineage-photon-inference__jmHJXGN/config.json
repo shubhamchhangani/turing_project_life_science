@@ -1,0 +1,16 @@
+{
+    "task": {
+        "path": "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/lineage-photon-inference"
+    },
+    "trial_name": "lineage-photon-inference__jmHJXGN",
+    "trials_dir": "jobs/receptor-torus-frontier/opus-5-5-low-lineage-photon",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "anthropic/claude-opus-5-5",
+        "kwargs": {
+            "version": "2.1.300",
+            "reasoning_effort": "low"
+        }
+    },
+    "job_id": "f38f662b-75b7-4d31-8db7-1d0d3ab1b10c"
+}

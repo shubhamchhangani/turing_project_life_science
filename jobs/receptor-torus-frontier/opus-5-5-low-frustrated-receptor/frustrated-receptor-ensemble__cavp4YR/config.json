@@ -1,0 +1,16 @@
+{
+    "task": {
+        "path": "/Users/shubhamchhangani/harshita/tasks/life-sciences/biology/frustrated-receptor-ensemble"
+    },
+    "trial_name": "frustrated-receptor-ensemble__cavp4YR",
+    "trials_dir": "jobs/receptor-torus-frontier/opus-5-5-low-frustrated-receptor",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "anthropic/claude-opus-5-5",
+        "kwargs": {
+            "version": "2.1.300",
+            "reasoning_effort": "low"
+        }
+    },
+    "job_id": "f61dc822-3408-4847-a562-4102c6416d61"
+}

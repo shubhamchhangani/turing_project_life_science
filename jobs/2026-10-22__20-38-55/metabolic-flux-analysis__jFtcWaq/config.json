@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "tasks/life-sciences/biology/metabolic-flux-analysis"
+    },
+    "trial_name": "metabolic-flux-analysis__jFtcWaq",
+    "trials_dir": "jobs/2026-10-22__20-38-55",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "5979fb57-b5a6-4931-a78d-c7e95b4fc9cf"
+}

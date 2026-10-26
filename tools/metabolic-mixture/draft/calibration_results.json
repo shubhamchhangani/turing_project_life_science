@@ -1,0 +1,358 @@
+[
+  {
+    "seed": 1000,
+    "ssr": 3708.930892853475,
+    "elapsed_sec": 57.23092508300033,
+    "errors": {
+      "A/G6PDH": {
+        "relative_error": 0.07869778530760693,
+        "tolerance": 0.45
+      },
+      "A/PDH": {
+        "relative_error": 0.002791354432324631,
+        "tolerance": 0.12
+      },
+      "A/PC": {
+        "relative_error": 0.03574375732342958,
+        "tolerance": 0.12
+      },
+      "A/ME": {
+        "relative_error": 0.01569619347276987,
+        "tolerance": 0.08
+      },
+      "A/CS": {
+        "relative_error": 0.018492069269614574,
+        "tolerance": 0.1
+      },
+      "A/IDH": {
+        "relative_error": 0.002349373481905559,
+        "tolerance": 0.2
+      },
+      "A/OAA": {
+        "relative_error": 0.045650531632163815,
+        "tolerance": 0.25
+      },
+      "A/Cit": {
+        "relative_error": 0.008602545842286544,
+        "tolerance": 0.25
+      },
+      "A/AKG": {
+        "relative_error": 0.16053433987598467,
+        "tolerance": 0.25
+      },
+      "A/Mal": {
+        "relative_error": 0.011056585482243737,
+        "tolerance": 0.25
+      },
+      "B/G6PDH": {
+        "relative_error": 0.025262894071950964,
+        "tolerance": 0.45
+      },
+      "B/PDH": {
+        "relative_error": 0.015350272665145957,
+        "tolerance": 0.12
+      },
+      "B/PC": {
+        "relative_error": 0.027080746192492733,
+        "tolerance": 0.12
+      },
+      "B/ME": {
+        "relative_error": 0.01849069873739856,
+        "tolerance": 0.08
+      },
+      "B/CS": {
+        "relative_error": 0.004274098286903374,
+        "tolerance": 0.1
+      },
+      "B/IDH": {
+        "relative_error": 0.004406584880024915,
+        "tolerance": 0.2
+      },
+      "B/OAA": {
+        "relative_error": 0.007676001327270398,
+        "tolerance": 0.25
+      },
+      "B/Cit": {
+        "relative_error": 0.015699452159483228,
+        "tolerance": 0.25
+      },
+      "B/AKG": {
+        "relative_error": 0.03760406379874226,
+        "tolerance": 0.25
+      },
+      "B/Mal": {
+        "relative_error": 0.011814491727182868,
+        "tolerance": 0.25
+      }
+    },
+    "all_targets_within_tolerance": true,
+    "initialization": "reference estimate from a different noise realization; no injected parameters used for initialization"
+  },
+  {
+    "seed": 1001,
+    "ssr": 3789.3761485785153,
+    "elapsed_sec": 72.68604074999894,
+    "errors": {
+      "A/G6PDH": {
+        "relative_error": 0.03526331002729594,
+        "tolerance": 0.45
+      },
+      "A/PDH": {
+        "relative_error": 0.06059323873247754,
+        "tolerance": 0.12
+      },
+      "A/PC": {
+        "relative_error": 0.03911725541385248,
+        "tolerance": 0.12
+      },
+      "A/ME": {
+        "relative_error": 0.0015919176001562008,
+        "tolerance": 0.08
+      },
+      "A/CS": {
+        "relative_error": 0.017887479279641027,
+        "tolerance": 0.1
+      },
+      "A/IDH": {
+        "relative_error": 0.03375644730264504,
+        "tolerance": 0.2
+      },
+      "A/OAA": {
+        "relative_error": 0.09328238110163878,
+        "tolerance": 0.25
+      },
+      "A/Cit": {
+        "relative_error": 0.010555599776316803,
+        "tolerance": 0.25
+      },
+      "A/AKG": {
+        "relative_error": 0.16941908624295704,
+        "tolerance": 0.25
+      },
+      "A/Mal": {
+        "relative_error": 0.03830189416748837,
+        "tolerance": 0.25
+      },
+      "B/G6PDH": {
+        "relative_error": 0.007839842111934954,
+        "tolerance": 0.45
+      },
+      "B/PDH": {
+        "relative_error": 0.06341799645535062,
+        "tolerance": 0.12
+      },
+      "B/PC": {
+        "relative_error": 0.040986332721571976,
+        "tolerance": 0.12
+      },
+      "B/ME": {
+        "relative_error": 0.013473481432034673,
+        "tolerance": 0.08
+      },
+      "B/CS": {
+        "relative_error": 0.0019406799530464656,
+        "tolerance": 0.1
+      },
+      "B/IDH": {
+        "relative_error": 0.020618588434708613,
+        "tolerance": 0.2
+      },
+      "B/OAA": {
+        "relative_error": 0.07898359603063324,
+        "tolerance": 0.25
+      },
+      "B/Cit": {
+        "relative_error": 0.013293756766219111,
+        "tolerance": 0.25
+      },
+      "B/AKG": {
+        "relative_error": 0.034283714796749395,
+        "tolerance": 0.25
+      },
+      "B/Mal": {
+        "relative_error": 0.04473052803141923,
+        "tolerance": 0.25
+      }
+    },
+    "all_targets_within_tolerance": true,
+    "initialization": "reference estimate from a different noise realization; no injected parameters used for initialization"
+  },
+  {
+    "seed": 1002,
+    "ssr": 3853.8535166108504,
+    "elapsed_sec": 60.60355016699759,
+    "errors": {
+      "A/G6PDH": {
+        "relative_error": 0.11701848916210562,
+        "tolerance": 0.45
+      },
+      "A/PDH": {
+        "relative_error": 0.1049406808615433,
+        "tolerance": 0.12
+      },
+      "A/PC": {
+        "relative_error": 0.009284599534407563,
+        "tolerance": 0.12
+      },
+      "A/ME": {
+        "relative_error": 0.012729195119671388,
+        "tolerance": 0.08
+      },
+      "A/CS": {
+        "relative_error": 0.008221493901778013,
+        "tolerance": 0.1
+      },
+      "A/IDH": {
+        "relative_error": 0.021883128806975627,
+        "tolerance": 0.2
+      },
+      "A/OAA": {
+        "relative_error": 0.15277492014326333,
+        "tolerance": 0.25
+      },
+      "A/Cit": {
+        "relative_error": 0.0009912396537097201,
+        "tolerance": 0.25
+      },
+      "A/AKG": {
+        "relative_error": 0.02491017055262484,
+        "tolerance": 0.25
+      },
+      "A/Mal": {
+        "relative_error": 0.006473352773823511,
+        "tolerance": 0.25
+      },
+      "B/G6PDH": {
+        "relative_error": 0.01019273968244584,
+        "tolerance": 0.45
+      },
+      "B/PDH": {
+        "relative_error": 0.11651522608090475,
+        "tolerance": 0.12
+      },
+      "B/PC": {
+        "relative_error": 0.003200268690324355,
+        "tolerance": 0.12
+      },
+      "B/ME": {
+        "relative_error": 0.006262270889161397,
+        "tolerance": 0.08
+      },
+      "B/CS": {
+        "relative_error": 0.007846629788458676,
+        "tolerance": 0.1
+      },
+      "B/IDH": {
+        "relative_error": 0.010506999119128965,
+        "tolerance": 0.2
+      },
+      "B/OAA": {
+        "relative_error": 0.014431762935310566,
+        "tolerance": 0.25
+      },
+      "B/Cit": {
+        "relative_error": 0.0009603028403427416,
+        "tolerance": 0.25
+      },
+      "B/AKG": {
+        "relative_error": 0.023227532442429526,
+        "tolerance": 0.25
+      },
+      "B/Mal": {
+        "relative_error": 0.00665981459367477,
+        "tolerance": 0.25
+      }
+    },
+    "all_targets_within_tolerance": true,
+    "initialization": "reference estimate from a different noise realization; no injected parameters used for initialization"
+  },
+  {
+    "seed": 1003,
+    "ssr": 3826.932934025284,
+    "elapsed_sec": 45.95366854200256,
+    "errors": {
+      "A/G6PDH": {
+        "relative_error": 0.0792399975743256,
+        "tolerance": 0.45
+      },
+      "A/PDH": {
+        "relative_error": 0.09448353017555397,
+        "tolerance": 0.12
+      },
+      "A/PC": {
+        "relative_error": 0.020745374958444366,
+        "tolerance": 0.12
+      },
+      "A/ME": {
+        "relative_error": 0.012626851490036551,
+        "tolerance": 0.08
+      },
+      "A/CS": {
+        "relative_error": 0.0035709269185107456,
+        "tolerance": 0.1
+      },
+      "A/IDH": {
+        "relative_error": 0.0472069937725913,
+        "tolerance": 0.2
+      },
+      "A/OAA": {
+        "relative_error": 0.008222000426864495,
+        "tolerance": 0.25
+      },
+      "A/Cit": {
+        "relative_error": 0.003738224415296069,
+        "tolerance": 0.25
+      },
+      "A/AKG": {
+        "relative_error": 0.06384128107908732,
+        "tolerance": 0.25
+      },
+      "A/Mal": {
+        "relative_error": 0.012744801661242752,
+        "tolerance": 0.25
+      },
+      "B/G6PDH": {
+        "relative_error": 0.018102250348444135,
+        "tolerance": 0.45
+      },
+      "B/PDH": {
+        "relative_error": 0.08516093901275945,
+        "tolerance": 0.12
+      },
+      "B/PC": {
+        "relative_error": 0.02018048617022336,
+        "tolerance": 0.12
+      },
+      "B/ME": {
+        "relative_error": 0.00527596348892613,
+        "tolerance": 0.08
+      },
+      "B/CS": {
+        "relative_error": 0.0021046873722414135,
+        "tolerance": 0.1
+      },
+      "B/IDH": {
+        "relative_error": 0.010796783372730564,
+        "tolerance": 0.2
+      },
+      "B/OAA": {
+        "relative_error": 0.01734003016620935,
+        "tolerance": 0.25
+      },
+      "B/Cit": {
+        "relative_error": 0.02945635942667959,
+        "tolerance": 0.25
+      },
+      "B/AKG": {
+        "relative_error": 0.02038991541719223,
+        "tolerance": 0.25
+      },
+      "B/Mal": {
+        "relative_error": 0.014867899784810337,
+        "tolerance": 0.25
+      }
+    },
+    "all_targets_within_tolerance": true,
+    "initialization": "reference estimate from a different noise realization; no injected parameters used for initialization"
+  }
+]

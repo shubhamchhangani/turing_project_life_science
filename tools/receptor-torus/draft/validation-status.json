@@ -1,0 +1,21 @@
+{
+  "status": "quality_validated_difficulty_pending",
+  "scientific_model": "finite zero-field heterogeneous receptor lattice",
+  "small_system_crosschecks": "24 independent implementation/regime cases, direct enumeration, max error <2e-14",
+  "reference_output_ready": true,
+  "independent_full_pending": false,
+  "model_trial": "fresh_retry_running_after_quota_reset",
+  "zip_created": false,
+  "full_size_max_joint_difference": 4.969323563752681e-13,
+  "full_size_logz_difference": 5.684341886080802e-14,
+  "static_checks_passed": 32,
+  "valid_artifact_cases_passed": 4,
+  "invalid_artifact_cases_rejected": 29,
+  "trial_job": "jobs/receptor-torus-frontier/gpt6-sol-max-receptor-torus-npx-retry1",
+  "offline_reference": "completed; result written",
+  "offline_verifier": "6/6 passed, reward 1, 215.44 seconds, offline, 1 CPU, 2 GiB",
+  "model_failure_proven": false,
+  "opus_trial": "pending_user_Claude_subscription_login",
+  "previous_attempt": "inconclusive_usage_limit",
+  "frozen_package_unchanged": true
+}

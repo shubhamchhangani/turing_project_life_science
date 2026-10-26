@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "differences": {
+    "parent": 4.163336342344337e-17,
+    "daughter_rna": 1.1102230246251565e-16,
+    "counts": 1.1102230246251565e-16,
+    "count_overflow": 5.551115123125783e-16,
+    "log_evidence": 1.7763568394002505e-15
+  },
+  "reference_seconds": 0.7106845829985105,
+  "source_seconds": 0.19380316699971445
+}

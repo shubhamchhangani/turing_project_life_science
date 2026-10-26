@@ -1,0 +1,38 @@
+{
+  "scope": "Post-fit diagnostic only. No truth used by inverse solver.",
+  "results": [
+    {
+      "start": 0,
+      "mobile_domain_rmsd_angstrom": [
+        0.007437587098297636,
+        0.09187464831025215,
+        0.007429010587362449,
+        0.009807790386240947
+      ],
+      "log_rate_rmse": 1.1450180849343972,
+      "max_rate_fold_error": 14.098468736162202
+    },
+    {
+      "start": 1,
+      "mobile_domain_rmsd_angstrom": [
+        0.007437587098297636,
+        0.09187464831025215,
+        0.007429010587362449,
+        0.009807790386240947
+      ],
+      "log_rate_rmse": 1.0768664741590854,
+      "max_rate_fold_error": 12.169403574869955
+    },
+    {
+      "start": 2,
+      "mobile_domain_rmsd_angstrom": [
+        0.007437587098297636,
+        0.09187464831025215,
+        0.007429010587362449,
+        0.009807790386240947
+      ],
+      "log_rate_rmse": 0.7994084536137089,
+      "max_rate_fold_error": 5.912099690025702
+    }
+  ]
+}

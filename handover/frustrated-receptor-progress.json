@@ -1,0 +1,27 @@
+{
+  "status": "DO_NOT_PACKAGE_SOLVED",
+  "worker_pid": 42724,
+  "zip_created": false,
+  "zip_path": null,
+  "order": "Claude first; GPT only after a valid Claude failure",
+  "package_fingerprint": "d602362b999495848b8caaff8f6f8da80d740e4fedfab5f2eccc2ef9bd1a902c",
+  "trials": {
+    "opus": {
+      "result": "/Users/shubhamchhangani/harshita/jobs/receptor-torus-frontier/opus-5-5-low-frustrated-receptor/frustrated-receptor-ensemble__cavp4YR/result.json",
+      "model": "anthropic/claude-opus-5-5",
+      "effort": "low",
+      "status": "solved_do_not_package",
+      "reward": 1.0,
+      "completed_commands": 8,
+      "error_type": null,
+      "quota_interrupted": false,
+      "agent_seconds": 179.548119,
+      "full_budget_timeout": false,
+      "counts_as_model_failure": false,
+      "task_checksum": "786ac5f9022844eb2901910e145c25ee5bd1c539c11e697f3321c90d6b8baf35",
+      "agent": "claude-code"
+    }
+  },
+  "updated_at": "2026-10-25T09:50:18.401683+00:00",
+  "worker_finished": true
+}

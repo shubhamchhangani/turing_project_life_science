@@ -1,0 +1,27 @@
+{
+  "status": "DO_NOT_PACKAGE_SOLVED",
+  "worker_pid": 38145,
+  "zip_created": false,
+  "zip_path": null,
+  "order": "Claude first; GPT only after a valid Claude failure",
+  "package_fingerprint": "839ceddc01259c62b40ab6e4f4c0a257509ddc169eb22bdccf095cb1ba34f4c0",
+  "trials": {
+    "opus": {
+      "result": "/Users/shubhamchhangani/harshita/jobs/receptor-torus-frontier/opus-5-5-low-conditional-receptor/conditional-receptor-ensemble__PxcXnMk/result.json",
+      "model": "anthropic/claude-opus-5-5",
+      "effort": "low",
+      "status": "solved_do_not_package",
+      "reward": 1.0,
+      "completed_commands": 5,
+      "error_type": null,
+      "quota_interrupted": false,
+      "agent_seconds": 88.015383,
+      "full_budget_timeout": false,
+      "counts_as_model_failure": false,
+      "task_checksum": "fe5d79e765cf6896f906bdc069e2fccd44403a8ef3483aa955e6e2c605ff18ef",
+      "agent": "claude-code"
+    }
+  },
+  "updated_at": "2026-10-25T09:37:53.681040+00:00",
+  "worker_finished": true
+}

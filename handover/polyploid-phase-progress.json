@@ -1,0 +1,55 @@
+{
+  "status": "DO_NOT_PACKAGE_SOLVED",
+  "worker_pid": 61450,
+  "zip_created": false,
+  "zip_path": null,
+  "package_fingerprint": "a7ce73b19acb76b8310eb092787f62b54479113651cf95588904f1c823397a37",
+  "gpt_not_before_utc": "1970-01-01T00:00:00+00:00",
+  "trials": {
+    "opus": {
+      "status": "cancelled_obsolete_candidate",
+      "job": "/Users/shubhamchhangani/harshita/jobs/receptor-torus-frontier/opus-5-5-low-polyploid-phase"
+    },
+    "gpt": {
+      "result": "/Users/shubhamchhangani/harshita/jobs/receptor-torus-frontier/gpt6-sol-max-polyploid-phase-npx/polyploid-haplotype-assembly__dCXJ7Rg/result.json",
+      "model": "openai/gpt-6-sol",
+      "effort": "max",
+      "status": "solved_do_not_package",
+      "reward": 1.0,
+      "completed_commands": 12,
+      "error_type": null,
+      "quota_interrupted": false,
+      "agent_seconds": 236.891953,
+      "full_budget_timeout": false,
+      "counts_as_model_failure": false,
+      "task_checksum": "70d10d8302acf5f3f30aec1c60d9cb141ed60c66bdb901aaef3ac52ca162b4ba",
+      "agent": "codex"
+    }
+  },
+  "limitation": "Local trials do not guarantee a future Turing-harness result.",
+  "updated_at": "2026-10-24T09:17:11.981467+00:00",
+  "gpt_capacity_at_launch": {
+    "limitId": "codex",
+    "limitName": null,
+    "normalModelSlug": null,
+    "primary": {
+      "usedPercent": 37,
+      "windowDurationMins": 300,
+      "resetsAt": 1792849895
+    },
+    "secondary": {
+      "usedPercent": 37,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793396161
+    },
+    "credits": {
+      "hasCredits": false,
+      "unlimited": false,
+      "balance": "0"
+    },
+    "individualLimit": null,
+    "spendControlReached": false,
+    "planType": "plus",
+    "rateLimitReachedType": null
+  }
+}

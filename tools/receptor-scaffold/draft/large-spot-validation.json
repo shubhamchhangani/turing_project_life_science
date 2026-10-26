@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "cohorts": 16,
+  "unique_even_subsets": 1788,
+  "max_compiled_vs_python_moment_error": 1.6653345369377348e-16,
+  "max_rank_update_vs_python_moment_error": 2.0701412806189978e-11,
+  "scope": "Arithmetic spot checks on full graph; not full joint-distribution validation."
+}

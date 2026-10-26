@@ -1,0 +1,13 @@
+{
+  "separate_offline_verifier_passed": true,
+  "reference_seconds": 175.517701872,
+  "reference_cost": 19873,
+  "public_budget": 19885,
+  "reference_uses_public_inputs_only": true,
+  "network": "none",
+  "cpus": 1,
+  "memory_mb": 2048,
+  "verifier_tests_passed": 3,
+  "verifier_seconds": 0.1,
+  "validated_at": "2026-10-24T09:07:22.194814+00:00"
+}

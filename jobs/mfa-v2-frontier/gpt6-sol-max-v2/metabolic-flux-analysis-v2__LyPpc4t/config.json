@@ -1,0 +1,15 @@
+{
+    "task": {
+        "path": "tasks/life-sciences/biology/metabolic-flux-analysis-v2"
+    },
+    "trial_name": "metabolic-flux-analysis-v2__LyPpc4t",
+    "trials_dir": "jobs/mfa-v2-frontier/gpt6-sol-max-v2",
+    "agent": {
+        "name": "codex",
+        "model_name": "openai/gpt-6-sol",
+        "kwargs": {
+            "reasoning_effort": "max"
+        }
+    },
+    "job_id": "bb0b7196-788b-4dca-922d-04480e09aa30"
+}

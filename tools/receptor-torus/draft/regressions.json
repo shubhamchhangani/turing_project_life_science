@@ -1,0 +1,271 @@
+{
+  "all_passed": true,
+  "valid_cases": 4,
+  "invalid_cases": 29,
+  "results": [
+    {
+      "case": "genuine_reference",
+      "expected_accept": true,
+      "accepted": true,
+      "passed": true,
+      "seconds": 0.00022195799829205498,
+      "reason": ""
+    },
+    {
+      "case": "arbitrary_row_order",
+      "expected_accept": true,
+      "accepted": true,
+      "passed": true,
+      "seconds": 0.00016720900021027774,
+      "reason": ""
+    },
+    {
+      "case": "CRLF",
+      "expected_accept": true,
+      "accepted": true,
+      "passed": true,
+      "seconds": 0.00013704199955100194,
+      "reason": ""
+    },
+    {
+      "case": "scientific_notation",
+      "expected_accept": true,
+      "accepted": true,
+      "passed": true,
+      "seconds": 0.00014591699437005445,
+      "reason": ""
+    },
+    {
+      "case": "leading_space",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 0.00010016600572271273,
+      "reason": "AssertionError: Invalid decimal numeric field"
+    },
+    {
+      "case": "trailing_space",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 4.5417000364977866e-05,
+      "reason": "AssertionError: Invalid decimal numeric field"
+    },
+    {
+      "case": "underscore",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 3.983300121035427e-05,
+      "reason": "AssertionError: Invalid decimal numeric field"
+    },
+    {
+      "case": "unicode_digit",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 4.6624998503830284e-05,
+      "reason": "AssertionError: Invalid decimal numeric field"
+    },
+    {
+      "case": "nan",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 3.9332997403107584e-05,
+      "reason": "AssertionError: Invalid decimal numeric field"
+    },
+    {
+      "case": "infinity",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 3.7874997360631824e-05,
+      "reason": "AssertionError: Invalid decimal numeric field"
+    },
+    {
+      "case": "overflow",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 3.9165999623946846e-05,
+      "reason": "AssertionError: Nonfinite numeric field"
+    },
+    {
+      "case": "empty",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 3.691700112540275e-05,
+      "reason": "AssertionError: Invalid decimal numeric field"
+    },
+    {
+      "case": "negative",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 6.275000487221405e-05,
+      "reason": "AssertionError: Probability outside [0,1]"
+    },
+    {
+      "case": "above_one",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 5.062499985797331e-05,
+      "reason": "AssertionError: Probability outside [0,1]"
+    },
+    {
+      "case": "padded_partition",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 7.299999560927972e-05,
+      "reason": "AssertionError: Invalid decimal numeric field"
+    },
+    {
+      "case": "wrong_quantity",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 6.754200148861855e-05,
+      "reason": "AssertionError: Incorrect thermodynamic quantity"
+    },
+    {
+      "case": "bad_partition",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 0.00014324999938253313,
+      "reason": "AssertionError: "
+    },
+    {
+      "case": "pattern_lost_zeroes",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 3.9917002141010016e-05,
+      "reason": "AssertionError: Missing or invalid patterns"
+    },
+    {
+      "case": "duplicate_pattern",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 3.26249937643297e-05,
+      "reason": "AssertionError: Duplicate pattern"
+    },
+    {
+      "case": "quoted_header",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 2.0749997929669917e-05,
+      "reason": "AssertionError: Incorrect literal CSV header"
+    },
+    {
+      "case": "wrong_header",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 1.695800165180117e-05,
+      "reason": "AssertionError: Incorrect literal CSV header"
+    },
+    {
+      "case": "extra_column",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 2.083300205413252e-05,
+      "reason": "AssertionError: Incorrect literal CSV header"
+    },
+    {
+      "case": "missing_row",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 2.6083995180670172e-05,
+      "reason": "AssertionError: Incorrect number of rows"
+    },
+    {
+      "case": "extra_row",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 2.9625000024680048e-05,
+      "reason": "AssertionError: Incorrect number of rows"
+    },
+    {
+      "case": "blank_row",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 2.7333000616636127e-05,
+      "reason": "AssertionError: Incorrect number of rows"
+    },
+    {
+      "case": "summary_extra_row",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 7.537499914178625e-05,
+      "reason": "AssertionError: Incorrect number of rows"
+    },
+    {
+      "case": "independent_receptors",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 0.00013187500007916242,
+      "reason": "AssertionError: "
+    },
+    {
+      "case": "sixth_order_only_error",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 0.00013020900223637,
+      "reason": "AssertionError: "
+    },
+    {
+      "case": "oversized_artifact",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 1.612499909242615e-05,
+      "reason": "AssertionError: Artifact size outside contract"
+    },
+    {
+      "case": "invalid_utf8",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 2.32499951380305e-05,
+      "reason": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+    },
+    {
+      "case": "missing_file",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 1.0415998985990882e-05,
+      "reason": "FileNotFoundError: [Errno 2] No such file or directory: '/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/receptor-regression-54k_l96a/joint.csv'"
+    },
+    {
+      "case": "fifo",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 2.245799987576902e-05,
+      "reason": "AssertionError: Artifact must be a regular file"
+    },
+    {
+      "case": "symlink",
+      "expected_accept": false,
+      "accepted": false,
+      "passed": true,
+      "seconds": 6.624999514315277e-06,
+      "reason": "OSError: [Errno 62] Too many levels of symbolic links: '/var/folders/jp/h0clx6y93sv0_q8dddgwh06w0000gn/T/receptor-regression-copwawfe/joint.csv'"
+    }
+  ]
+}
