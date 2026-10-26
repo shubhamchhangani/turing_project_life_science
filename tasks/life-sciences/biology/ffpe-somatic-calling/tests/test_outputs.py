@@ -33,9 +33,15 @@ NORMAL_FRACTION_REL_TOL = 0.15
 
 
 def read_text(path):
-    """Read a regular UTF-8 file of at most 1 MiB without blocking on FIFOs."""
-    assert path.exists(), f"missing output {path}"
-    fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)
+    """Read a regular UTF-8 file of at most 1 MiB without blocking on FIFOs.
+
+    Symbolic links are rejected (at the file and in any parent directory) so a submission
+    cannot point at verifier-side files such as the simulation truth.
+    """
+    assert os.path.lexists(path), f"missing output {path}"
+    assert not os.path.islink(path), f"{path} must be a regular file, not a symbolic link"
+    assert os.path.realpath(path) == str(path), f"{path} must not be reached through a symbolic link"
+    fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK | os.O_NOFOLLOW)
     try:
         info = os.fstat(fd)
         assert stat.S_ISREG(info.st_mode), f"{path} must be a regular file"

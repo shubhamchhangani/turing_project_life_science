@@ -3,8 +3,8 @@ Determine the somatic single-nucleotide variants (SNVs) of the lymphoma in the w
 ## Specimens
 
 - Tumour (`tumor`): excisional lymph-node biopsy of a pleomorphic mantle cell lymphoma, formalin-fixed and paraffin-embedded (FFPE). The block was stored for 8 years before extraction. The DNA was not treated with uracil-DNA glycosylase, and the library has no unique molecular identifiers.
-- Normal (`normal`): fresh-frozen peripheral-blood mononuclear cells drawn on the day of the biopsy. The absolute lymphocyte count at the draw was 21 × 10⁹/L. Flow cytometry of the same draw detected a monoclonal CD5⁺ cyclin D1⁺ B-cell population.
-- Both libraries are Illumina paired-end 2 × 150 bp. Reads are aligned to the reference below and coordinate-sorted. Duplicates are not marked. Base qualities are binned.
+- Normal (`normal`): fresh-frozen peripheral-blood mononuclear cells drawn on the day of the biopsy. The absolute lymphocyte count at the draw was $ 21 \times 10^{9} $ cells per litre. Flow cytometry of the same draw detected a monoclonal B-cell population positive for CD5 and cyclin D1.
+- Both libraries are Illumina paired-end, $ 2 \times 150 $ bp. Reads are aligned to the reference below and coordinate-sorted. Duplicates are not marked. Base qualities are binned.
 
 ## Input files (all in `/root/data/`)
 

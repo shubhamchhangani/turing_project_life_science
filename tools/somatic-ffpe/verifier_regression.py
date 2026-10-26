@@ -50,6 +50,8 @@ case("bad_truth_plus_germline", tsv="chrom\tpos\tref\talt\n" + "".join("\t".join
 case("bad_clonal_only", tsv="chrom\tpos\tref\talt\n" + "".join("\t".join(r[:4]) + "\n" for r in [l.split("\t") for l in (priv / "truth_somatic.tsv").read_text().splitlines()[1:]] if r[4] == "clonal"))
 case("bad_wrong_alt_allele", tsv="chrom\tpos\tref\talt\n" + "".join(f"{c}\t{p}\t{r}\t{'ACGT'[('ACGT'.index(a) + 1) % 4] if 'ACGT'[('ACGT'.index(a) + 1) % 4] != r else 'ACGT'[('ACGT'.index(a) + 2) % 4]}\n" for c, p, r, a in truth))
 case("bad_fifo", special="fifo")
+case("bad_symlink_to_truth", special="symlink_truth")
+case("bad_symlink_results_dir", special="symlink_dir")
 case("bad_oversize", tsv=snv + "#" * (1024 * 1024))
 results = {}
 for name, (tsv, js, special) in cases.items():
@@ -57,14 +59,26 @@ for name, (tsv, js, special) in cases.items():
     d.mkdir(parents=True)
     if special == "empty":
         pass
+    elif special == "symlink_truth":
+        os.symlink("/tests/data/truth_somatic.tsv", d / "somatic_snvs.tsv")
+        os.symlink("/tests/data/truth_params.json", d / "sample_estimates.json")
+    elif special == "symlink_dir":
+        (d / "real").mkdir()
+        (d / "real" / "somatic_snvs.tsv").write_text(tsv)
+        (d / "real" / "sample_estimates.json").write_text(js)
     elif special == "fifo":
         os.mkfifo(d / "somatic_snvs.tsv")
         (d / "sample_estimates.json").write_text(js)
     else:
         (d / "somatic_snvs.tsv").write_bytes(tsv.encode("utf-8", "surrogateescape") if "\xff" not in tsv else tsv[:-1].encode() + b"\xff")
         (d / "sample_estimates.json").write_text(js)
-    r = subprocess.run(["docker", "run", "--rm", "--network", "none", "-v", f"{d.resolve()}:/root/results:ro", "ffpe-tests",
-                        "bash", "-c", "bash /tests/test.sh >/dev/null 2>&1; cat /logs/verifier/reward.txt"],
+    if special == "symlink_dir":
+        cmd = ["docker", "run", "--rm", "--network", "none", "-v", f"{d.resolve()}:/mnt/sub:ro", "ffpe-tests", "bash", "-c",
+               "rmdir /root/results && ln -s /mnt/sub/real /root/results && bash /tests/test.sh >/dev/null 2>&1; cat /logs/verifier/reward.txt"]
+    else:
+        cmd = ["docker", "run", "--rm", "--network", "none", "-v", f"{d.resolve()}:/root/results:ro", "ffpe-tests",
+               "bash", "-c", "bash /tests/test.sh >/dev/null 2>&1; cat /logs/verifier/reward.txt"]
+    r = subprocess.run(cmd,
                        capture_output=True, text=True, timeout=300)
     reward = r.stdout.strip()
     ok = (reward == "1") == name.startswith("valid_")
