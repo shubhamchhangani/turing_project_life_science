@@ -1,0 +1,16 @@
+draft/
+harbor/
+devenv/base/proxy-ca.crt
+release/res_oracle/
+*.cram
+*.crai
+*.bam
+*.npz
+*.npy
+tools/somatic-ffpe/trials/round1/trial1-work/cand.tsv
+tools/somatic-ffpe/trials/round1/trial1-work/cand2.tsv
+tools/somatic-ffpe/trials/round1/trial1-work/hets.tsv
+tools/somatic-ffpe/trials/round1/trial1-work/s.tsv
+tools/somatic-ffpe/trials/round1/trial1-work/scored.tsv
+tools/somatic-ffpe/trials/round1/trial2-work/all.txt
+tools/somatic-ffpe/trials/round2/trial3-work/cand.tsv

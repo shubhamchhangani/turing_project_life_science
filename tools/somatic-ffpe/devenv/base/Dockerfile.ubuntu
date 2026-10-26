@@ -1,0 +1,4 @@
+FROM ubuntu:24.04
+COPY proxy-ca.crt /etc/ssl/certs/ca-certificates.crt
+COPY proxy-ca.crt /usr/local/share/ca-certificates/zz-proxy-ca.crt
+ENV SSL_CERT_FILE=/usr/local/share/ca-certificates/zz-proxy-ca.crt PIP_CERT=/usr/local/share/ca-certificates/zz-proxy-ca.crt REQUESTS_CA_BUNDLE=/usr/local/share/ca-certificates/zz-proxy-ca.crt

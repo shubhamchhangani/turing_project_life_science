@@ -1,0 +1,82 @@
+{
+  "seed": 8,
+  "tumor_purity": 0.62,
+  "tumor_ploidy": 3.71,
+  "normal_tumor_fraction": 0.2,
+  "n_somatic": 400,
+  "segments": [
+    [
+      "chr1",
+      0,
+      300000,
+      2,
+      2
+    ],
+    [
+      "chr2",
+      0,
+      250000,
+      2,
+      1
+    ],
+    [
+      "chr3",
+      0,
+      120000,
+      2,
+      0
+    ],
+    [
+      "chr3",
+      120000,
+      250000,
+      2,
+      2
+    ],
+    [
+      "chr4",
+      0,
+      200000,
+      3,
+      2
+    ]
+  ],
+  "library_stats": {
+    "tumor": {
+      "fragments": 566665,
+      "reads": 1642266
+    },
+    "normal": {
+      "fragments": 300001,
+      "reads": 666794
+    }
+  },
+  "params": {
+    "purity": 0.62,
+    "normal_tumor_fraction": 0.2,
+    "ccf_a": 0.35,
+    "ccf_b": 0.22,
+    "n_clonal": 230,
+    "n_sub_a": 110,
+    "n_sub_b": 60,
+    "pre_doubling_fraction": 0.5,
+    "het_rate": 0.0009090909090909091,
+    "hom_rate": 0.00028571428571428574,
+    "n_recurrent": 260,
+    "recurrent_molecule_fraction": 0.6,
+    "tumor_mean_unique_depth": 170,
+    "normal_mean_unique_depth": 90,
+    "tumor_family_q": 0.31,
+    "normal_family_q": 0.1,
+    "tumor_frag": [
+      210.0,
+      0.24
+    ],
+    "normal_frag": [
+      320.0,
+      0.2
+    ],
+    "damage_mean": 0.01,
+    "damage_shape": 0.45
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "task": "/home/user/repo/tasks/life-sciences/biology/ffpe-somatic-calling",
+  "static_checks_passed": true,
+  "portal_acceptance_guaranteed": false,
+  "package_fingerprint": "10767ace0fd956d7f4a7277fa1da432e3a69f90a6125518437b87128daf2e52b",
+  "files": {
+    "README.md": "b308eaaa8476bf25184c5a19fe0c16bae7beb8bdcd8c0b39c4b2cd1b5cee3ae1",
+    "environment/Dockerfile": "bec0d31f37f0570c6c81dd3800037160e9ca7d77cb8d739b07ddc8d10e6f1cff",
+    "environment/data/normal.cram": "5a80378b77067163874d2f71d9567d3ef663b3caf0cd41a172a7995895db9064",
+    "environment/data/normal.cram.crai": "f3bc359fa04a94e39273a5414483f067744ce3ea05a482ae7caf9b5f7089e53f",
+    "environment/data/reference.fa": "4812119ae1a8d33bb5080b18d48477a4d55f83f9c89a97e562f438f8f3309012",
+    "environment/data/reference.fa.fai": "087e2de90d1f692e78a5a12d5606f0cfdadf359fe8f3c6d5b96c84b96f83199c",
+    "environment/data/tumor.cram": "67917cf0c06f3df48c8145753cf78196a351f8cb0f713a09743b8b298f2559ba",
+    "environment/data/tumor.cram.crai": "128c5af9f1a3eeae12b2dc23fc00127e3cc1ecdc4ee6866b09f95c615b89d335",
+    "instruction.md": "0176c283edef7a767d28e2cff6c9560da127824416aec83fea875b2d228ffb8c",
+    "solution/call_somatic.py": "c221d33cd69d258962f1e8a00f00b7c656a335a22b206b49fc5edf2e1ac9929f",
+    "solution/solve.sh": "61791386ee2011727e40011c1f255dbae358fe1f2571cf30c05afc906b8e0228",
+    "task.toml": "187b3121fb36e551905ab8342de9d6b00647da5b63b38d3a399646d071c1e077",
+    "tests/Dockerfile": "897ce9a0bd7c99fe367d210dfe1f5947e1df00d0c18d0773e4d8cf57489aadf2",
+    "tests/data/reference.fa": "4812119ae1a8d33bb5080b18d48477a4d55f83f9c89a97e562f438f8f3309012",
+    "tests/data/truth_params.json": "c04ccb0de92bf435aed6e4dc9bd05b6eb03979f5396f188e8e5217f86d42fa1b",
+    "tests/data/truth_somatic.tsv": "92de1831db2dbfd6ce4e0f766e9ce353dca897c1369ff8261d2ad4db8a3becba",
+    "tests/test.sh": "7ee810212593b12f748f7df6da97422f588a8a4200c2c18553fc941e455c1122",
+    "tests/test_outputs.py": "22deda5589e98be9fc1b77966c6570e65104f569226bf789a1a79c4894ec2719"
+  },
+  "checks": [
+    {
+      "check": "root structure",
+      "passed": true,
+      "detail": "missing=[], extra=[]"
+    },
+    {
+      "check": "environment is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "tests is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "solution is a directory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no hidden/cache files",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no canary markers",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no symlinks in package",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "schema 1.4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "top-level artifacts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "task required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "metadata required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "environment required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier required fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "turing task namespace",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no legacy metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "life sciences biology category",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "binary reward and overlap type",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent execution contract",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent environment network",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "isolated offline verifier",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "agent resources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier resources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "verifier timeout",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test runner errexit",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "test runner shell syntax",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: solution/call_somatic.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Python syntax/docstrings: tests/test_outputs.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "execution-contract closing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all artifacts stated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no scoring language in instructions",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "errors": [],
+  "required_additional_evidence": [
+    "offline reference solution and verifier",
+    "valid and invalid artifact regressions",
+    "scientific coverage and independent truth review",
+    "completed substantive trials on the required model roster"
+  ],
+  "zip_created": false
+}
