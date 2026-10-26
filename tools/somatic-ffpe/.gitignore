@@ -7,10 +7,10 @@ release/res_oracle/
 *.bam
 *.npz
 *.npy
-tools/somatic-ffpe/trials/round1/trial1-work/cand.tsv
-tools/somatic-ffpe/trials/round1/trial1-work/cand2.tsv
-tools/somatic-ffpe/trials/round1/trial1-work/hets.tsv
-tools/somatic-ffpe/trials/round1/trial1-work/s.tsv
-tools/somatic-ffpe/trials/round1/trial1-work/scored.tsv
-tools/somatic-ffpe/trials/round1/trial2-work/all.txt
-tools/somatic-ffpe/trials/round2/trial3-work/cand.tsv
+/trials/round1/trial1-work/cand.tsv
+/trials/round1/trial1-work/cand2.tsv
+/trials/round1/trial1-work/hets.tsv
+/trials/round1/trial1-work/s.tsv
+/trials/round1/trial1-work/scored.tsv
+/trials/round1/trial2-work/all.txt
+/trials/round2/trial3-work/cand.tsv
