@@ -70,9 +70,9 @@ def reference():
 def snv_lines():
     text = read_text(SNVS)
     lines = text.split("\n")
-    if lines and lines[-1] == "":
-        lines.pop()
     lines = [ln[:-1] if ln.endswith("\r") else ln for ln in lines]
+    while lines and lines[-1] == "":  # trailing newlines at end of file are allowed
+        lines.pop()
     assert lines, "somatic_snvs.tsv is empty"
     return lines
 

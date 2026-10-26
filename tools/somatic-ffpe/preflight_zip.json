@@ -2,9 +2,9 @@
   "task": "/home/user/repo/tasks/life-sciences/biology/ffpe-somatic-calling",
   "static_checks_passed": true,
   "portal_acceptance_guaranteed": false,
-  "package_fingerprint": "53fafbb97bfd12cc036cc1fb9e48671a476a2160ff2fa5e2c1fe1602eff13c1f",
+  "package_fingerprint": "ce8540d50353e417dfea8ad5fd20d2a144a0fb7b0cf1189f37745b2785c26962",
   "files": {
-    "README.md": "f10a07466f2c74e014592384b815f8471bc212bd91021b84924ff091c4ac317e",
+    "README.md": "daea68e7cee200cba44b97ccb3624d5ab4bebe9238a75a479efdf4ee7b52288f",
     "environment/Dockerfile": "bec0d31f37f0570c6c81dd3800037160e9ca7d77cb8d739b07ddc8d10e6f1cff",
     "environment/data/normal.cram": "5a80378b77067163874d2f71d9567d3ef663b3caf0cd41a172a7995895db9064",
     "environment/data/normal.cram.crai": "f3bc359fa04a94e39273a5414483f067744ce3ea05a482ae7caf9b5f7089e53f",
@@ -12,16 +12,16 @@
     "environment/data/reference.fa.fai": "087e2de90d1f692e78a5a12d5606f0cfdadf359fe8f3c6d5b96c84b96f83199c",
     "environment/data/tumor.cram": "67917cf0c06f3df48c8145753cf78196a351f8cb0f713a09743b8b298f2559ba",
     "environment/data/tumor.cram.crai": "128c5af9f1a3eeae12b2dc23fc00127e3cc1ecdc4ee6866b09f95c615b89d335",
-    "instruction.md": "f234114051a8c5508735e5c743c195b832d7fbd58d32737b7032f9d4bc5dc7ba",
+    "instruction.md": "d2ee6d23713826a6cdedab91b12869abb4d2dd32249d1c3df9b21419dd33d768",
     "solution/call_somatic.py": "c221d33cd69d258962f1e8a00f00b7c656a335a22b206b49fc5edf2e1ac9929f",
     "solution/solve.sh": "61791386ee2011727e40011c1f255dbae358fe1f2571cf30c05afc906b8e0228",
-    "task.toml": "3dc1d2a6929f68943a8466a1056980db07e591585b4f6d84583630128a9486c6",
+    "task.toml": "ed75810db6b402832baf2525f680bdadd7d393c0ce93d438028c27dc8b8e4f10",
     "tests/Dockerfile": "897ce9a0bd7c99fe367d210dfe1f5947e1df00d0c18d0773e4d8cf57489aadf2",
     "tests/data/reference.fa": "4812119ae1a8d33bb5080b18d48477a4d55f83f9c89a97e562f438f8f3309012",
     "tests/data/truth_params.json": "c04ccb0de92bf435aed6e4dc9bd05b6eb03979f5396f188e8e5217f86d42fa1b",
     "tests/data/truth_somatic.tsv": "92de1831db2dbfd6ce4e0f766e9ce353dca897c1369ff8261d2ad4db8a3becba",
     "tests/test.sh": "7ee810212593b12f748f7df6da97422f588a8a4200c2c18553fc941e455c1122",
-    "tests/test_outputs.py": "5a51ec4e52dd9defa234d56b9d3ff520621b5e542b53ec5d230fc3c29157ee8a"
+    "tests/test_outputs.py": "ccf7d2f8a2159d1094d09edad369286ad3b8b00d4d8a8ca81e4a1ccd32dda772"
   },
   "checks": [
     {

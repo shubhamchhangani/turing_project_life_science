@@ -25,7 +25,7 @@ These statements hold exactly:
 
 ## Output 1 — `/root/results/somatic_snvs.tsv`
 
-A UTF-8, tab-separated text file of at most 1 MiB. The first line is exactly `chrom	pos	ref	alt` (four tab-separated column names). Each further line is one somatic SNV, in any order, with these four fields:
+A regular UTF-8, tab-separated text file of at most 1 MiB. The first line is exactly `chrom	pos	ref	alt` (four tab-separated column names). Each further line is one somatic SNV, in any order, with these four fields:
 
 - `chrom`: one of `chr1`, `chr2`, `chr3`, `chr4`.
 - `pos`: the 1-based position on that chromosome, written as a plain decimal integer with no sign, leading zeros or whitespace.
@@ -36,7 +36,7 @@ Report between 1 and 5,000 SNVs, with each (`chrom`, `pos`) at most once. A soma
 
 ## Output 2 — `/root/results/sample_estimates.json`
 
-A UTF-8 JSON object of at most 1 MiB with exactly these three keys. Each value is a finite JSON number, not a string or boolean.
+A regular UTF-8 file of at most 1 MiB containing a JSON object with exactly these three keys. Each value is a finite JSON number, not a string or boolean.
 
 - `tumor_purity`: the fraction of all cells in the tumour specimen that are malignant, with $ 0 < tumor\_purity \leq 1 $.
 - `tumor_ploidy`: the mean total copy number of a malignant cell, averaged over all 1,000,000 reference positions with equal weight, with $ 0 < tumor\_ploidy \leq 10 $.
@@ -46,7 +46,7 @@ A UTF-8 JSON object of at most 1 MiB with exactly these three keys. Each value i
 
 The output is valid only when all of the following requirements hold. The true somatic SNVs and the true sample parameters are those used to simulate the data.
 
-1. Contract. Both files exist and follow the formats above exactly.
+1. Contract. Both files exist and follow the formats above exactly. Each output is a regular file written directly at its stated path, not a symbolic link, and `/root/results` itself is not a symbolic link.
 2. SNV precision. At least 90 % of the reported rows match a true somatic SNV. A match requires `chrom`, `pos`, `ref` and `alt` to all be equal.
 3. SNV recall. At least 85 % of all true somatic SNVs, clonal and subclonal, are reported with matching `chrom`, `pos`, `ref` and `alt`.
 4. Sample estimates. Each estimate satisfies $ |reported - true| \leq tolerance \times |true| $, where $ true $ is the true value of that quantity and $ tolerance $ is the stated relative tolerance:

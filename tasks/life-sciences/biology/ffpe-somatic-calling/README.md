@@ -71,7 +71,7 @@ Diploid purity/ploidy estimates (ploidy 2, T ≈ 0.25) fail the ploidy and T tes
 **Other checks.**
 - **Harbor:** oracle reward 1.0, nop reward 0.0.
 - **Offline oracle run:** I ran the oracle offline (`docker run --network none --cpus 1 --memory 2g` on the agent image). It finished in 174 s, wrote both artifacts and passed all seven tests.
-- **Adversarial regression suite (37 cases):** all 4 valid variants (CRLF, no final newline, integer-valued numbers, the oracle) pass. All 33 invalid ones fail, including symbolic links to the verifier's truth files or a symlinked results directory (artifacts must be regular files reached without symlinks), truth plus recurrent artefacts, truth plus germline SNPs, clonal-only calls, wrong alt alleles, a diploid ploidy, the doubled solution, NaN, strings or booleans, unicode digits, leading zeros, duplicates, FIFO files and files over 1 MiB.
+- **Adversarial regression suite (38 cases):** all 5 valid variants (CRLF, no final newline, trailing blank lines, integer-valued numbers, the oracle) pass. All 33 invalid ones fail, including symbolic links to the verifier's truth files or a symlinked results directory (artifacts must be regular files reached without symlinks), truth plus recurrent artefacts, truth plus germline SNPs, clonal-only calls, wrong alt alleles, a diploid ploidy, the doubled solution, NaN, strings or booleans, unicode digits, leading zeros, duplicates, FIFO files and files over 1 MiB.
 
 **Agent trials.** All trials used Claude Opus 5.5 in isolated containers (1 CPU, 2 GB, internet, 18,000 s budget), with solution, tests and truth unreachable during the runs.
 

@@ -19,6 +19,7 @@ def case(name, tsv=snv, js=json.dumps(est), special=None):
 case("valid_oracle")
 case("valid_crlf", tsv=snv.replace("\n", "\r\n"))
 case("valid_no_final_newline", tsv=snv.rstrip("\n"))
+case("valid_trailing_blank_lines", tsv=snv + "\n\n")
 case("valid_integer_like_estimates", js='{"tumor_purity": 0.62, "tumor_ploidy": 4, "normal_tumor_fraction": 0.2}')
 case("bad_missing_files", special="empty")
 case("bad_header", tsv=snv.replace("chrom\tpos\tref\talt", "chrom\tposition\tref\talt", 1))
